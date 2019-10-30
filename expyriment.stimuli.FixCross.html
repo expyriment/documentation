@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.stimuli.FixCross &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.stimuli.FixCross &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment.stimuli" href="expyriment.stimuli.html"/>
-        <link rel="next" title="expyriment.stimuli.Frame" href="expyriment.stimuli.Frame.html"/>
-        <link rel="prev" title="expyriment.stimuli.Ellipse" href="expyriment.stimuli.Ellipse.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.stimuli.Frame" href="expyriment.stimuli.Frame.html" />
+    <link rel="prev" title="expyriment.stimuli.Ellipse" href="expyriment.stimuli.Ellipse.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -133,36 +136,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
+        
           <li><a href="expyriment.stimuli.html">expyriment.stimuli</a> &raquo;</li>
-      
-    <li>expyriment.stimuli.FixCross</li>
+        
+      <li>expyriment.stimuli.FixCross</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -182,35 +205,30 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>size</strong> : (int, int), optional</p>
-<blockquote>
-<div><p>size of the cross</p>
-</div></blockquote>
-<p><strong>position</strong> : (int, int), optional</p>
-<blockquote>
-<div><p>position of the stimulus</p>
-</div></blockquote>
-<p><strong>line_width</strong> : int optional</p>
-<blockquote>
-<div><p>width of the lines</p>
-</div></blockquote>
-<p><strong>colour</strong> : (int, int, int), optional</p>
-<blockquote>
-<div><p>colour of the cross</p>
-</div></blockquote>
-<p><strong>anti_aliasing</strong> :  int, optional</p>
-<blockquote class="last">
-<div><p>anti aliasing parameter (good anti_aliasing with 10)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>size</strong><span class="classifier">(int, int), optional</span></dt><dd><p>size of the cross</p>
+</dd>
+<dt><strong>position</strong><span class="classifier">(int, int), optional</span></dt><dd><p>position of the stimulus</p>
+</dd>
+<dt><strong>line_width</strong><span class="classifier">int optional</span></dt><dd><p>width of the lines</p>
+</dd>
+<dt><strong>colour</strong><span class="classifier">(int, int, int), optional</span></dt><dd><p>colour of the cross</p>
+</dd>
+<dt><strong>anti_aliasing</strong><span class="classifier">int, optional</span></dt><dd><p>anti aliasing parameter (good anti_aliasing with 10)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
+<p class="rubric">Notes</p>
+<p>The parameter cross_size is now OBSOLETE. Please use ‘size’ and
+specify x and y dimensions.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.absolute_position">
-<code class="descname">absolute_position</code><a class="headerlink" href="#expyriment.stimuli.FixCross.absolute_position" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">absolute_position</code><a class="headerlink" href="#expyriment.stimuli.FixCross.absolute_position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for absolute_position.</p>
 <p class="rubric">Notes</p>
 <p>The absolute position differs for instance from the (relative) position, if the
@@ -226,24 +244,20 @@ stimulus is plotted ontop of another stimulus, which has not the position (0,0).
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grain_size</strong> : int</p>
-<blockquote>
-<div><p>size of the grains for the noise</p>
-</div></blockquote>
-<p><strong>percentage</strong> : int</p>
-<blockquote>
-<div><p>percentage of covered area</p>
-</div></blockquote>
-<p><strong>colour</strong> : (int, int, int)</p>
-<blockquote>
-<div><p>colour (RGB) of the noise</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>grain_size</strong><span class="classifier">int</span></dt><dd><p>size of the grains for the noise</p>
+</dd>
+<dt><strong>percentage</strong><span class="classifier">int</span></dt><dd><p>percentage of covered area</p>
+</dd>
+<dt><strong>colour</strong><span class="classifier">(int, int, int)</span></dt><dd><p>colour (RGB) of the noise</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -261,10 +275,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>xy</strong> : (int, int)</p>
-<blockquote class="last">
-<div><p>vertex as tuple</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>xy</strong><span class="classifier">(int, int)</span></dt><dd><p>vertex as tuple</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -279,19 +293,19 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>vertex_list</strong> : (int, int)</p>
-<blockquote class="last">
-<div><p>list of vertices (int, int)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>vertex_list</strong><span class="classifier">((int, int))</span></dt><dd><p>list of vertices ((int, int))</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.anti_aliasing">
-<code class="descname">anti_aliasing</code><a class="headerlink" href="#expyriment.stimuli.FixCross.anti_aliasing" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">anti_aliasing</code><a class="headerlink" href="#expyriment.stimuli.FixCross.anti_aliasing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for anti_aliasing.</p>
 </dd></dl>
 
@@ -300,25 +314,25 @@ to compute!</p>
 <code class="descname">blur</code><span class="sig-paren">(</span><em>level</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.blur" title="Permalink to this definition">¶</a></dt>
 <dd><p>Blur the shape.</p>
 <p>This blurs the stimulus, by scaling it down and up by the factor of
-&#8216;level&#8217;.
+‘level’.
 Notes
-&#8212;&#8211;
+—–
 Depending on the blur level and the size of your stimulus, this method
 may take some time!</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>level</strong> : int</p>
-<blockquote>
-<div><p>level of bluring</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of bluring</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -337,10 +351,10 @@ This method is functionally equivalent with unload(keep_surface=False).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -350,16 +364,16 @@ This method is functionally equivalent with unload(keep_surface=False).</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.colour">
-<code class="descname">colour</code><a class="headerlink" href="#expyriment.stimuli.FixCross.colour" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">colour</code><a class="headerlink" href="#expyriment.stimuli.FixCross.colour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for colour.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="expyriment.stimuli.FixCross.compress">
 <code class="descname">compress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.compress" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;Compress the stimulus.</p>
+<dd><p>“Compress the stimulus.</p>
 <p>This will create a temporary file on the disk where the surface of the
 stimululs is written to.
 The surface will now be read from the disk to free memory.
@@ -371,10 +385,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -389,10 +403,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>point_xy</strong> : (int, int)</p>
-<blockquote class="last">
-<div><p>Expyriment screen coordinates (tuple)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>point_xy</strong><span class="classifier">(int, int)</span></dt><dd><p>Expyriment screen coordinates (tuple)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -407,7 +421,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>copy</strong> : deep copy of self</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>copy</strong><span class="classifier">deep copy of self</span></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -416,10 +433,16 @@ to compute!</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.cross_size">
-<code class="descname">cross_size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.cross_size" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">cross_size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.cross_size" title="Permalink to this definition">¶</a></dt>
 <dd><p>OBSOLETE property, please use size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="expyriment.stimuli.FixCross.debug_contour_colour">
+<em class="property">property </em><code class="descname">debug_contour_colour</code><a class="headerlink" href="#expyriment.stimuli.FixCross.debug_contour_colour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for conture_colour.</p>
 </dd></dl>
 
 <dl class="method">
@@ -434,10 +457,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -454,16 +477,16 @@ of this and another visual stimulus.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>other</strong> : stimulus</p>
-<blockquote>
-<div><p>the other visual stimulus</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong><span class="classifier">stimulus</span></dt><dd><p>the other visual stimulus</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>dist</strong> : float</p>
-<blockquote class="last">
-<div><p>distance between surface centers</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>dist</strong><span class="classifier">float</span></dt><dd><p>distance between surface centers</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -485,16 +508,16 @@ of this and another visual stimulus.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>booleans</strong> : (bool, bool)</p>
-<blockquote>
-<div><p>booleans to flip or not</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>booleans</strong><span class="classifier">(bool, bool)</span></dt><dd><p>booleans to flip or not</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -504,30 +527,49 @@ of this and another visual stimulus.</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.flipping">
-<code class="descname">flipping</code><a class="headerlink" href="#expyriment.stimuli.FixCross.flipping" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;Getter for the total native flipping.</p>
+<em class="property">property </em><code class="descname">flipping</code><a class="headerlink" href="#expyriment.stimuli.FixCross.flipping" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Getter for the total native flipping.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="expyriment.stimuli.FixCross.get_pixel_array">
 <code class="descname">get_pixel_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.get_pixel_array" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a PixelArray representation of surface of the stimulus</p>
+<dd><p>Return a 2D array referencing the surface pixel data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">pixel_array: Pygame.PixelArray</p>
-<blockquote class="last">
-<div><p>a copy of the PixelArray is returned</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>pixel_array: Pygame.PixelArray</strong></dt><dd><p>a 2D array referencing the surface pixel data</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
 <p>see also set_surface</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="expyriment.stimuli.FixCross.get_surface_array">
+<code class="descname">get_surface_array</code><span class="sig-paren">(</span><em>replace_transparent_with_colour=None</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.get_surface_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a 3D array containing the surface pixel data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>surface_array</strong><span class="classifier">numpy.ndarray</span></dt><dd><p>a 3D array containing the surface pixel data
+using RGBA coding.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -538,7 +580,10 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">surface: Pygame.surface</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>surface: Pygame.surface</strong></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -546,15 +591,15 @@ to compute!</p>
 <p>see also set_surface</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.has_surface">
-<code class="descname">has_surface</code><a class="headerlink" href="#expyriment.stimuli.FixCross.has_surface" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">has_surface</code><a class="headerlink" href="#expyriment.stimuli.FixCross.has_surface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for has_surface.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.id">
-<code class="descname">id</code><a class="headerlink" href="#expyriment.stimuli.FixCross.id" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">id</code><a class="headerlink" href="#expyriment.stimuli.FixCross.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for id.</p>
 </dd></dl>
 
@@ -566,19 +611,19 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>stimulus</strong> : expyriment stimulus</p>
-<blockquote>
-<div><p>the other stimulus</p>
-</div></blockquote>
-<p><strong>mode</strong> : mode (str), optional</p>
-<blockquote>
-<div><p>&#8220;visible&#8221;: based on non-transparent pixels or
-&#8220;rectangle&#8221;: based on pixels in pygame surface
-(default = visible&#8221;)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>the other stimulus</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“surface”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>out</strong> : bool</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong><span class="classifier">bool</span></dt><dd></dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -588,39 +633,39 @@ to compute!</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.is_compressed">
-<code class="descname">is_compressed</code><a class="headerlink" href="#expyriment.stimuli.FixCross.is_compressed" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">is_compressed</code><a class="headerlink" href="#expyriment.stimuli.FixCross.is_compressed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for is_compressed.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="expyriment.stimuli.FixCross.is_point_inside">
 <code class="descname">is_point_inside</code><span class="sig-paren">(</span><em>point_xy</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.is_point_inside" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;OBSOLETE METHOD: Please use &#8216;overlapping_with_position&#8217;.</p>
+<dd><p>“OBSOLETE METHOD: Please use ‘overlapping_with_position’.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.is_preloaded">
-<code class="descname">is_preloaded</code><a class="headerlink" href="#expyriment.stimuli.FixCross.is_preloaded" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">is_preloaded</code><a class="headerlink" href="#expyriment.stimuli.FixCross.is_preloaded" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for is_preloaded.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="expyriment.stimuli.FixCross.is_shape_overlapping">
 <code class="descname">is_shape_overlapping</code><span class="sig-paren">(</span><em>shape2</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.is_shape_overlapping" title="Permalink to this definition">¶</a></dt>
-<dd><p>OBSOLETE METHOD: Please use &#8216;overlapping_with_shape&#8217;.</p>
+<dd><p>OBSOLETE METHOD: Please use ‘overlapping_with_shape’.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.line_width">
-<code class="descname">line_width</code><a class="headerlink" href="#expyriment.stimuli.FixCross.line_width" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">line_width</code><a class="headerlink" href="#expyriment.stimuli.FixCross.line_width" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for line_width.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.logging">
-<code class="descname">logging</code><a class="headerlink" href="#expyriment.stimuli.FixCross.logging" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">logging</code><a class="headerlink" href="#expyriment.stimuli.FixCross.logging" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
@@ -633,16 +678,16 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>offset</strong> : tuple (x,y)</p>
-<blockquote>
-<div><p>translation along x and y axis</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>offset</strong><span class="classifier">tuple (x,y)</span></dt><dd><p>translation along x and y axis</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -662,10 +707,10 @@ No surface will be created.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>booleans</strong> : (bool, bool)</p>
-<blockquote class="last">
-<div><p>booleans to flip horizontally and vertically or not</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>booleans</strong><span class="classifier">(bool, bool)</span></dt><dd><p>booleans to flip horizontally and vertically or not</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -677,15 +722,15 @@ No surface will be created.</p>
 <code class="descname">native_overlapping_with_position</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.native_overlapping_with_position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return True if the position is inside the shape.</p>
 <p>Parameters
-position &#8211; Expyriment screen coordinates (tuple)</p>
+position – Expyriment screen coordinates (tuple)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>val</strong> : bool</p>
-<blockquote class="last">
-<div><p>True if the position is inside the shape</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val</strong><span class="classifier">bool</span></dt><dd><p>True if the position is inside the shape</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -703,10 +748,10 @@ No surface will be created.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>degree</strong> : int</p>
-<blockquote class="last">
-<div><p>degree to rotate counterclockwise (int)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>degree</strong><span class="classifier">float</span></dt><dd><p>degree to rotate counterclockwise (float)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -725,15 +770,10 @@ No surface will be created.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>factors</strong> : int or (int, int)</p>
-<blockquote>
-<div><p>x and y factors to scale</p>
-</div></blockquote>
-<p><strong>scale_line_width</strong> : bool, optional</p>
-<blockquote class="last">
-<div><p>if True, line_width will be scaled proportionally to the change in
-surface size (default=False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>factors</strong><span class="classifier">int or (int, int)</span></dt><dd><p>x and y factors to scale</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -748,23 +788,21 @@ surface size (default=False)</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>position</strong> : (int, int)</p>
-<blockquote>
-<div><p>position to check for overlapping</p>
-</div></blockquote>
-<p><strong>mode</strong> : mode (str), optional</p>
-<blockquote>
-<div><p>&#8220;visible&#8221;: based on non-transparent pixels or
-&#8220;rectangle&#8221;: based on pixels in pygame surface
-(default = visible&#8221;)</p>
-</div></blockquote>
-<p><strong>use_absolute_position</strong> : bool, optional</p>
-<blockquote>
-<div><p>use absolute_position of stimulus (default) instead of position</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>position</strong><span class="classifier">(int, int)</span></dt><dd><p>position to check for overlapping</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“rectangle”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+<dt><strong>use_absolute_position</strong><span class="classifier">bool, optional</span></dt><dd><p>use absolute_position of stimulus (default) instead of position</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>overlapping</strong> : bool</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>overlapping</strong><span class="classifier">bool</span></dt><dd></dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -786,16 +824,16 @@ Pygame, we can right now not change this.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>other</strong> : stimuli.Shape</p>
-<blockquote>
-<div><p>the other shape object</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong><span class="classifier">stimuli.Shape</span></dt><dd><p>the other shape object</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>val</strong> : bool</p>
-<blockquote class="last">
-<div><p>True if overlapping</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val</strong><span class="classifier">bool</span></dt><dd><p>True if overlapping</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -810,31 +848,25 @@ Pygame, we can right now not change this.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>stimulus</strong> : expyriment stimulus</p>
-<blockquote>
-<div><p>the other stimulus</p>
-</div></blockquote>
-<p><strong>mode</strong> : mode (str), optional</p>
-<blockquote>
-<div><p>&#8220;visible&#8221;: based on non-transparent pixels or
-&#8220;surface&#8221;: based on pixels in pygame surface
-(default = visible&#8221;)</p>
-</div></blockquote>
-<p><strong>use_absolute_position</strong> : bool, optional</p>
-<blockquote>
-<div><p>use absolute_position of stimuli (default) instead of position</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>the other stimulus</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“surface”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+<dt><strong>use_absolute_position</strong><span class="classifier">bool, optional</span></dt><dd><p>use absolute_position of stimuli (default) instead of position</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>overlapping</strong> : bool</p>
-<blockquote>
-<div><p>are stimuli overlapping or not</p>
-</div></blockquote>
-<p><strong>overlap</strong> : (int, int)</p>
-<blockquote class="last">
-<div><p>the overlap (x, y) in pixels. If mode is &#8216;surface&#8217;, the argument
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>overlapping</strong><span class="classifier">bool</span></dt><dd><p>are stimuli overlapping or not</p>
+</dd>
+<dt><strong>overlap</strong><span class="classifier">(int, int)</span></dt><dd><p>the overlap (x, y) in pixels. If mode is ‘surface’, the argument
 will always be None.</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -870,16 +902,16 @@ plotted on.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>stimulus</strong> : expyriment stimulus</p>
-<blockquote>
-<div><p>stimulus to whose surface should be plotted</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>stimulus to whose surface should be plotted</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -889,10 +921,14 @@ plotted on.</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.points">
-<code class="descname">points</code><a class="headerlink" href="#expyriment.stimuli.FixCross.points" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return polygon as list of tuples (x,y) in Expyriment coordinates.</p>
+<em class="property">property </em><code class="descname">points</code><a class="headerlink" href="#expyriment.stimuli.FixCross.points" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Returns shape as list of tuples (x, y) representing points.</dt><dd>see Shape.xy_points</dd>
+</dl>
+<p>The representation does not take into account the position. Use
+points_on_screen for position-depended representation.</p>
 <p>In contrast to the vertex representation, the point representation
 takes into all the native transformations (rotation, scaling,
 flipping)</p>
@@ -900,40 +936,49 @@ flipping)</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">val: list of tuples</p>
-<blockquote class="last">
-<div><p>polygon as list of tuples (x,y) in Expyriment coordinates</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val: list of tuples</strong></dt><dd><p>polygon as list of tuples (x,y) in Expyriment coordinates</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.points_on_screen">
-<code class="descname">points_on_screen</code><a class="headerlink" href="#expyriment.stimuli.FixCross.points_on_screen" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return polygon as list of tuples in Expyriment coordinates.</p>
+<em class="property">property </em><code class="descname">points_on_screen</code><a class="headerlink" href="#expyriment.stimuli.FixCross.points_on_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns shape as list of tuples (x, y) resenting points on the
+screen. see Shape.xy_points_on_screen.</p>
+<p>In contrast to Shape.points, it takes into account the position on
+screen.</p>
 <p>In contrast to the vertex representation, the point representation
 takes into all the native transformations (rotation, scaling,
-flipping)</p>
+flipping).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">val: list of tuples</p>
-<blockquote class="last">
-<div><p>polygon as list of tuples (x,y) in Expyriment coordinates</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val: list of tuples</strong></dt><dd><p>polygon as list of tuples (x,y) in Expyriment coordinates</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
+<dt id="expyriment.stimuli.FixCross.polar_position">
+<em class="property">property </em><code class="descname">polar_position</code><a class="headerlink" href="#expyriment.stimuli.FixCross.polar_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the position in polar coordinates (radial, angle[degrees])</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.position">
-<code class="descname">position</code><a class="headerlink" href="#expyriment.stimuli.FixCross.position" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">position</code><a class="headerlink" href="#expyriment.stimuli.FixCross.position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for position.</p>
 </dd></dl>
 
@@ -945,27 +990,27 @@ flipping)</p>
 In OpenGL mode this method creates an OpenGL texture based on the
 surface of the stimulus.
 When OpenGL is switched off, this method will create a surface if it
-doesn&#8217;t exists yet.
+doesn’t exists yet.
 If stimuli are not preloaded manually, this will happen
 automatically during presentation. However, stimulus presentation will
 take some time then!</p>
-<p>Always preload your stimuli when a timing acurate presentation is
+<p>Always preload your stimuli when a timing accurate presentation is
 needed!</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>inhibit_ogl_compress</strong> : bool, optional</p>
-<blockquote>
-<div><p>inhibits OpenGL stimuli to be automatically compressed
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>inhibit_ogl_compress</strong><span class="classifier">bool, optional</span></dt><dd><p>inhibits OpenGL stimuli to be automatically compressed
 (default=False)</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -986,38 +1031,37 @@ can take some time to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>clear</strong> : bool, optional</p>
-<blockquote>
-<div><p>if True the screen will be cleared automatically
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>clear</strong><span class="classifier">bool, optional</span></dt><dd><p>if True the screen will be cleared automatically
 (default = True)</p>
-</div></blockquote>
-<p><strong>update</strong> : bool, optional</p>
-<blockquote>
-<div><p>if False the screen will be not be updated automatically
+</dd>
+<dt><strong>update</strong><span class="classifier">bool, optional</span></dt><dd><p>if False the screen will be not be updated automatically
 (default = True)</p>
-</div></blockquote>
-<p><strong>log_event_tag</strong> : numeral or string, optional</p>
-<blockquote>
-<div><p>if log_event_tag is defined and if logging is switched on for this
+</dd>
+<dt><strong>log_event_tag</strong><span class="classifier">numeral or string, optional</span></dt><dd><p>if log_event_tag is defined and if logging is switched on for this
 stimulus (default), a summary of the inter-event-intervalls are
 appended at the end of the event file</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.rect">
-<code class="descname">rect</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rect" title="Permalink to this definition">¶</a></dt>
-<dd><p>Getter for rect =(top, left, bottom, right).</p>
+<em class="property">property </em><code class="descname">rect</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for bouncing rectangular
+rect = pygame.Rect(left, top, width, height)</p>
+<p class="rubric">Notes</p>
+<p>Fom version 0.9.1 on, this is a pygame.Rect</p>
 </dd></dl>
 
 <dl class="method">
@@ -1035,16 +1079,16 @@ appended at the end of the event file</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>new_position</strong> : tuple (x,y)</p>
-<blockquote>
-<div><p>translation along x and y axis</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>new_position</strong><span class="classifier">tuple (x,y)</span></dt><dd><p>translation along x and y axis</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1064,20 +1108,18 @@ rotated stimulus is not a good idea.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>degree</strong> : int</p>
-<blockquote>
-<div><p>degree to rotate counterclockwise</p>
-</div></blockquote>
-<p><strong>filter</strong> : bool, optional</p>
-<blockquote>
-<div><p>filter the surface content for better quality (default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>degree</strong><span class="classifier">int</span></dt><dd><p>degree to rotate counterclockwise</p>
+</dd>
+<dt><strong>filter</strong><span class="classifier">bool, optional</span></dt><dd><p>filter the surface content for better quality (default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1087,21 +1129,21 @@ rotated stimulus is not a good idea.</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.rotation">
-<code class="descname">rotation</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;Getter for the total native rotation.</p>
+<em class="property">property </em><code class="descname">rotation</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Getter for the total native rotation.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.rotation_centre">
-<code class="descname">rotation_centre</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation_centre" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">rotation_centre</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation_centre" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for rotation_centre.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.rotation_centre_display_colour">
-<code class="descname">rotation_centre_display_colour</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation_centre_display_colour" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">rotation_centre_display_colour</code><a class="headerlink" href="#expyriment.stimuli.FixCross.rotation_centre_display_colour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for rotation_centre_display_colour.</p>
 </dd></dl>
 
@@ -1113,11 +1155,11 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>filename</strong> : str</p>
-<blockquote class="last">
-<div><p>name of the file to write (possible extensions are BMP, TGA, PNG,
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>name of the file to write (possible extensions are BMP, TGA, PNG,
 or JPEG with TGA being the default)</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1139,18 +1181,18 @@ scaled stimulus is not a good idea.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>factors</strong> : (int, int) or (float, float)</p>
-<blockquote>
-<div><p>tuple representing the x and y factors to scale or a single number.
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>factors</strong><span class="classifier">(int, int) or (float, float)</span></dt><dd><p>tuple representing the x and y factors to scale or a single number.
 In the case of a single number x and y scaling will be the
 identical (i.e., proportional scaling)</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1171,17 +1213,17 @@ scaled stimulus is not a good idea.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>keep_aspect_ratio</strong> : boolean, optional</p>
-<blockquote>
-<div><p>if this boolean is False, stimulus will be stretched so that it
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>keep_aspect_ratio</strong><span class="classifier">boolean, optional</span></dt><dd><p>if this boolean is False, stimulus will be stretched so that it
 fills out the whole screen (default = False)</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1191,10 +1233,10 @@ fills out the whole screen (default = False)</p>
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.scaling">
-<code class="descname">scaling</code><a class="headerlink" href="#expyriment.stimuli.FixCross.scaling" title="Permalink to this definition">¶</a></dt>
-<dd><p>&#8220;Getter for the total native scaling.</p>
+<em class="property">property </em><code class="descname">scaling</code><a class="headerlink" href="#expyriment.stimuli.FixCross.scaling" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Getter for the total native scaling.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1207,16 +1249,16 @@ you may loose some pixels on the edge.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grain_size</strong> : int or (int, int)</p>
-<blockquote>
-<div><p>size of a grain (use tuple of integers for different width &amp; height)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>grain_size</strong><span class="classifier">int or (int, int)</span></dt><dd><p>size of a grain (use tuple of integers for different width &amp; height)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1234,17 +1276,18 @@ to compute!</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>onoff</strong> : bool</p>
-<blockquote class="last">
-<div><p>set logging on (True) or off (False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Notes</p>
-<p>See also design.experiment.set_log_level fur further information about
-event logging.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -1252,42 +1295,43 @@ event logging.</p>
 <code class="descname">set_surface</code><span class="sig-paren">(</span><em>surface</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.FixCross.set_surface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the surface of the stimulus</p>
 <p>This method overwrites the surface of the stimulus. It can also handle
-surfaces in form of pygame.PixelArray representations.</p>
+surfaces in form of pygame.PixelArray or Numpy 3D array (RGB or RGBA)
+representations.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>surface: pygame.Surface or pygame.PixelArray</strong></p>
-<blockquote>
-<div><p>a representation of the new surface</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>surface: pygame.Surface or pygame.PixelArray or numpy.ndarray</strong></dt><dd><p>a representation of the new surface</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">succeeded: boolean</p>
-<blockquote class="last">
-<div><p>setting surface was successful or not</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>succeeded: boolean</strong></dt><dd><p>setting surface was successful or not</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>CAUTION: This is an expert&#8217;s method.
+<p>CAUTION: This is an expert’s method.
 The method can be used together with get_surface() &amp; get_pixel_array()
 to apply low-level Pygame operations on stimuli. However, users should
 be aware of what they are doing, because the incorrect usage of this
 methods might affect the stability of the experiment.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.size">
-<code class="descname">size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.size" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for size.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.surface_size">
-<code class="descname">surface_size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.surface_size" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">surface_size</code><a class="headerlink" href="#expyriment.stimuli.FixCross.surface_size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for surface_size.</p>
 </dd></dl>
 
@@ -1297,46 +1341,46 @@ methods might affect the stability of the experiment.</p>
 <dd><p>Unload the stimulus from memory.</p>
 <p>This will unload preloaded stimuli.
 In OpenGL mode, this method will remove the reference to the OpenGL
-texture and the surface (when &#8216;keep_surface&#8217; is False).
+texture and the surface (when ‘keep_surface’ is False).
 When OpenGL is switched off, the reference to the surface will be
-removed (when &#8216;keep_surface&#8217; is False).</p>
+removed (when ‘keep_surface’ is False).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>keep_surface</strong> : bool, optional</p>
-<blockquote>
-<div><p>keep the surface after unload (default=False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>keep_surface</strong><span class="classifier">bool, optional</span></dt><dd><p>keep the surface after unload (default=False)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>time</strong> : int</p>
-<blockquote class="last">
-<div><p>the time it took to execute this method</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><code class="xref py py-obj docutils literal"><span class="pre">clear_surface.</span></code></p>
+<p class="last"><a class="reference internal" href="#expyriment.stimuli.FixCross.clear_surface" title="expyriment.stimuli.FixCross.clear_surface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear_surface</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>Depending on the size of the stimulus, this method may take some time
 to compute!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.vertices">
-<code class="descname">vertices</code><a class="headerlink" href="#expyriment.stimuli.FixCross.vertices" title="Permalink to this definition">¶</a></dt>
-<dd><p>Getter for the polygon verticies.</p>
+<em class="property">property </em><code class="descname">vertices</code><a class="headerlink" href="#expyriment.stimuli.FixCross.vertices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the polygon vertices.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.xy_points">
-<code class="descname">xy_points</code><a class="headerlink" href="#expyriment.stimuli.FixCross.xy_points" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return polygon as list of XYPoints of the shape.</p>
+<em class="property">property </em><code class="descname">xy_points</code><a class="headerlink" href="#expyriment.stimuli.FixCross.xy_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the shape as list of XYPoints.</p>
 <p>The representation does not take into account the position. Use
 xy_points_on_screen for position-depended representation.</p>
 <p>In contrast to the vertex representation, the point representation
@@ -1346,20 +1390,22 @@ flipping).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">val: list of XYPoints</p>
-<blockquote class="last">
-<div><p>polygon as list of XYPoints of the shape</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val: list of XYPoints</strong></dt><dd><p>polygon as list of XYPoints of the shape</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.stimuli.FixCross.xy_points_on_screen">
-<code class="descname">xy_points_on_screen</code><a class="headerlink" href="#expyriment.stimuli.FixCross.xy_points_on_screen" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return polygon as list of XYPoints in Expyriment coordinates.</p>
+<em class="property">property </em><code class="descname">xy_points_on_screen</code><a class="headerlink" href="#expyriment.stimuli.FixCross.xy_points_on_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the shape as list of XYPoints in Expyriment coordinates.</p>
+<p>In contrast to xy_points, it takes into account the position on
+screen.</p>
 <p>In contrast to the vertex representation, the point representation
 takes into all the native transformations (rotation, scaling,
 flipping).</p>
@@ -1367,10 +1413,10 @@ flipping).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">val: list of XYPoints</p>
-<blockquote class="last">
-<div><p>polygon as list of XYPoints of the shape</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>val: list of XYPoints</strong></dt><dd><p>polygon as list of XYPoints of the shape</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -1383,15 +1429,16 @@ flipping).</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.stimuli.Frame.html" class="btn btn-neutral float-right" title="expyriment.stimuli.Frame" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.stimuli.Frame.html" class="btn btn-neutral float-right" title="expyriment.stimuli.Frame" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.stimuli.Ellipse.html" class="btn btn-neutral" title="expyriment.stimuli.Ellipse" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.stimuli.Ellipse.html" class="btn btn-neutral float-left" title="expyriment.stimuli.Ellipse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1400,11 +1447,11 @@ flipping).</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1417,35 +1464,15 @@ flipping).</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

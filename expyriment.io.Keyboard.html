@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.io.Keyboard &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.io.Keyboard &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment.io" href="expyriment.io.html"/>
-        <link rel="next" title="expyriment.io.MarkerOutput" href="expyriment.io.MarkerOutput.html"/>
-        <link rel="prev" title="expyriment.io.InputFile" href="expyriment.io.InputFile.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.io.MarkerOutput" href="expyriment.io.MarkerOutput.html" />
+    <link rel="prev" title="expyriment.io.InputFile" href="expyriment.io.InputFile.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -133,36 +136,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
+        
           <li><a href="expyriment.io.html">expyriment.io</a> &raquo;</li>
-      
-    <li>expyriment.io.Keyboard</li>
+        
+      <li>expyriment.io.Keyboard</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -174,7 +197,7 @@
 <dt id="expyriment.io.Keyboard">
 <em class="property">class </em><code class="descclassname">expyriment.io.</code><code class="descname">Keyboard</code><span class="sig-paren">(</span><em>default_keys=None</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard" title="Permalink to this definition">¶</a></dt>
 <dd><p>A class implementing a keyboard input.</p>
-<p>Calling <cite>expyriment.control.intialize(exp)</cite> will automatically create a
+<p>Calling <cite>expyriment.control.initialize(exp)</cite> will automatically create a
 keyboard instance and will reference it in exp.keyboard for easy access.</p>
 <dl class="method">
 <dt id="expyriment.io.Keyboard.__init__">
@@ -184,10 +207,10 @@ keyboard instance and will reference it in exp.keyboard for easy access.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>default_keys</strong> : int or list, optional</p>
-<blockquote class="last">
-<div><p>a default key or list of default keys</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default_keys</strong><span class="classifier">int or list, optional</span></dt><dd><p>a default key or list of default keys</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -196,30 +219,35 @@ keyboard instance and will reference it in exp.keyboard for easy access.</p>
 
 <dl class="method">
 <dt id="expyriment.io.Keyboard.check">
-<code class="descname">check</code><span class="sig-paren">(</span><em>keys=None</em>, <em>check_for_control_keys=True</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.check" title="Permalink to this definition">¶</a></dt>
+<code class="descname">check</code><span class="sig-paren">(</span><em>keys=None</em>, <em>check_for_keyup=False</em>, <em>check_for_control_keys=True</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.check" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if keypress is in event queue.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>keys</strong> : int or list, optional</p>
-<blockquote>
-<div><p>a specific key or list of keys to check</p>
-</div></blockquote>
-<p><strong>check_for_control_keys</strong> : bool, optional</p>
-<blockquote>
-<div><p>checks if control key has been pressed (default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>keys</strong><span class="classifier">int or list, optional</span></dt><dd><p>a specific key or list of keys to check</p>
+</dd>
+<dt><strong>check_for_keyup</strong><span class="classifier">bool, optional</span></dt><dd><p>if True checks for key-up (default = False)</p>
+</dd>
+<dt><strong>check_for_control_keys</strong><span class="classifier">bool, optional</span></dt><dd><p>checks if control key has been pressed (default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>key</strong> : int</p>
-<blockquote class="last">
-<div><p>pressed key or None. Only the first occurence is returned!</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>key</strong><span class="classifier">int</span></dt><dd><p>pressed key or None. Only the first occurrence is returned!</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
+<p class="rubric">Notes</p>
+<p>Keys are defined by keyboard constants (please see misc.constants).</p>
+<p>When checking for key-down (default), all key-up events are first
+cleared, and when checking for key-up events, all key-down events are
+first cleared!</p>
 </dd></dl>
 
 <dl class="method">
@@ -228,31 +256,31 @@ keyboard instance and will reference it in exp.keyboard for easy access.</p>
 <dd><p>Clear the event queue from keyboard events.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.default_keys">
-<code class="descname">default_keys</code><a class="headerlink" href="#expyriment.io.Keyboard.default_keys" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">default_keys</code><a class="headerlink" href="#expyriment.io.Keyboard.default_keys" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for default keys</p>
 </dd></dl>
 
-<dl class="staticmethod">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.get_pause_key">
 <em class="property">static </em><code class="descname">get_pause_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.get_pause_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the currently defined pause key</p>
 </dd></dl>
 
-<dl class="staticmethod">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.get_quit_key">
 <em class="property">static </em><code class="descname">get_quit_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.get_quit_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the currently defined quit key</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.logging">
-<code class="descname">logging</code><a class="headerlink" href="#expyriment.io.Keyboard.logging" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">logging</code><a class="headerlink" href="#expyriment.io.Keyboard.logging" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
-<dl class="staticmethod">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.process_control_keys">
 <em class="property">static </em><code class="descname">process_control_keys</code><span class="sig-paren">(</span><em>key_event=None</em>, <em>quit_confirmed_function=None</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.process_control_keys" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if quit_key or pause_key has been pressed.</p>
@@ -261,22 +289,20 @@ keyboard instance and will reference it in exp.keyboard for easy access.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>key_event</strong> : int, optional</p>
-<blockquote>
-<div><p>key event to check. If not defined, the Pygame event queue will be
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>key_event</strong><span class="classifier">int, optional</span></dt><dd><p>key event to check. If not defined, the Pygame event queue will be
 checked for key down events.</p>
-</div></blockquote>
-<p><strong>quit_confirmed_function</strong> : function, optional</p>
-<blockquote>
-<div><p>function to be called if quitting has been confirmed.</p>
-</div></blockquote>
+</dd>
+<dt><strong>quit_confirmed_function</strong><span class="classifier">function, optional</span></dt><dd><p>function to be called if quitting has been confirmed.</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>out</strong> : bool</p>
-<blockquote class="last">
-<div><p>True if quitting or pause screen has been displayed,
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong><span class="classifier">bool</span></dt><dd><p>True if quitting or pause screen has been displayed,
 False otherwise</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -297,26 +323,27 @@ False otherwise</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>onoff</strong> : bool</p>
-<blockquote class="last">
-<div><p>set logging on (True) or off (False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Notes</p>
-<p>See also design.experiment.set_log_level fur further information about
-event logging.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></p>
+</div>
 </dd></dl>
 
-<dl class="staticmethod">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.set_pause_key">
 <em class="property">static </em><code class="descname">set_pause_key</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.set_pause_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the currently defined pause key</p>
 </dd></dl>
 
-<dl class="staticmethod">
+<dl class="method">
 <dt id="expyriment.io.Keyboard.set_quit_key">
 <em class="property">static </em><code class="descname">set_quit_key</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Keyboard.set_quit_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the currently defined quit key</p>
@@ -333,47 +360,37 @@ well as the reaction time.
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>keys</strong> : int or list, optional</p>
-<blockquote>
-<div><p>a specific key or list of keys to wait for</p>
-</div></blockquote>
-<p><strong>duration</strong> : int, optional</p>
-<blockquote>
-<div><p>maximal time to wait in ms</p>
-</div></blockquote>
-<p><strong>wait_for_keyup</strong> : bool, optional</p>
-<blockquote>
-<div><p>if True it waits for key-up</p>
-</div></blockquote>
-<p><strong>callback_function</strong> : function, optional</p>
-<blockquote>
-<div><p>function to repeatedly execute during waiting loop</p>
-</div></blockquote>
-<p><strong>process_control_events</strong> : bool, optional</p>
-<blockquote>
-<div><p>process <code class="docutils literal"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
-<code class="docutils literal"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>keys</strong><span class="classifier">int or list, optional</span></dt><dd><p>a specific key or list of keys to wait for</p>
+</dd>
+<dt><strong>duration</strong><span class="classifier">int, optional</span></dt><dd><p>maximal time to wait in ms</p>
+</dd>
+<dt><strong>wait_for_keyup</strong><span class="classifier">bool, optional</span></dt><dd><p>if True it waits for key-up (default=False)</p>
+</dd>
+<dt><strong>callback_function</strong><span class="classifier">function, optional</span></dt><dd><p>function to repeatedly execute during waiting loop</p>
+</dd>
+<dt><strong>process_control_events</strong><span class="classifier">bool, optional</span></dt><dd><p>process <code class="docutils literal notranslate"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>found</strong> : char</p>
-<blockquote>
-<div><p>pressed character</p>
-</div></blockquote>
-<p><strong>rt</strong> : int</p>
-<blockquote class="last">
-<div><p>reaction time in ms</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>found</strong><span class="classifier">char</span></dt><dd><p>pressed character</p>
+</dd>
+<dt><strong>rt</strong><span class="classifier">int</span></dt><dd><p>reaction time in ms</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><code class="xref py py-obj docutils literal"><span class="pre">design.experiment.register_wait_callback_function</span></code></p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.register_wait_callback_function" title="expyriment.design.Experiment.register_wait_callback_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.register_wait_callback_function</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
-<p>Keys are defined my keyboard constants (please use see misc.constants)</p>
+<p>Keys are defined by keyboard constants (please see misc.constants).</p>
 </dd></dl>
 
 <dl class="method">
@@ -387,40 +404,32 @@ found character as well as the reaction time.
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>char</strong> : int or list</p>
-<blockquote>
-<div><p>a specific character or list of characters to wait for</p>
-</div></blockquote>
-<p><strong>duration</strong> : int, optional</p>
-<blockquote>
-<div><p>maximal time to wait in ms</p>
-</div></blockquote>
-<p><strong>callback_function</strong> : function, optional</p>
-<blockquote>
-<div><p>function to repeatedly execute during waiting loop</p>
-</div></blockquote>
-<p><strong>process_control_events</strong> : bool, optional</p>
-<blockquote>
-<div><p>process <code class="docutils literal"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
-<code class="docutils literal"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>char</strong><span class="classifier">int or list</span></dt><dd><p>a specific character or list of characters to wait for</p>
+</dd>
+<dt><strong>duration</strong><span class="classifier">int, optional</span></dt><dd><p>maximal time to wait in ms</p>
+</dd>
+<dt><strong>callback_function</strong><span class="classifier">function, optional</span></dt><dd><p>function to repeatedly execute during waiting loop</p>
+</dd>
+<dt><strong>process_control_events</strong><span class="classifier">bool, optional</span></dt><dd><p>process <code class="docutils literal notranslate"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>found</strong> : char</p>
-<blockquote>
-<div><p>pressed character</p>
-</div></blockquote>
-<p><strong>rt</strong> : int</p>
-<blockquote class="last">
-<div><p>reaction time in ms</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>found</strong><span class="classifier">char</span></dt><dd><p>pressed character</p>
+</dd>
+<dt><strong>rt</strong><span class="classifier">int</span></dt><dd><p>reaction time in ms</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><code class="xref py py-obj docutils literal"><span class="pre">design.experiment.register_wait_callback_function</span></code></p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.register_wait_callback_function" title="expyriment.design.Experiment.register_wait_callback_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.register_wait_callback_function</span></code></a></p>
 </div>
 </dd></dl>
 
@@ -430,15 +439,16 @@ found character as well as the reaction time.
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.io.MarkerOutput.html" class="btn btn-neutral float-right" title="expyriment.io.MarkerOutput" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.io.MarkerOutput.html" class="btn btn-neutral float-right" title="expyriment.io.MarkerOutput" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.io.InputFile.html" class="btn btn-neutral" title="expyriment.io.InputFile" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.io.InputFile.html" class="btn btn-neutral float-left" title="expyriment.io.InputFile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -447,11 +457,11 @@ found character as well as the reaction time.
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -464,35 +474,15 @@ found character as well as the reaction time.
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

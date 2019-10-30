@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Defaults (settings) &mdash; Expyriment 0.9.0 documentation</title>
+  <title>Defaults (settings) &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="Advanced" href="Advanced.html"/>
-        <link rel="next" title="Hardware compatibility" href="Hardware.html"/>
-        <link rel="prev" title="The Expyriment plugin system (extras)" href="Plugins.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Hardware compatibility" href="Hardware.html" />
+    <link rel="prev" title="The Expyriment plugin system (extras)" href="Plugins.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced.html">Advanced</a><ul class="current">
@@ -119,34 +122,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="Advanced.html">Advanced</a> &raquo;</li>
-      
-    <li>Defaults (settings)</li>
+        
+      <li>Defaults (settings)</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -169,50 +192,43 @@ experimental control in one central place. The settings here have preceedance!</
 </div>
 <div class="section" id="expyriment-design-defaults">
 <h3><a class="reference external" href="expyriment.design.defaults.html">expyriment.design.defaults</a><a class="headerlink" href="#expyriment-design-defaults" title="Permalink to this headline">¶</a></h3>
-<p>The parameters of every class&#8217; constructor (i.e. the parameters when creating
+<p>The parameters of every class’ constructor (i.e. the parameters when creating
 an instance of this class) within expyriment.design can be set via:
-<code class="docutils literal"><span class="pre">expyriment.design.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">expyriment.design.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
 </div>
 <div class="section" id="expyriment-stimuli-defaults">
 <h3><a class="reference external" href="expyriment.stimuli.defaults.html">expyriment.stimuli.defaults</a><a class="headerlink" href="#expyriment-stimuli-defaults" title="Permalink to this headline">¶</a></h3>
-<p>The parameters of every class&#8217; constructor (i.e. the parameters when creating
+<p>The parameters of every class’ constructor (i.e. the parameters when creating
 an instance of this class) within expyriment.stimuli can be set via:
-<code class="docutils literal"><span class="pre">expyriment.stimuli.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">expyriment.stimuli.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
 </div>
 <div class="section" id="expyriment-io-defaults">
 <h3><a class="reference external" href="expyriment.io.defaults.html">expyriment.io.defaults</a><a class="headerlink" href="#expyriment-io-defaults" title="Permalink to this headline">¶</a></h3>
-<p>The parameters of every class&#8217; constructor (i.e. the parameters when creating
+<p>The parameters of every class’ constructor (i.e. the parameters when creating
 an instance of this class) within expyriment.io can be set via:
-<code class="docutils literal"><span class="pre">expyriment.io.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">expyriment.io.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
 </div>
 <div class="section" id="expyriment-misc-defaults">
 <h3><a class="reference external" href="expyriment.misc.defaults.html">expyriment.misc.defaults</a><a class="headerlink" href="#expyriment-misc-defaults" title="Permalink to this headline">¶</a></h3>
-<p>The parameters of every class&#8217; constructor (i.e. the parameters when creating
+<p>The parameters of every class’ constructor (i.e. the parameters when creating
 an instance of this class) within expyriment.misc can be set via:
-<code class="docutils literal"><span class="pre">expyriment.misc.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">expyriment.misc.defaults.classname_parametername</span> <span class="pre">=</span> <span class="pre">x</span></code></p>
 </div>
-</div>
-<div class="section" id="development">
-<h2>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
-<p>When developing <a class="reference external" href="plugins.html">Plugins</a> default values can be integrated into extras.defaults.
-Upon start, Expyriment will read all files in the extra folder that have the same
-name as the plugin, followd by <code class="docutils literal"><span class="pre">_defaults.py</span></code> (e.g. <code class="docutils literal"><span class="pre">dotcloud_defaults.py</span></code>).
-All variables within this file will be integrated into the namespace and will
-be available in extras.defaults (e.g. <code class="docutils literal"><span class="pre">expyriment.stimuli.extras.defaults</span></code>).</p>
 </div>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Hardware.html" class="btn btn-neutral float-right" title="Hardware compatibility" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Hardware.html" class="btn btn-neutral float-right" title="Hardware compatibility" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Plugins.html" class="btn btn-neutral" title="The Expyriment plugin system (extras)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Plugins.html" class="btn btn-neutral float-left" title="The Expyriment plugin system (extras)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -221,11 +237,11 @@ be available in extras.defaults (e.g. <code class="docutils literal"><span class
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -238,35 +254,15 @@ be available in extras.defaults (e.g. <code class="docutils literal"><span class
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

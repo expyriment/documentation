@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Timing and empirical testing of Expyriment &mdash; Expyriment 0.9.0 documentation</title>
+  <title>Timing and empirical testing of Expyriment &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="Advanced" href="Advanced.html"/>
-        <link rel="next" title="Currently known problems and limitations" href="Problems.html"/>
-        <link rel="prev" title="Hardware compatibility" href="Hardware.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Currently known problems and limitations" href="Problems.html" />
+    <link rel="prev" title="Hardware compatibility" href="Hardware.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced.html">Advanced</a><ul class="current">
@@ -119,34 +122,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="Advanced.html">Advanced</a> &raquo;</li>
-      
-    <li>Timing and empirical testing of Expyriment</li>
+        
+      <li>Timing and empirical testing of Expyriment</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -174,19 +197,19 @@ content, being visible. What is even worse is that you will never know in which
 phase of the redrawing the new redraw was started. Thus, you cannot be sure
 when exactly the new content is fully visible on screen. This should be the
 behaviour of Expyriment, when OpenGL is switched off
-(<code class="docutils literal"><span class="pre">control.defaults.open_gl=0</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>)</p>
+(<code class="docutils literal notranslate"><span class="pre">control.defaults.open_gl=0</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>)</p>
 <p>The first step towards getting around this problem is to synchronize the actual
 redraw to the vertical retrace of the screen. This means that a change in
 content will never happen immediately, but always only when the retrace is at
 the top left position. When synchronizing to the vertical retrace, the graphic
 card is told to update the screen the next time it starts redrawing the first
 line. This should be the behaviour of Expyriment, when OpenGL is switched on
-and set to &#8220;vsync / no blocking&#8221; (<code class="docutils literal"><span class="pre">control.defaults.open_gl=1</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).
+and set to “vsync / no blocking” (<code class="docutils literal notranslate"><span class="pre">control.defaults.open_gl=1</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).
 While this will solve the problem of artifacts, you will still face the
 problem of not knowing when exactly something was visible on the screen, since
 the graphic card handles this synchronization itself in the background.</p>
 <p>Solving this problem is the exact (and only) reason why Expyriment will use
-OpenGL set to &#8220;vsync / blocking&#8221; (<code class="docutils literal"><span class="pre">control.defaults.open_gl=2</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>) by default.
+OpenGL set to “vsync / blocking” (<code class="docutils literal notranslate"><span class="pre">control.defaults.open_gl=2</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>) by default.
 It allows to wait for the vertical retrace to actually happen before
 proceeding with the code that tells the graphics card to update the screen
 (this is also known as blocking on the vertical retrace). This means that
@@ -202,10 +225,10 @@ has been just over the center line when the screen update was issued.</p>
 specifics of the video card driver implementation. Should blocking on the
 vertical retrace indeed not work (as can be revealed by the
 <a class="reference internal" href="Testsuite.html"><span class="doc">Expyriment test suite</span></a>), an alternative blocking mechanism
-is available by using OpenGL set to &#8220;vsync / alternative blocking&#8221;
-(<code class="docutils literal"><span class="pre">control.defaults.open_gl=3</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).</p>
-<p><em>It is important to set your graphic card&#8217;s driver settings to support
-synchronizing to the vertical retrace (&#8220;Sync to VBlank&#8221; or &#8220;V-sync&#8221;) and to
+is available by using OpenGL set to “vsync / alternative blocking”
+(<code class="docutils literal notranslate"><span class="pre">control.defaults.open_gl=3</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).</p>
+<p><em>It is important to set your graphic card’s driver settings to support
+synchronizing to the vertical retrace (“Sync to VBlank” or “V-sync”) and to
 switch off any power saving schemes on the graphic card.</em>
 <em>Also, please be aware that blocking on the vertical retrace is not accurate
 in window mode!</em></p>
@@ -217,7 +240,7 @@ After each screen presentation, a marker was send via the serial port to the
 oscilloscope. Testing was done on an Intel Core Duo PC with an Nvidia Quadro
 NVS 290 graphics card, running Microsoft Windows XP SP3. The monitor used was a
 Samsung SyncMaster 2233. Expyriment was running in the default OpenGL mode
-(<code class="docutils literal"><span class="pre">control.defaults.open_gl=2</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).</p>
+(<code class="docutils literal notranslate"><span class="pre">control.defaults.open_gl=2</span></code>; see <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a>).</p>
 <p>The results revealed:</p>
 <ul class="simple">
 <li>When presenting a stimulus, updating the screen does successfully block code
@@ -272,8 +295,8 @@ the screen. Thus, visual onset of this frame can be synchronized with the
 vertical retrace (see visual stimulus presentation above). Each following frame
 has to be plotted on the screen and the screen has to be updated. The
 wait_end() method of a video stimulus will automatically present each frame on
-the screen until the video is over. When Expyriment is in OpenGL mode &#8220;vsync /
-(alternative) blocking&#8221;, the process of plotting each frame might take longer
+the screen until the video is over. When Expyriment is in OpenGL mode “vsync /
+(alternative) blocking”, the process of plotting each frame might take longer
 than one refresh rate which will result in dropping frames (e.g. frames not
 being presented at all). To control for this, the wait_end() method will
 report and log if any frames were dropped during video playback.</p>
@@ -293,8 +316,8 @@ in the design and thus know beforehand (e.g. a response after a stimulus
 onset). Adding an event loop would make things unnecessarily more complicated
 for those 99%.</p>
 <p>However, we also thought of those cases that need to check user input during
-other operations: All events can manually be pushed from either Pygame&#8217;s event
-cue (keyboard, mouse, joystick) or the operating system&#8217;s buffer (serial port,
+other operations: All events can manually be pushed from either Pygame’s event
+cue (keyboard, mouse, joystick) or the operating system’s buffer (serial port,
 parallel port) into an EventBuffer object. Doing this regularly is up to the
 user.</p>
 <div class="section" id="keyboard">
@@ -355,15 +378,16 @@ is only able to read from Acknowledge, Paper-Out and Selected pins!</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Problems.html" class="btn btn-neutral float-right" title="Currently known problems and limitations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Problems.html" class="btn btn-neutral float-right" title="Currently known problems and limitations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Hardware.html" class="btn btn-neutral" title="Hardware compatibility" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Hardware.html" class="btn btn-neutral float-left" title="Hardware compatibility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -372,11 +396,11 @@ is only able to read from Acknowledge, Paper-Out and Selected pins!</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -389,35 +413,15 @@ is only able to read from Acknowledge, Paper-Out and Selected pins!</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

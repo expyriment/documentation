@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.io.TouchScreenButtonBox &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.io.TouchScreenButtonBox &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment.io" href="expyriment.io.html"/>
-        <link rel="next" title="expyriment.io.TriggerInput" href="expyriment.io.TriggerInput.html"/>
-        <link rel="prev" title="expyriment.io.TextMenu" href="expyriment.io.TextMenu.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.io.TriggerInput" href="expyriment.io.TriggerInput.html" />
+    <link rel="prev" title="expyriment.io.TextMenu" href="expyriment.io.TextMenu.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -133,36 +136,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
+        
           <li><a href="expyriment.io.html">expyriment.io</a> &raquo;</li>
-      
-    <li>expyriment.io.TouchScreenButtonBox</li>
+        
+      <li>expyriment.io.TouchScreenButtonBox</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -182,22 +205,18 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>button_fields</strong> : visual Expyriment stimulus or list of stimuli</p>
-<blockquote>
-<div><p>The button fields defines the area on which a click action will be
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>button_fields</strong><span class="classifier">visual Expyriment stimulus or list of stimuli</span></dt><dd><p>The button fields defines the area on which a click action will be
 registered.</p>
-</div></blockquote>
-<p><strong>stimuli</strong> : visual Expyriment stimulus or list of stimuli, optional</p>
-<blockquote>
-<div><p>Additional visual stimuli that will be presented together with the
+</dd>
+<dt><strong>stimuli</strong><span class="classifier">visual Expyriment stimulus or list of stimuli, optional</span></dt><dd><p>Additional visual stimuli that will be presented together with the
 button fields. Stimuli are plotted on top of the button_fields.</p>
-</div></blockquote>
-<p><strong>background_stimulus</strong> : visual Expyriment stimulus, optional</p>
-<blockquote class="last">
-<div><p>The background stimulus on which the touschscreen button fields
+</dd>
+<dt><strong>background_stimulus</strong><span class="classifier">visual Expyriment stimulus, optional</span></dt><dd><p>The background stimulus on which the touschscreen button fields
 are presented. Importantly, background_stimulus has to have
 size of the screen.</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -206,7 +225,7 @@ size of the screen.</p>
 <p>Every visual Expyriment stimulus can serve as a touchscreen button
 field.
 If the TouchScreenButtonBox is presented, it can be checked for events
-using the methods &#8216;check&#8217; and &#8216;wait&#8217;.</p>
+using the methods ‘check’ and ‘wait’.</p>
 </dd></dl>
 
 <dl class="method">
@@ -217,7 +236,10 @@ using the methods &#8216;check&#8217; and &#8216;wait&#8217;.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>button_field</strong> : visual Expyriment stimulus</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>button_field</strong><span class="classifier">visual Expyriment stimulus</span></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -232,23 +254,26 @@ using the methods &#8216;check&#8217; and &#8216;wait&#8217;.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stimulus</strong> : visual Expyriment stimulus</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>stimulus</strong><span class="classifier">visual Expyriment stimulus</span></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.TouchScreenButtonBox.background_stimulus">
-<code class="descname">background_stimulus</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.background_stimulus" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">background_stimulus</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.background_stimulus" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter of background stimulus.</p>
 <p>Background stimulus, on which the button fields and the additional
 stimuli will be presented. (visual Expyriment stimuli)</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.TouchScreenButtonBox.button_field">
-<code class="descname">button_field</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.button_field" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">button_field</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.button_field" title="Permalink to this definition">¶</a></dt>
 <dd><p>getter of button fields (list of visual Expyriment stimuli)</p>
 </dd></dl>
 
@@ -260,28 +285,26 @@ stimuli will be presented. (visual Expyriment stimuli)</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>button_fields</strong> : Expyriment stimulus or list of stimuli, optional</p>
-<blockquote>
-<div><p>The button fields that will be checked for.</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>button_fields</strong><span class="classifier">Expyriment stimulus or list of stimuli, optional</span></dt><dd><p>The button fields that will be checked for.</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>pressed_button_field</strong> : Expyriment stimulus or list of stimuli, optional</p>
-<blockquote>
-<div><p>The button fields that will be checked for.</p>
-</div></blockquote>
-<p><strong>touch_time</strong> : integer</p>
-<blockquote class="last">
-<div><p>The time when the button was touched. Function might return delayed,
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>pressed_button_field</strong><span class="classifier">Expyriment stimulus or list of stimuli, optional</span></dt><dd><p>The button fields that will be checked for.</p>
+</dd>
+<dt><strong>touch_time</strong><span class="classifier">integer</span></dt><dd><p>The time when the button was touched. Function might return delayed,
 because button field comparison (after touch) takes time. The
 return time is most accurate.</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>Don&#8217;t forget to show the TouchScreenButtonBox.</p>
+<p>Don’t forget to show the TouchScreenButtonBox.</p>
 </dd></dl>
 
 <dl class="method">
@@ -298,15 +321,15 @@ return time is most accurate.</p>
 presentation.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.TouchScreenButtonBox.last_touch_position">
-<code class="descname">last_touch_position</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.last_touch_position" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">last_touch_position</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.last_touch_position" title="Permalink to this definition">¶</a></dt>
 <dd><p>getter for the last touch position (x,y)</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.TouchScreenButtonBox.logging">
-<code class="descname">logging</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.logging" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">logging</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.logging" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
@@ -318,17 +341,18 @@ presentation.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>onoff</strong> : bool</p>
-<blockquote class="last">
-<div><p>set logging on (True) or off (False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Notes</p>
-<p>See also design.experiment.set_log_level fur further information about
-event logging.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -337,9 +361,9 @@ event logging.</p>
 <dd><p>Present touchscreen buttons.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.TouchScreenButtonBox.stimuli">
-<code class="descname">stimuli</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.stimuli" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">stimuli</code><a class="headerlink" href="#expyriment.io.TouchScreenButtonBox.stimuli" title="Permalink to this definition">¶</a></dt>
 <dd><p>getter of additional stimuli (list of visual Expyriment stimuli)</p>
 </dd></dl>
 
@@ -351,46 +375,38 @@ event logging.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>button_fields</strong> : Expyriment stimulus or list of stimuli, optional</p>
-<blockquote>
-<div><p>The button fields that will be checked for.</p>
-</div></blockquote>
-<p><strong>duration</strong> : int, optional</p>
-<blockquote>
-<div><p>maximal time to wait in ms</p>
-</div></blockquote>
-<p><strong>callback_function</strong> : function, optional</p>
-<blockquote>
-<div><p>function to repeatedly execute during waiting loop</p>
-</div></blockquote>
-<p><strong>process_control_events</strong> : bool, optional</p>
-<blockquote>
-<div><p>process <code class="docutils literal"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
-<code class="docutils literal"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>button_fields</strong><span class="classifier">Expyriment stimulus or list of stimuli, optional</span></dt><dd><p>The button fields that will be checked for.</p>
+</dd>
+<dt><strong>duration</strong><span class="classifier">int, optional</span></dt><dd><p>maximal time to wait in ms</p>
+</dd>
+<dt><strong>callback_function</strong><span class="classifier">function, optional</span></dt><dd><p>function to repeatedly execute during waiting loop</p>
+</dd>
+<dt><strong>process_control_events</strong><span class="classifier">bool, optional</span></dt><dd><p>process <code class="docutils literal notranslate"><span class="pre">io.Keyboard.process_control_keys()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">io.Mouse.process_quit_event()</span></code> (default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>pressed_button_field</strong> : Expyriment stimulus or None</p>
-<blockquote>
-<div><p>the button field defined by a stimulus that has been pressed</p>
-</div></blockquote>
-<p><strong>rt</strong> : int</p>
-<blockquote class="last">
-<div><p>reaction time</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>pressed_button_field</strong><span class="classifier">Expyriment stimulus or None</span></dt><dd><p>the button field defined by a stimulus that has been pressed</p>
+</dd>
+<dt><strong>rt</strong><span class="classifier">int</span></dt><dd><p>reaction time</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><code class="xref py py-obj docutils literal"><span class="pre">design.experiment.register_wait_callback_function</span></code></p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.register_wait_callback_function" title="expyriment.design.Experiment.register_wait_callback_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.register_wait_callback_function</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>This will also by default process control events (quit and pause).
 Thus, keyboard events will be cleared from the cue and cannot be
 received by a Keyboard().check() anymore!</p>
-<p>Don&#8217;t forget to show the TouchScreenButtonBox.</p>
+<p>Don’t forget to show the TouchScreenButtonBox.</p>
 </dd></dl>
 
 </dd></dl>
@@ -399,15 +415,16 @@ received by a Keyboard().check() anymore!</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.io.TriggerInput.html" class="btn btn-neutral float-right" title="expyriment.io.TriggerInput" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.io.TriggerInput.html" class="btn btn-neutral float-right" title="expyriment.io.TriggerInput" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.io.TextMenu.html" class="btn btn-neutral" title="expyriment.io.TextMenu" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.io.TextMenu.html" class="btn btn-neutral float-left" title="expyriment.io.TextMenu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -416,11 +433,11 @@ received by a Keyboard().check() anymore!</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -433,35 +450,15 @@ received by a Keyboard().check() anymore!</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

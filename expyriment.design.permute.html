@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.design.permute &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.design.permute &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment.design" href="expyriment.design.html"/>
-        <link rel="next" title="expyriment.design.randomize" href="expyriment.design.randomize.html"/>
-        <link rel="prev" title="expyriment.design.extras.StimulationProtocol" href="expyriment.design.extras.StimulationProtocol.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.design.randomize" href="expyriment.design.randomize.html" />
+    <link rel="prev" title="expyriment.design.extras" href="expyriment.design.extras.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -96,9 +99,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="expyriment.design.html">expyriment.design</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.defaults.html">expyriment.design.defaults</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.extras.html">expyriment.design.extras</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.design.permute</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.design.permute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.randomize.html">expyriment.design.randomize</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.Block.html">expyriment.design.Block</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.Experiment.html">expyriment.design.Experiment</a></li>
@@ -123,36 +124,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
+        
           <li><a href="expyriment.design.html">expyriment.design</a> &raquo;</li>
-      
-    <li>expyriment.design.permute</li>
+        
+      <li>expyriment.design.permute</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -162,34 +183,21 @@
 <span id="expyriment-design-permute"></span><h1>expyriment.design.permute<a class="headerlink" href="#module-expyriment.design.permute" title="Permalink to this headline">¶</a></h1>
 <p>The permute module.</p>
 <p>This module implements permutation of blocks, trials and conditions.</p>
-<div class="section" id="attributes">
-<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="modules">
-<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-</div>
-</div>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="expyriment.design.permute.balanced_latin_square">
 <code class="descclassname">expyriment.design.permute.</code><code class="descname">balanced_latin_square</code><span class="sig-paren">(</span><em>elements</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.permute.balanced_latin_square" title="Permalink to this definition">¶</a></dt>
 <dd><p>A balanced latin square permutation of elements.</p>
-<p>If elements is an integer the elements=[0,..., elements] is used.</p>
+<p>If elements is an integer the elements=[0,…, elements] is used.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>elements</strong> : int or list</p>
-<blockquote class="last">
-<div><p>list of elements or a number</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>elements</strong><span class="classifier">int or list</span></dt><dd><p>list of elements or a number</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -200,15 +208,15 @@
 <dt id="expyriment.design.permute.cycled_latin_square">
 <code class="descclassname">expyriment.design.permute.</code><code class="descname">cycled_latin_square</code><span class="sig-paren">(</span><em>elements</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.permute.cycled_latin_square" title="Permalink to this definition">¶</a></dt>
 <dd><p>A cycled latin square permutation of elements.</p>
-<p>If elements is a integer the elements=[0,..., elements] is used.</p>
+<p>If elements is a integer the elements=[0,…, elements] is used.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>elements</strong> : int or list</p>
-<blockquote class="last">
-<div><p>list of elements or a number</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>elements</strong><span class="classifier">int or list</span></dt><dd><p>list of elements or a number</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -223,10 +231,10 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>type_str</strong> : string</p>
-<blockquote class="last">
-<div><p>permutation type string</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>type_str</strong><span class="classifier">string</span></dt><dd><p>permutation type string</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -238,15 +246,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.design.randomize.html" class="btn btn-neutral float-right" title="expyriment.design.randomize" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.design.randomize.html" class="btn btn-neutral float-right" title="expyriment.design.randomize" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.design.extras.StimulationProtocol.html" class="btn btn-neutral" title="expyriment.design.extras.StimulationProtocol" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.design.extras.html" class="btn btn-neutral float-left" title="expyriment.design.extras" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -255,11 +264,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -272,35 +281,15 @@
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

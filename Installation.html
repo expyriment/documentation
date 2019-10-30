@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; Expyriment 0.9.0 documentation</title>
+  <title>Installation &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="Getting started" href="GettingStarted.html"/>
-        <link rel="next" title="Platform-specific instructions: Windows" href="Installation.Windows.html"/>
-        <link rel="prev" title="Getting started" href="GettingStarted.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Platform-specific instructions: Windows" href="Installation.Windows.html" />
+    <link rel="prev" title="Getting started" href="GettingStarted.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="GettingStarted.html">Getting started</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
@@ -116,34 +119,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="GettingStarted.html">Getting started</a> &raquo;</li>
-      
-    <li>Installation</li>
+        
+      <li>Installation</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -156,45 +179,41 @@
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <p>Expyriment depends on the following Python packages:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://pypi.python.org/pypi/future">Future</a> (&gt;=0.15)</li>
-<li><a class="reference external" href="http://www.pygame.org/">Pygame</a> (&gt;=1.9)</li>
-<li><a class="reference external" href="http://www.pyopengl.sourceforge.net">PyOpenGL</a> (&gt;=3.0)</li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/future">Future</a> (&gt;=0.15,&lt;1)</li>
+<li><a class="reference external" href="http://www.pygame.org/">Pygame</a> (&gt;=1.9,&lt;2)</li>
+<li><a class="reference external" href="http://www.pyopengl.sourceforge.net">PyOpenGL</a> (&gt;=3.0,&lt;4)</li>
 </ul>
 <p>Additional Python packages, which are optional and only required for some features of
 Expyriment are:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://numpy.org/">NumPy</a> (&gt;=1.6) (to use data preprocessing)</li>
-<li><a class="reference external" href="http://dschreij.github.io/python-mediadecoder/">mediadecoder</a> (&gt;=0.1) (to use enhanced video playback with support for various formats)</li>
-<li><a class="reference external" href="http://python-sounddevice.readthedocs.io/en/0.3.3/">sounddevice</a> (&gt;=0.3) (to use enhanced video playback with support for various formats with audio)</li>
-<li><a class="reference external" href="http://pyserial.sourceforge.net/pyparallel.html">PySerial</a> (&gt;=3.0) (to use serial port communication)</li>
-<li><a class="reference external" href="http://pyserial.sourceforge.net">PyParallel</a> (&gt;=0.2) (to use parallel port communication on Linux)</li>
+<li><a class="reference external" href="http://numpy.org/">NumPy</a> (&gt;=1.6,&lt;2) (to use data preprocessing)</li>
+<li><a class="reference external" href="http://dschreij.github.io/python-mediadecoder/">mediadecoder</a> (&gt;=0.1,&lt;1) (to use enhanced video playback with support for various formats)</li>
+<li><a class="reference external" href="http://python-sounddevice.readthedocs.io/en/0.3.3/">sounddevice</a> (&gt;=0.3,&lt;1) (to use enhanced video playback with support for various formats with audio)</li>
+<li><a class="reference external" href="http://pyserial.sourceforge.net/pyparallel.html">PySerial</a> (&gt;=3.0,&lt;4) (to use serial port communication)</li>
+<li><a class="reference external" href="http://pyserial.sourceforge.net">PyParallel</a> (&gt;=0.2,&gt;1) (to use parallel port communication on Linux)</li>
 </ul>
 <p>Please be aware that Expyriment plugins (extras) might have further dependencies.</p>
 </div>
 <div class="section" id="installing-with-pip">
-<h2>Installing with <code class="docutils literal"><span class="pre">pip</span></code><a class="headerlink" href="#installing-with-pip" title="Permalink to this headline">¶</a></h2>
+<h2>Installing with <code class="docutils literal notranslate"><span class="pre">pip</span></code><a class="headerlink" href="#installing-with-pip" title="Permalink to this headline">¶</a></h2>
 <p>Expyriment (and its dependencies) can be installed with <a class="reference external" href="https://en.wikipedia.org/wiki/Pip_(package_manager)">pip</a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">expyriment</span>
 </pre></div>
 </div>
 <p>To install with additional optional features, use</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">expyriment</span><span class="p">[</span><span class="n">FEATURE</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">expyriment</span><span class="p">[</span><span class="n">FEATURE</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>where <code class="docutils literal"><span class="pre">FEATURE</span></code> is one (or several, separated by commas) of:</p>
+<p>where <code class="docutils literal notranslate"><span class="pre">FEATURE</span></code> is one (or several, separated by commas) of:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">data_preprocessing</span></code></dt>
-<dd><a class="reference external" href="DataPreprocessing">Data preprocessing and exporting</a></dd>
-<dt><code class="docutils literal"><span class="pre">serialport</span></code></dt>
-<dd><a class="reference external" href="expyriment.io.SerialPort">Serial port</a> communication</dd>
-<dt><code class="docutils literal"><span class="pre">parallelport_linux</span></code></dt>
-<dd><a class="reference external" href="expyriment.io.ParallelPort">Parallel port</a> communication on Linux (for Windows, please install one of the following parallel port drivers instead: <a class="reference external" href="http://www.highrez.co.uk/Downloads/InpOut32/">inpout32</a> or <a class="reference external" href="http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/">dlportio</a>)</dd>
-<dt><code class="docutils literal"><span class="pre">video</span></code></dt>
-<dd>Enhanced <a class="reference external" href="Video">video playback</a> with support for various formats</dd>
-<dt><code class="docutils literal"><span class="pre">all</span></code></dt>
-<dd>All of the above</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">data_preprocessing</span></code></dt><dd><a class="reference external" href="DataPreprocessing">Data preprocessing and exporting</a></dd>
+<dt><code class="docutils literal notranslate"><span class="pre">serialport</span></code></dt><dd><a class="reference external" href="expyriment.io.SerialPort">Serial port</a> communication</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">parallelport_linux</span></code></dt><dd><a class="reference external" href="expyriment.io.ParallelPort">Parallel port</a> communication on Linux (for Windows, please install one of the following parallel port drivers instead: <a class="reference external" href="http://www.highrez.co.uk/Downloads/InpOut32/">inpout32</a> or <a class="reference external" href="http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/">dlportio</a>)</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">video</span></code></dt><dd>Enhanced <a class="reference external" href="Video">video playback</a> with support for various formats</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">stash</span></code></dt><dd>Download content from Expyriment stash</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">all</span></code></dt><dd>All of the above</dd>
 </dl>
-<p>Replace <code class="docutils literal"><span class="pre">pip</span></code> with <code class="docutils literal"><span class="pre">pip3</span></code> when using Python 3.</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">pip</span></code> with <code class="docutils literal notranslate"><span class="pre">pip3</span></code> when using Python 3.</p>
 </div>
 <div class="section" id="platform-specific-instructions">
 <h2>Platform-specific instructions<a class="headerlink" href="#platform-specific-instructions" title="Permalink to this headline">¶</a></h2>
@@ -213,15 +232,16 @@ Expyriment here:</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Installation.Windows.html" class="btn btn-neutral float-right" title="Platform-specific instructions: Windows" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Installation.Windows.html" class="btn btn-neutral float-right" title="Platform-specific instructions: Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="GettingStarted.html" class="btn btn-neutral" title="Getting started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="GettingStarted.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -230,11 +250,11 @@ Expyriment here:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -247,35 +267,15 @@ Expyriment here:</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

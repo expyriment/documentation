@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.misc &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.misc &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment" href="expyriment.html"/>
-        <link rel="next" title="expyriment.misc.constants" href="expyriment.misc.constants.html"/>
-        <link rel="prev" title="expyriment.io.TriggerInput" href="expyriment.io.TriggerInput.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.misc.constants" href="expyriment.misc.constants.html" />
+    <link rel="prev" title="expyriment.io.TriggerInput" href="expyriment.io.TriggerInput.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -105,7 +108,7 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Buffer.html">expyriment.misc.Buffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
-<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.HSVColour.html">expyriment.misc.HSVColour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
@@ -124,34 +127,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
-    <li>expyriment.misc</li>
+        
+      <li>expyriment.misc</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -182,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.Buffer.html">expyriment.misc.Buffer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
-<li class="toctree-l1"><a class="reference internal" href="expyriment.misc.HSVColour.html">expyriment.misc.HSVColour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
 </ul>
 </div>
 </div>
@@ -199,10 +222,10 @@ Expyriment, such that they are found when only giving their name
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>folder</strong> : str or unicode</p>
-<blockquote class="last">
-<div><p>the full path to the folder to search for</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>folder</strong><span class="classifier">str or unicode</span></dt><dd><p>the full path to the folder to search for</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -223,18 +246,14 @@ Expyriment, such that they are found when only giving their name
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>input_code</strong> : int</p>
-<blockquote>
-<div><p>code or bitpattern</p>
-</div></blockquote>
-<p><strong>standard_codes</strong> : int or list</p>
-<blockquote>
-<div><p>code/bitpattern or list of codes/bitpattern</p>
-</div></blockquote>
-<p><strong>bitwise_comparison</strong> : bool, optional</p>
-<blockquote class="last">
-<div><p>(default = True)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>input_code</strong><span class="classifier">int</span></dt><dd><p>code or bitpattern</p>
+</dd>
+<dt><strong>standard_codes</strong><span class="classifier">int or list</span></dt><dd><p>code/bitpattern or list of codes/bitpattern</p>
+</dd>
+<dt><strong>bitwise_comparison</strong><span class="classifier">bool, optional</span></dt><dd><p>(default = True)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -249,16 +268,41 @@ Expyriment, such that they are found when only giving their name
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>amount</strong> : int</p>
-<blockquote>
-<div><p>the number of colours to create</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>amount</strong><span class="classifier">int</span></dt><dd><p>the number of colours to create</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>colours</strong> : list</p>
-<blockquote class="last">
-<div><p>a list of colours, each in the form [r, g, b]</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>colours</strong><span class="classifier">list</span></dt><dd><p>a list of colours, each in the form [r, g, b]</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="expyriment.misc.download_from_stash">
+<code class="descclassname">expyriment.misc.</code><code class="descname">download_from_stash</code><span class="sig-paren">(</span><em>content='all'</em>, <em>branch=None</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.download_from_stash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download content from the Expyriment stash.</p>
+<p>Content will be stored in an Expyriment settings diretory (<cite>.expyriment</cite>
+or <cite>~expyriment</cite>, located in the current user’s home directory).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>content</strong><span class="classifier">str, optional</span></dt><dd><p>the content to install (“examples”, “extras”, “tools”, or “all”)
+(default=”all”)</p>
+</dd>
+<dt><strong>branch</strong><span class="classifier">str, optional</span></dt><dd><p>a specific branch to get the content from (if not set, the branch
+corresponding to the current Expyriment release is used)
+(default=None)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -275,17 +319,17 @@ the given font name.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>font</strong> : str</p>
-<blockquote>
-<div><p>name of the font</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>font</strong><span class="classifier">str</span></dt><dd><p>name of the font</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>font</strong> : str</p>
-<blockquote class="last">
-<div><p>the font that is most similar
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>font</strong><span class="classifier">str</span></dt><dd><p>the font that is most similar
 If no font is found, an empty string will be returned.</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -301,11 +345,11 @@ hash (sha1) of the main file of the current experiment.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">hash: string or None</p>
-<blockquote class="last">
-<div><p>first six places of the experiment secure hash or None, if no main
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>hash: string or None</strong></dt><dd><p>first six places of the experiment secure hash or None, if no main
 file can be found</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -328,11 +372,11 @@ from the local folded.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">hashes: dict</p>
-<blockquote class="last">
-<div><p>hash dict with all imported modules
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>hashes: dict</strong></dt><dd><p>hash dict with all imported modules
 keys = file names, values = sha hashes</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -350,10 +394,10 @@ secure hashes.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">resolution: (int, int)</p>
-<blockquote class="last">
-<div><p>monitor resolution, screen resolution</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>resolution: (int, int)</strong></dt><dd><p>monitor resolution, screen resolution</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -368,10 +412,10 @@ secure hashes.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>as_string</strong> : boolean, optional</p>
-<blockquote class="last">
-<div><p>Print as string instead of dict (default = False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>as_string</strong><span class="classifier">boolean, optional</span></dt><dd><p>Print as string instead of dict (default = False)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -405,7 +449,10 @@ IPthon)</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>interactive_mode</strong> : boolean</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>interactive_mode</strong><span class="classifier">boolean</span></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -435,13 +482,34 @@ absolute path to the font file.</p>
 <dt id="expyriment.misc.numpad_digit_code2ascii">
 <code class="descclassname">expyriment.misc.</code><code class="descname">numpad_digit_code2ascii</code><span class="sig-paren">(</span><em>keycode</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.numpad_digit_code2ascii" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert numpad keycode to the ascii code of that particular number</p>
-<p>If it is not a keypad digit code, no convertion takes place and the
+<p>If it is not a keypad digit code, no conversion takes place and the
 same code will be returned.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>ascii_code</strong> : int</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ascii_code</strong><span class="classifier">int</span></dt><dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="expyriment.misc.py2py3_sort_array">
+<code class="descclassname">expyriment.misc.</code><code class="descname">py2py3_sort_array</code><span class="sig-paren">(</span><em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.py2py3_sort_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sorts an array with different types using the string representation
+under Python2 and Python3. Sorts in place!</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>array: the sorted array</strong></dt><dd></dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -455,22 +523,22 @@ same code will be returned.</p>
 <dl class="function">
 <dt id="expyriment.misc.which">
 <code class="descclassname">expyriment.misc.</code><code class="descname">which</code><span class="sig-paren">(</span><em>programme</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.which" title="Permalink to this definition">¶</a></dt>
-<dd><p>Locate a programme file in the user&#8217;s path.</p>
-<p>This mimics behaviour of UNIC &#8216;which&#8217; command.</p>
+<dd><p>Locate a programme file in the user’s path.</p>
+<p>This mimics behaviour of UNIX’s ‘which’ command.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>programme</strong> : str</p>
-<blockquote>
-<div><p>the programme to file to locate</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>programme</strong><span class="classifier">str</span></dt><dd><p>the programme to file to locate</p>
+</dd>
+</dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>path</strong> : str or None</p>
-<blockquote class="last">
-<div><p>the full path to the programme file or None if not found</p>
-</div></blockquote>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>path</strong><span class="classifier">str or None</span></dt><dd><p>the full path to the programme file or None if not found</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -482,15 +550,16 @@ same code will be returned.</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.misc.constants.html" class="btn btn-neutral float-right" title="expyriment.misc.constants" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.misc.constants.html" class="btn btn-neutral float-right" title="expyriment.misc.constants" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.io.TriggerInput.html" class="btn btn-neutral" title="expyriment.io.TriggerInput" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.io.TriggerInput.html" class="btn btn-neutral float-left" title="expyriment.io.TriggerInput" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -499,11 +568,11 @@ same code will be returned.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -516,35 +585,15 @@ same code will be returned.</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

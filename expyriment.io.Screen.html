@@ -8,48 +8,48 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>expyriment.io.Screen &mdash; Expyriment 0.9.0 documentation</title>
+  <title>expyriment.io.Screen &mdash; Expyriment 0.10.0 documentation</title>
   
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+  
+  
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Expyriment 0.9.0 documentation" href="index.html"/>
-        <link rel="up" title="expyriment.io" href="expyriment.io.html"/>
-        <link rel="next" title="expyriment.io.SerialPort" href="expyriment.io.SerialPort.html"/>
-        <link rel="prev" title="expyriment.io.ParallelPort" href="expyriment.io.ParallelPort.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.io.SerialPort" href="expyriment.io.SerialPort.html" />
+    <link rel="prev" title="expyriment.io.ParallelPort" href="expyriment.io.ParallelPort.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +58,7 @@
 
           
             
-            <img src="_static/xpy_button.png" class="logo" />
+            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.9
+                0.10
               </div>
             
           
@@ -87,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
@@ -133,36 +136,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Expyriment</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-      
+        
           <li><a href="expyriment.io.html">expyriment.io</a> &raquo;</li>
-      
-    <li>expyriment.io.Screen</li>
+        
+      <li>expyriment.io.Screen</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -172,42 +195,39 @@
 <h1>expyriment.io.Screen<a class="headerlink" href="#expyriment-io-screen" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="expyriment.io.Screen">
-<em class="property">class </em><code class="descclassname">expyriment.io.</code><code class="descname">Screen</code><span class="sig-paren">(</span><em>colour</em>, <em>open_gl</em>, <em>window_mode</em>, <em>window_size</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">expyriment.io.</code><code class="descname">Screen</code><span class="sig-paren">(</span><em>colour</em>, <em>open_gl</em>, <em>window_mode</em>, <em>window_size</em>, <em>no_frame</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Permalink to this definition">¶</a></dt>
 <dd><p>A class implementing a screen output.</p>
 <p>Each experiment and all stimuli need a screen instance to function.
 They are expecting this screen instance to be referenced in
 expyriment._active_exp.screen.
-Calling expyriment.control.intialize(exp) will automatically create such
+Calling expyriment.control.initialize(exp) will automatically create such
 a screen instance and will additionally reference it in exp.screen for
 easy access.</p>
 <dl class="method">
 <dt id="expyriment.io.Screen.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>colour</em>, <em>open_gl</em>, <em>window_mode</em>, <em>window_size</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>colour</em>, <em>open_gl</em>, <em>window_mode</em>, <em>window_size</em>, <em>no_frame</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create and set up a screen output.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>colour</strong> : (int, int, int)</p>
-<blockquote>
-<div><p>colour of the screen</p>
-</div></blockquote>
-<p><strong>open_gl</strong> : int or bool</p>
-<blockquote>
-<div><p>0/False - No OpenGL (no vsync / no blocking)
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>colour</strong><span class="classifier">(int, int, int)</span></dt><dd><p>colour of the screen</p>
+</dd>
+<dt><strong>open_gl</strong><span class="classifier">int or bool</span></dt><dd><p>0/False - No OpenGL (no vsync / no blocking)
 1       - OpenGL (vsync / no blocking)
 2/True  - OpenGL (vsync / blocking)
 3       - OpenGL (vsync / alternative blocking)</p>
-</div></blockquote>
-<p><strong>window_mode</strong> : bool</p>
-<blockquote>
-<div><p>if screen should be a window</p>
-</div></blockquote>
-<p><strong>window_size</strong> : (int, int)</p>
-<blockquote class="last">
-<div><p>size of the window in window_mode,
+</dd>
+<dt><strong>window_mode</strong><span class="classifier">bool</span></dt><dd><p>if screen should be a window</p>
+</dd>
+<dt><strong>window_size</strong><span class="classifier">(int, int)</span></dt><dd><p>size of the window in window_mode,
 full screen mode if size of window_mode[0]&lt;=0</p>
-</div></blockquote>
+</dd>
+<dt><strong>no_frame</strong><span class="classifier">bool</span></dt><dd><p>set True for windows (in window mode) with no frame;
+this parameter does not affect fullscreen mode</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -216,18 +236,18 @@ full screen mode if size of window_mode[0]&lt;=0</p>
 <p>CAUTION: We discourage from creating a screen instance manually!</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.center_x">
-<code class="descname">center_x</code><a class="headerlink" href="#expyriment.io.Screen.center_x" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">center_x</code><a class="headerlink" href="#expyriment.io.Screen.center_x" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for X-coordinate of the screen center.</p>
 <p class="rubric">Notes</p>
 <p>Each initialized experiment has its one screen (exp.screen). Please use always the
 screen of your current  experiment.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.center_y">
-<code class="descname">center_y</code><a class="headerlink" href="#expyriment.io.Screen.center_y" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">center_y</code><a class="headerlink" href="#expyriment.io.Screen.center_y" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for the Y-coordinate of the screen center.</p>
 <p class="rubric">Notes</p>
 <p>Each initialized experiment has its one screen (exp.screen). Please use always the
@@ -241,27 +261,33 @@ screen of your current  experiment.</p>
 <p>This will reset the default experimental background colour.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.colour">
-<code class="descname">colour</code><a class="headerlink" href="#expyriment.io.Screen.colour" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">colour</code><a class="headerlink" href="#expyriment.io.Screen.colour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for colour.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.logging">
-<code class="descname">logging</code><a class="headerlink" href="#expyriment.io.Screen.logging" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">logging</code><a class="headerlink" href="#expyriment.io.Screen.logging" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.monitor_resolution">
-<code class="descname">monitor_resolution</code><a class="headerlink" href="#expyriment.io.Screen.monitor_resolution" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">monitor_resolution</code><a class="headerlink" href="#expyriment.io.Screen.monitor_resolution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for monitor_resolution.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
+<dt id="expyriment.io.Screen.no_frame">
+<em class="property">property </em><code class="descname">no_frame</code><a class="headerlink" href="#expyriment.io.Screen.no_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for no_frame boolean</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="expyriment.io.Screen.open_gl">
-<code class="descname">open_gl</code><a class="headerlink" href="#expyriment.io.Screen.open_gl" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">open_gl</code><a class="headerlink" href="#expyriment.io.Screen.open_gl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for open_gl.</p>
 </dd></dl>
 
@@ -273,11 +299,11 @@ screen of your current  experiment.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>filename</strong> : str</p>
-<blockquote class="last">
-<div><p>name of the file to write (possible extensions are BMP,
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>name of the file to write (possible extensions are BMP,
 TGA, PNG, or JPEG, with the default being TGA)</p>
-</div></blockquote>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -292,31 +318,32 @@ TGA, PNG, or JPEG, with the default being TGA)</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>onoff</strong> : bool</p>
-<blockquote class="last">
-<div><p>set logging on (True) or off (False)</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Notes</p>
-<p>See also design.experiment.set_log_level fur further information about
-event logging.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></p>
+</div>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.size">
-<code class="descname">size</code><a class="headerlink" href="#expyriment.io.Screen.size" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">size</code><a class="headerlink" href="#expyriment.io.Screen.size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for the size of the screen.</p>
 <p class="rubric">Notes</p>
 <p>Each initialized experiment has its one screen (exp.screen). Please use always the
 screen of your current  experiment.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.surface">
-<code class="descname">surface</code><a class="headerlink" href="#expyriment.io.Screen.surface" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">surface</code><a class="headerlink" href="#expyriment.io.Screen.surface" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for surface.</p>
 </dd></dl>
 
@@ -335,10 +362,10 @@ screen of your current  experiment.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>stimuli</strong> : list</p>
-<blockquote class="last">
-<div><p>stimulus or a list of stimuli to update</p>
-</div></blockquote>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>stimuli</strong><span class="classifier">list</span></dt><dd><p>stimulus or a list of stimuli to update</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -347,15 +374,15 @@ screen of your current  experiment.</p>
 <p>This does only work for non OpenGL screens.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.window_mode">
-<code class="descname">window_mode</code><a class="headerlink" href="#expyriment.io.Screen.window_mode" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">window_mode</code><a class="headerlink" href="#expyriment.io.Screen.window_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for window_mode.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="method">
 <dt id="expyriment.io.Screen.window_size">
-<code class="descname">window_size</code><a class="headerlink" href="#expyriment.io.Screen.window_size" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="descname">window_size</code><a class="headerlink" href="#expyriment.io.Screen.window_size" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for window_size.</p>
 </dd></dl>
 
@@ -365,15 +392,16 @@ screen of your current  experiment.</p>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="expyriment.io.SerialPort.html" class="btn btn-neutral float-right" title="expyriment.io.SerialPort" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="expyriment.io.SerialPort.html" class="btn btn-neutral float-right" title="expyriment.io.SerialPort" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="expyriment.io.ParallelPort.html" class="btn btn-neutral" title="expyriment.io.ParallelPort" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="expyriment.io.ParallelPort.html" class="btn btn-neutral float-left" title="expyriment.io.ParallelPort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -382,11 +410,11 @@ screen of your current  experiment.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Florian Krause &amp; Oliver Lindemann.
+        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -399,35 +427,15 @@ screen of your current  experiment.</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.9.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>
