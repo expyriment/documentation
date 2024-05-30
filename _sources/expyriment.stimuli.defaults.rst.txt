@@ -111,7 +111,7 @@ Attributes
 
 .. py:data:: expyriment.stimuli.defaults.tempdir
 
-   default value: '/tmp/expyriment_x4294nxr'
+   default value: '/tmp/expyriment_q5mhplos'
 
 .. py:data:: expyriment.stimuli.defaults.textbox_background_colour
 
