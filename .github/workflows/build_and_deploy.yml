@@ -3,10 +3,16 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: ${{ contains(github.event.head_commit.message, '[build]') }}
+    if: ${{ contains(github.event.head_commit.message, '[build') }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          repository: expyriment/expyriment
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          working-directory: expyriment
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Install dependencies
@@ -15,13 +21,16 @@ jobs:
           python -m pip install sphinx numpydoc sphinx-rtd-theme
       - name: Install expyriment
         run: | # change back to normal install after testing
+          echo "nothing"
           # python -m pip install expyriment
-          python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --pre expyriment
+          #python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --pre expyriment
       - name: Build
         run: |
+          echo "$PWD
           cd sphinx
-          python create_rst_api_reference.py
-          sphinx-build -b html _build/html
+          make html
+          #python create_rst_api_reference.py
+          #sphinx-build -b html _build/html
           cd ..
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
