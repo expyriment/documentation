@@ -26,7 +26,7 @@ jobs:
           #python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --pre expyriment
       - name: Build
         run: |
-          echo "$PWD
+          echo "$PWD"
           cd sphinx
           make html
           #python create_rst_api_reference.py
