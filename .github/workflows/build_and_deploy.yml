@@ -27,7 +27,7 @@ jobs:
           python -m pip install -U pip wheel
       - name: Build
         run: |
-          make html EXPYRIMENT_PATH=expyriment
+          make html EXPYRIMENT_PATH=./expyriment
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
