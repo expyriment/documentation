@@ -13,15 +13,24 @@ jobs:
       #    cd expyriment
       #    echo "$PWD"
       #    git clone https://github.com/expyriment/documentation
-      - name: Checkout
+      
+      - name: Checkout Documentation
+        uses: actions/checkout@v4
+        with:
+          path: documentation
+      - name: Get latest Expyriment release
+        id: latest
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: expyriment
+          repo: expyriment
+          excludes: draft#, prerelease
+      - name: Checkout Expyriment
         uses: actions/checkout@v4
         with:
           repository: expyriment/expyriment
           path: expyriment
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          path: documentation
+          ref: tags/${{ steps.latest.outputs.release }}
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Install dependencies
@@ -29,20 +38,13 @@ jobs:
           python -m pip install -U pip wheel
       - name: Build
         run: |
-          echo "$PWD"
-          sudo apt-get install -y tree
-          cd
-          tree -d
-          cd expyriment/documentation/sphinx
-          make html
-          #python create_rst_api_reference.py
-          #sphinx-build -b html _build/html
-          cd ..
+          cd documentation/sphinx
+          make html EXPYRIMENT_PATH=../expyriment
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages-test  # change back to gh-pages after testing
-          folder: sphinx/_build/html/
+          folder: documentation/sphinx/_build/html/
           target-folder: ./
           clean-exclude: |
             old/
