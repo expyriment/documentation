@@ -5,7 +5,13 @@ import os
 import sys
 import inspect
 
-p = os.path.abspath(os.path.join(os.path.split(sys.argv[0])[0], '..', '..'))
+if len(sys.argv) > 1:
+    if os.path.isabs(sys.argv[1]):
+        p = os.path.abspath(sys.argv[1])
+    else:
+        p = os.path.abspath(os.path.join(os.path.split(sys.argv[0])[0], sys.argv[1]))
+else:
+    p = os.path.abspath(os.path.join(os.path.split(sys.argv[0])[0], '..'))
 sys.path.insert(0, p)
 
 import expyriment
