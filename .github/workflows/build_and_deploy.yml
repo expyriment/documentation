@@ -15,11 +15,13 @@ jobs:
       #    git clone https://github.com/expyriment/documentation
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          repository: expyriment/expyriment
+          path: expyriment
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: expyriment/expyriment
-          path: ../expyriment
+          path: documentation
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Install dependencies
