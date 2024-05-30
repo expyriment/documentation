@@ -14,8 +14,9 @@ jobs:
           python -m pip install -U pip wheel
           python -m pip install sphinx numpydoc sphinx-rtd-theme
       - name: Install expyriment
-        run: |
-          python -m pip install expyriment
+        run: | # change back to normal install after testing
+          # python -m pip install expyriment
+          python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --pre expyriment
       - name: Build
         run: |
           cd sphinx
