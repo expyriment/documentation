@@ -34,8 +34,8 @@ jobs:
           branch: gh-pages-test  # change back to gh-pages after testing
           folder: _build/html/
           target-folder: ./
+          clean: true
           clean-exclude: |
-            venv/
             old/
             0.*/
       - name: Get Expyriment version without v
@@ -48,5 +48,4 @@ jobs:
           branch: gh-pages-test  # change back to gh-pages after testing
           folder: _build/html/
           target-folder: ${{ env.VERSION_NR }}
-          clean-exclude: |
-            venv/
+          clean: true
