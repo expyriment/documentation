@@ -22,7 +22,7 @@ jobs:
           make html
           cd ..
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages-test  # change back to gh-pages after testing
           folder: sphinx/html/
