@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.misc.Buffer &mdash; Expyriment 0.11.dev1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10ab73f2"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.misc.ByteBuffer" href="expyriment.misc.ByteBuffer.html" />
+    <link rel="prev" title="expyriment.misc.statistics" href="expyriment.misc.statistics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.11.dev1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.design.html">expyriment.design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.io.html">expyriment.io</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.constants.html">expyriment.misc.constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.data_preprocessing.html">expyriment.misc.data_preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.defaults.html">expyriment.misc.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.extras.html">expyriment.misc.extras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.geometry.html">expyriment.misc.geometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.statistics.html">expyriment.misc.statistics</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.misc.Buffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.misc.html">expyriment.misc</a></li>
+      <li class="breadcrumb-item active">expyriment.misc.Buffer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="expyriment-misc-buffer">
+<h1>expyriment.misc.Buffer<a class="headerlink" href="#expyriment-misc-buffer" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">Buffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Buffer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer" title="Link to this definition"></a></dt>
+<dd><p>A class implementing a general event buffer.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Buffer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create an event buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>the name of the buffer</p>
+</dd>
+<dt><strong>clock</strong><span class="classifier">expyriment.Clock object (optional)</span></dt><dd><p>an experimental clock</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.add_event">
+<span class="sig-name descname"><span class="pre">add_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.add_event" title="Link to this definition"></a></dt>
+<dd><p>Add an event to the buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>event</strong><span class="classifier">anything</span></dt><dd><p>the event to add</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.add_events">
+<span class="sig-name descname"><span class="pre">add_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">events</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.add_events" title="Link to this definition"></a></dt>
+<dd><p>Add a list of events to the buffer.</p>
+<p>All events get the same time stamp!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>events</strong><span class="classifier">list</span></dt><dd><p>the event list to add</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.clear" title="Link to this definition"></a></dt>
+<dd><p>Clear the buffer.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.clock">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clock</span></span><a class="headerlink" href="#expyriment.misc.Buffer.clock" title="Link to this definition"></a></dt>
+<dd><p>Getter for clock</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.get_element">
+<span class="sig-name descname"><span class="pre">get_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.get_element" title="Link to this definition"></a></dt>
+<dd><p>Get an element (code, rt) from the buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>position</strong><span class="classifier">int</span></dt><dd><p>the position to get the element from</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>element</strong><span class="classifier">(anything, float)</span></dt><dd><p>The element to get from the buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.get_last_event">
+<span class="sig-name descname"><span class="pre">get_last_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.get_last_event" title="Link to this definition"></a></dt>
+<dd><p>Get the last event (code, rt) in the buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>element</strong><span class="classifier">(anything, float)</span></dt><dd><p>the last element of the buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.get_size" title="Link to this definition"></a></dt>
+<dd><p>Return the number of elements in the buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>size</strong><span class="classifier">int</span></dt><dd><p>the size of the buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.get_whole_buffer">
+<span class="sig-name descname"><span class="pre">get_whole_buffer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.Buffer.get_whole_buffer" title="Link to this definition"></a></dt>
+<dd><p>Get a copy of the buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>copy</strong><span class="classifier">list</span></dt><dd><p>the copy of the buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.memory">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">memory</span></span><a class="headerlink" href="#expyriment.misc.Buffer.memory" title="Link to this definition"></a></dt>
+<dd><p>Getter for memory [list of tuples (code, rt)]</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.Buffer.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#expyriment.misc.Buffer.name" title="Link to this definition"></a></dt>
+<dd><p>Getter for name</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.misc.statistics.html" class="btn btn-neutral float-left" title="expyriment.misc.statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.misc.ByteBuffer.html" class="btn btn-neutral float-right" title="expyriment.misc.ByteBuffer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
