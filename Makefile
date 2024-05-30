@@ -46,10 +46,11 @@ rst:
 
 venv:
 	python -m venv venv
+        venv/bin/pip install -r requirements.txt
 	venv/bin/pip install $(EXPYRIMENT_PATH)
 
 expyriment.rst: venv
-	$(PYTHON) create_rst_api_reference.py
+	$(PYTHON) create_rst_api_reference.py $(EXPYRIMENT_PATH)
 
 sitemap: venv
 	$(PYTHON) create_sitemap.py
