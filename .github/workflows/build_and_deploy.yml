@@ -30,7 +30,7 @@ jobs:
         with:
           repository: expyriment/expyriment
           path: expyriment
-          ref: tags/${{ steps.latest.outputs.release }}
+          ref: ${{ steps.latest.outputs.release }}
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Install dependencies
