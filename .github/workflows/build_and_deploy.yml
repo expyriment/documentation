@@ -7,12 +7,16 @@ jobs:
     steps:
       - name: Checkout expyriment
         run: |
+          echo "$PWD"
           git clone https://github.com/expyriment/expyriment
           cd expyriment
+          echo "$PWD"
       - name: Checkout documentation
         run: |
+          echo "$PWD"
           git clone https://github.com/expyriment/documentation
           cd documentation
+          echo "$PWD"
       #- name: Checkout
       #  uses: actions/checkout@v4
       #  with:
