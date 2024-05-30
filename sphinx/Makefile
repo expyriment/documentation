@@ -2,11 +2,12 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
-SPHINXBUILD   = venv/bin/sphinx-build
-PAPER         =
-BUILDDIR      = _build
-PYTHON		  = venv/bin/python
+EXPYRIMENT_PATH = ../
+SPHINXOPTS      =
+SPHINXBUILD     = venv/bin/sphinx-build
+PAPER           =
+BUILDDIR        = _build
+PYTHON	        = venv/bin/python
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -45,7 +46,7 @@ rst:
 
 venv:
 	python -m venv venv
-	venv/bin/pip install ../../
+	venv/bin/pip install $(EXPYRIMENT_PATH)
 
 expyriment.rst: venv
 	$(PYTHON) create_rst_api_reference.py
