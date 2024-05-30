@@ -30,14 +30,14 @@ jobs:
       - name: Build
         run: |
           echo "$PWD"
-          cd documentation/documentation/sphinx
+          cd documentation
           echo "$PWD"
           make html EXPYRIMENT_PATH=../expyriment
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages-test  # change back to gh-pages after testing
-          folder: documentation/documentation/sphinx/_build/html/
+          folder: documentation/_build/html/
           target-folder: ./
           clean-exclude: |
             old/
