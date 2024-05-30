@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.io.DataFile &mdash; Expyriment 0.11.dev1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10ab73f2"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.io.EventButtonBox" href="expyriment.io.EventButtonBox.html" />
+    <link rel="prev" title="expyriment.io.extras" href="expyriment.io.extras.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.11.dev1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.design.html">expyriment.design</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.io.html">expyriment.io</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.defaults.html">expyriment.io.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.extras.html">expyriment.io.extras</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.io.DataFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.EventButtonBox.html">expyriment.io.EventButtonBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.EventFile.html">expyriment.io.EventFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.GamePad.html">expyriment.io.GamePad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.InputFile.html">expyriment.io.InputFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.Keyboard.html">expyriment.io.Keyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.MarkerOutput.html">expyriment.io.MarkerOutput</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.Mouse.html">expyriment.io.Mouse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.OutputFile.html">expyriment.io.OutputFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.ParallelPort.html">expyriment.io.ParallelPort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.Screen.html">expyriment.io.Screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.SerialPort.html">expyriment.io.SerialPort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.StreamingButtonBox.html">expyriment.io.StreamingButtonBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.TextInput.html">expyriment.io.TextInput</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.TextMenu.html">expyriment.io.TextMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.TouchScreenButtonBox.html">expyriment.io.TouchScreenButtonBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.io.TriggerInput.html">expyriment.io.TriggerInput</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.io.html">expyriment.io</a></li>
+      <li class="breadcrumb-item active">expyriment.io.DataFile</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="expyriment-io-datafile">
+<h1>expyriment.io.DataFile<a class="headerlink" href="#expyriment-io-datafile" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="expyriment.io.DataFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">DataFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">additional_suffix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delimiter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_stamp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile" title="Link to this definition"></a></dt>
+<dd><p>A class implementing a data file.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">additional_suffix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delimiter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_stamp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create a data file.</p>
+<p>Filename: {MAINFILE_NAME}_{SUBJECT_ID}_{TIME_STAMP}{ADD_SUFFIX}.xpd</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>additional_suffix</strong><span class="classifier">str</span></dt><dd><p>additional suffix</p>
+</dd>
+<dt><strong>directory</strong><span class="classifier">str, optional</span></dt><dd><p>directory of the file</p>
+</dd>
+<dt><strong>delimiter</strong><span class="classifier">str, optional</span></dt><dd><p>symbol between variables</p>
+</dd>
+<dt><strong>time_stamp</strong><span class="classifier">bool, optional</span></dt><dd><p>using time stamps, based on the experiment start time,
+not the current time</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.add" title="Link to this definition"></a></dt>
+<dd><p>Add data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong><span class="classifier">string or numeric or list</span></dt><dd><p>data to be added</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.add_experiment_info">
+<span class="sig-name descname"><span class="pre">add_experiment_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.add_experiment_info" title="Link to this definition"></a></dt>
+<dd><p>Adds a text the subject info header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>text</strong><span class="classifier">str</span></dt><dd><p>experiment information to be added to the file header</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The next data.save() might take longer!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.add_subject_info">
+<span class="sig-name descname"><span class="pre">add_subject_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.add_subject_info" title="Link to this definition"></a></dt>
+<dd><p>Adds a text the subject info header.</p>
+<p>Subject information can be extracted afterwards using
+misc.data_preprocessing.read_data_file. To defined between subject
+variables use a syntax like this: “gender = female” or
+“handedness : left”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>text</strong><span class="classifier">str</span></dt><dd><p>subject information to be added to the file header</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The next data.save() might take longer!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.add_variable_names">
+<span class="sig-name descname"><span class="pre">add_variable_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.add_variable_names" title="Link to this definition"></a></dt>
+<dd><p>Add data variable names to the data file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>variables</strong><span class="classifier">str or list of str</span></dt><dd><p>variable names</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The next data.save() might take longer!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.clear_variable_names">
+<span class="sig-name descname"><span class="pre">clear_variable_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.clear_variable_names" title="Link to this definition"></a></dt>
+<dd><p>Remove all variable names from data file.</p>
+<p class="rubric">Notes</p>
+<p>The next data.save() might take longer!</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.comment_char">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">comment_char</span></span><a class="headerlink" href="#expyriment.io.DataFile.comment_char" title="Link to this definition"></a></dt>
+<dd><p>Getter for comment_char</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.delimiter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delimiter</span></span><a class="headerlink" href="#expyriment.io.DataFile.delimiter" title="Link to this definition"></a></dt>
+<dd><p>Getter for delimiter</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.directory">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">directory</span></span><a class="headerlink" href="#expyriment.io.DataFile.directory" title="Link to this definition"></a></dt>
+<dd><p>Getter for directory</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.filename">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#expyriment.io.DataFile.filename" title="Link to this definition"></a></dt>
+<dd><p>Getter for filename</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.fullpath">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fullpath</span></span><a class="headerlink" href="#expyriment.io.DataFile.fullpath" title="Link to this definition"></a></dt>
+<dd><p>Getter for fullpath</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.get_next_subject_number">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_next_subject_number</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.get_next_subject_number" title="Link to this definition"></a></dt>
+<dd><p>Return the next subject number based on the existing data and event files.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.logging">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.DataFile.logging" title="Link to this definition"></a></dt>
+<dd><p>Getter for logging.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.rename">
+<span class="sig-name descname"><span class="pre">rename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.rename" title="Link to this definition"></a></dt>
+<dd><p>Renames the output file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.save" title="Link to this definition"></a></dt>
+<dd><p>Save the new data to data-file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.set_logging">
+<span class="sig-name descname"><span class="pre">set_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">onoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.set_logging" title="Link to this definition"></a></dt>
+<dd><p>Set logging of this object on or off</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></dt><dd></dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.standard_file_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard_file_name</span></span><a class="headerlink" href="#expyriment.io.DataFile.standard_file_name" title="Link to this definition"></a></dt>
+<dd><p>Getter for the standard expyriment outputfile name.</p>
+<p>Filename: {MAINFILE_NAME}_{SUBJECT_ID}_{TIME_STAMP}{suffix}</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.suffix">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">suffix</span></span><a class="headerlink" href="#expyriment.io.DataFile.suffix" title="Link to this definition"></a></dt>
+<dd><p>Getter for directory</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.variable_names">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">variable_names</span></span><a class="headerlink" href="#expyriment.io.DataFile.variable_names" title="Link to this definition"></a></dt>
+<dd><p>Getter for variable_names.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.write" title="Link to this definition"></a></dt>
+<dd><p>Write to file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>content</strong><span class="classifier">str</span></dt><dd><p>content to be written (anything, will be casted to str)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.write_comment">
+<span class="sig-name descname"><span class="pre">write_comment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.write_comment" title="Link to this definition"></a></dt>
+<dd><p>Write a comment line to files.</p>
+<p>(i.e., text is proceeded by comment char).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>comment</strong><span class="classifier">str</span></dt><dd><p>comment to be written (anything, will be casted to str)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.write_line">
+<span class="sig-name descname"><span class="pre">write_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.write_line" title="Link to this definition"></a></dt>
+<dd><p>Write a text line to files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>content</strong><span class="classifier">str</span></dt><dd><p>content to be written (anything, will be casted to str)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.io.DataFile.write_list">
+<span class="sig-name descname"><span class="pre">write_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.DataFile.write_list" title="Link to this definition"></a></dt>
+<dd><p>Write a list in a row. Data are separated by a delimiter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>list_</strong><span class="classifier">list</span></dt><dd><p>list to be written</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.io.extras.html" class="btn btn-neutral float-left" title="expyriment.io.extras" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.io.EventButtonBox.html" class="btn btn-neutral float-right" title="expyriment.io.EventButtonBox" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

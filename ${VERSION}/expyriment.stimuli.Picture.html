@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.stimuli.Picture &mdash; Expyriment 0.11.dev1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10ab73f2"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.stimuli.Rectangle" href="expyriment.stimuli.Rectangle.html" />
+    <link rel="prev" title="expyriment.stimuli.Line" href="expyriment.stimuli.Line.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.11.dev1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.design.html">expyriment.design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.io.html">expyriment.io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.defaults.html">expyriment.stimuli.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.extras.html">expyriment.stimuli.extras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Audio.html">expyriment.stimuli.Audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.BlankScreen.html">expyriment.stimuli.BlankScreen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Canvas.html">expyriment.stimuli.Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Circle.html">expyriment.stimuli.Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Dot.html">expyriment.stimuli.Dot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Ellipse.html">expyriment.stimuli.Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.FixCross.html">expyriment.stimuli.FixCross</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Frame.html">expyriment.stimuli.Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Line.html">expyriment.stimuli.Line</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.stimuli.Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Rectangle.html">expyriment.stimuli.Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Shape.html">expyriment.stimuli.Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextBox.html">expyriment.stimuli.TextBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextLine.html">expyriment.stimuli.TextLine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextScreen.html">expyriment.stimuli.TextScreen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Tone.html">expyriment.stimuli.Tone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Video.html">expyriment.stimuli.Video</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+      <li class="breadcrumb-item active">expyriment.stimuli.Picture</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="expyriment-stimuli-picture">
+<h1>expyriment.stimuli.Picture<a class="headerlink" href="#expyriment-stimuli-picture" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">Picture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture" title="Link to this definition"></a></dt>
+<dd><p>A class implementing a general picture stimulus.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create a picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>filename (incl. path) of the picture file</p>
+</dd>
+<dt><strong>position :(int,int), optional</strong></dt><dd><p>position of the stimulus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.absolute_position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">absolute_position</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.absolute_position" title="Link to this definition"></a></dt>
+<dd><p>Getter for absolute_position.</p>
+<p class="rubric">Notes</p>
+<p>The absolute position differs for instance from the (relative) position, if the
+stimulus is plotted on top of another stimulus, which has not the position (0,0).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.add_noise">
+<span class="sig-name descname"><span class="pre">add_noise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grain_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percentage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colour</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.add_noise" title="Link to this definition"></a></dt>
+<dd><p>Add visual noise on top of the stimulus.</p>
+<p>This function might take very long for large stimuli.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>grain_size</strong><span class="classifier">int</span></dt><dd><p>size of the grains for the noise</p>
+</dd>
+<dt><strong>percentage</strong><span class="classifier">int</span></dt><dd><p>percentage of covered area</p>
+</dd>
+<dt><strong>colour</strong><span class="classifier">(int, int, int)</span></dt><dd><p>colour (RGB) of the noise</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.blur">
+<span class="sig-name descname"><span class="pre">blur</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.blur" title="Link to this definition"></a></dt>
+<dd><p>Blur the stimulus.</p>
+<p>This blurs the stimulus, by scaling it down and up by the factor of
+‘level’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of bluring</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.clear_surface">
+<span class="sig-name descname"><span class="pre">clear_surface</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.clear_surface" title="Link to this definition"></a></dt>
+<dd><p>Clear the stimulus surface.</p>
+<p>Surfaces are automatically created after any surface operation
+(presenting, plotting, rotating, scaling, flipping etc.) and preloading.
+If the stimulus was preloaded, this method unloads the stimulus.
+This method is functionally equivalent with unload(keep_surface=False).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.compress">
+<span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.compress" title="Link to this definition"></a></dt>
+<dd><p>“Compress the stimulus.</p>
+<p>This will create a temporary file on the disk where the surface of the
+stimululs is written to.
+The surface will now be read from the disk to free memory.
+Compressed stimuli cannot do surface operations!
+Preloading compressed stimuli is possible and highly recommended.
+Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.copy" title="Link to this definition"></a></dt>
+<dd><p>Deep copy of the visual stimulus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>copy</strong><span class="classifier">deep copy of self</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.decompress">
+<span class="sig-name descname"><span class="pre">decompress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.decompress" title="Link to this definition"></a></dt>
+<dd><p>Decompress the stimulus.</p>
+<p>This will decompress the stimulus.
+The surface will now be read from memory again.
+Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.distance">
+<span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.distance" title="Link to this definition"></a></dt>
+<dd><p>Surface center distance.</p>
+<p>This method computes the distance between the surface center
+of this and another visual stimulus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>other</strong><span class="classifier">stimulus</span></dt><dd><p>the other visual stimulus</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dist</strong><span class="classifier">float</span></dt><dd><p>distance between surface centers</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.filename">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.filename" title="Link to this definition"></a></dt>
+<dd><p>Getter for filename.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.flip">
+<span class="sig-name descname"><span class="pre">flip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">booleans</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.flip" title="Link to this definition"></a></dt>
+<dd><p>Flip the stimulus.</p>
+<p>This is a surface operation. After this, a surface will be present!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>booleans</strong><span class="classifier">(bool, bool)</span></dt><dd><p>booleans to flip or not</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.get_pixel_array">
+<span class="sig-name descname"><span class="pre">get_pixel_array</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.get_pixel_array" title="Link to this definition"></a></dt>
+<dd><p>Return a 2D array referencing the surface pixel data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>pixel_array: Pygame.PixelArray</dt><dd><p>a 2D array referencing the surface pixel data</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>see also set_surface</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.get_surface_array">
+<span class="sig-name descname"><span class="pre">get_surface_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replace_transparent_with_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.get_surface_array" title="Link to this definition"></a></dt>
+<dd><p>Get a 3D array containing the surface pixel data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>surface_array</strong><span class="classifier">numpy.ndarray</span></dt><dd><p>a 3D array containing the surface pixel data
+using RGBA coding.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.get_surface_copy">
+<span class="sig-name descname"><span class="pre">get_surface_copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.get_surface_copy" title="Link to this definition"></a></dt>
+<dd><p>Returns a copy of the Pygame surface of the stimulus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>surface: Pygame.surface</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>see also set_surface</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.has_surface">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_surface</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.has_surface" title="Link to this definition"></a></dt>
+<dd><p>Getter for has_surface.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.id" title="Link to this definition"></a></dt>
+<dd><p>Getter for id.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.inside_stimulus">
+<span class="sig-name descname"><span class="pre">inside_stimulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'visible'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.inside_stimulus" title="Link to this definition"></a></dt>
+<dd><p>Check if stimulus is inside another stimulus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>the other stimulus</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“surface”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>out</strong><span class="classifier">bool</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.is_compressed">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_compressed</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.is_compressed" title="Link to this definition"></a></dt>
+<dd><p>Getter for is_compressed.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.is_preloaded">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.is_preloaded" title="Link to this definition"></a></dt>
+<dd><p>Getter for is_preloaded.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.logging">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.logging" title="Link to this definition"></a></dt>
+<dd><p>Getter for logging.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.move" title="Link to this definition"></a></dt>
+<dd><p>Moves the stimulus in 2D space.</p>
+<p>When using OpenGL, this can take longer then 1ms!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>offset</strong><span class="classifier">tuple (x,y)</span></dt><dd><p>translation along x and y axis</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>see also reposition</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.overlapping_with_position">
+<span class="sig-name descname"><span class="pre">overlapping_with_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'visible'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_absolute_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.overlapping_with_position" title="Link to this definition"></a></dt>
+<dd><p>Check if stimulus is overlapping with a certain position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>position</strong><span class="classifier">(int, int)</span></dt><dd><p>position to check for overlapping</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“rectangle”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+<dt><strong>use_absolute_position</strong><span class="classifier">bool, optional</span></dt><dd><p>use absolute_position of stimulus (default) instead of position</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>overlapping</strong><span class="classifier">bool</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+<p>CAUTION: Please note that if a stimulus is plotted on another smaller
+stimulus, such that it is not fully visible on screen, this method will
+still check overlapping of the full stimulus! Due to a current bug in
+Pygame, we can right now not change this.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.overlapping_with_stimulus">
+<span class="sig-name descname"><span class="pre">overlapping_with_stimulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'visible'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_absolute_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.overlapping_with_stimulus" title="Link to this definition"></a></dt>
+<dd><p>Check if stimulus is overlapping with another stimulus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>the other stimulus</p>
+</dd>
+<dt><strong>mode</strong><span class="classifier">mode (str), optional</span></dt><dd><p>“visible”: based on non-transparent pixels or
+“surface”: based on pixels in pygame surface
+(default = visible”)</p>
+</dd>
+<dt><strong>use_absolute_position</strong><span class="classifier">bool, optional</span></dt><dd><p>use absolute_position of stimuli (default) instead of position</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>overlapping</strong><span class="classifier">bool</span></dt><dd><p>are stimuli overlapping or not</p>
+</dd>
+<dt><strong>overlap</strong><span class="classifier">(int, int)</span></dt><dd><p>the overlap (x, y) in pixels. If mode is ‘surface’, the argument
+will always be None.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+<p>CAUTION: Please note that if a stimulus is plotted on another smaller
+stimulus, such that it is not fully visible on screen, this method will
+still check overlapping of the full stimulus! Due to a current bug in
+Pygame, we can right now not change this.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.picture">
+<span class="sig-name descname"><span class="pre">picture</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.picture" title="Link to this definition"></a></dt>
+<dd><p>Return the stimulus as Picture stimulus.</p>
+<p>This will create a temporary file on the hard disk where the image is
+saved to.</p>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulus</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.plot" title="Link to this definition"></a></dt>
+<dd><p>Plot the stimulus on the surface of another stimulus.</p>
+<p>Use this to plot more than one stimulus and to present them at the
+same time afterwards by presenting the stimulus on which they were
+plotted on.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>stimulus to whose surface should be plotted</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.polar_position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polar_position</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.polar_position" title="Link to this definition"></a></dt>
+<dd><p>Getter for the position in polar coordinates (radial, angle[degrees])</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.position" title="Link to this definition"></a></dt>
+<dd><p>Getter for position.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.preload">
+<span class="sig-name descname"><span class="pre">preload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inhibit_ogl_compress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.preload" title="Link to this definition"></a></dt>
+<dd><p>Preload the stimulus to memory.</p>
+<p>This will prepare the stimulus for a fast presentation.
+In OpenGL mode this method creates an OpenGL texture based on the
+surface of the stimulus.
+When OpenGL is switched off, this method will create a surface if it
+doesn’t exists yet.
+If stimuli are not preloaded manually, this will happen
+automatically during presentation. However, stimulus presentation will
+take some time then!</p>
+<p>Always preload your stimuli when a timing accurate presentation is
+needed!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>inhibit_ogl_compress</strong><span class="classifier">bool, optional</span></dt><dd><p>inhibits OpenGL stimuli to be automatically compressed
+(default=False)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.present">
+<span class="sig-name descname"><span class="pre">present</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_event_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.present" title="Link to this definition"></a></dt>
+<dd><p>Present the stimulus on the screen.</p>
+<p>This clears and updates the screen automatically.
+When not preloaded, depending on the size of the stimulus, this method
+can take some time to compute!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>clear</strong><span class="classifier">bool, optional</span></dt><dd><p>if True the screen will be cleared automatically
+(default = True)</p>
+</dd>
+<dt><strong>update</strong><span class="classifier">bool, optional</span></dt><dd><p>if False the screen will be not be updated automatically
+(default = True)</p>
+</dd>
+<dt><strong>log_event_tag</strong><span class="classifier">numeral or string, optional</span></dt><dd><p>if log_event_tag is defined and if logging is switched on for this
+stimulus (default), a summary of the inter-event-intervalls are
+appended at the end of the event file</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.reposition">
+<span class="sig-name descname"><span class="pre">reposition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.reposition" title="Link to this definition"></a></dt>
+<dd><p>Move stimulus to a new position.</p>
+<p>When using OpenGL, this can take longer then 1ms!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>new_position</strong><span class="classifier">tuple (x,y)</span></dt><dd><p>translation along x and y axis</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>see also move</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.rotate">
+<span class="sig-name descname"><span class="pre">rotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.rotate" title="Link to this definition"></a></dt>
+<dd><p>Rotate the stimulus.</p>
+<p>This is a surface operation. After this, a surface will be present!
+Rotating goes along with a quality loss. Thus, rotating an already
+rotated stimulus is not a good idea.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>degree</strong><span class="classifier">int</span></dt><dd><p>degree to rotate counterclockwise</p>
+</dd>
+<dt><strong>filter</strong><span class="classifier">bool, optional</span></dt><dd><p>filter the surface content for better quality (default = True)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.save" title="Link to this definition"></a></dt>
+<dd><p>Save the stimulus as image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>name of the file to write (possible extensions are BMP, TGA, PNG,
+or JPEG with TGA being the default)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.scale">
+<span class="sig-name descname"><span class="pre">scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.scale" title="Link to this definition"></a></dt>
+<dd><p>Scale the stimulus.</p>
+<p>This is a surface operation. After this, a surface will be present!
+Negative scaling values will flip the stimulus.
+Scaling goes along with a quality loss. Thus, scaling an already
+scaled stimulus is not a good idea.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>factors</strong><span class="classifier">(int, int) or (float, float)</span></dt><dd><p>tuple representing the x and y factors to scale or a single number.
+In the case of a single number x and y scaling will be the
+identical (i.e., proportional scaling)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.scale_to_fullscreen">
+<span class="sig-name descname"><span class="pre">scale_to_fullscreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keep_aspect_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.scale_to_fullscreen" title="Link to this definition"></a></dt>
+<dd><p>Scale the stimulus to fullscreen.</p>
+<p>This is a surface operation. After this, a surface will be present!
+Scaling goes along with a quality loss. Thus, scaling an already
+scaled stimulus is not a good idea.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>keep_aspect_ratio</strong><span class="classifier">boolean, optional</span></dt><dd><p>if this boolean is False, stimulus will be stretched so that it
+fills out the whole screen (default = False)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.scramble">
+<span class="sig-name descname"><span class="pre">scramble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grain_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.scramble" title="Link to this definition"></a></dt>
+<dd><p>Scramble the stimulus.</p>
+<p>Attention: If the surface size is not a multiple of the grain size,
+you may loose some pixels on the edge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>grain_size</strong><span class="classifier">int or (int, int)</span></dt><dd><p>size of a grain (use tuple of integers for different width &amp; height)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.set_logging">
+<span class="sig-name descname"><span class="pre">set_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">onoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.set_logging" title="Link to this definition"></a></dt>
+<dd><p>Set logging of this object on or off</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>onoff</strong><span class="classifier">bool</span></dt><dd><p>set logging on (True) or off (False)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="expyriment.design.Experiment.html#expyriment.design.Experiment.set_log_level" title="expyriment.design.Experiment.set_log_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.Experiment.set_log_level</span></code></a></dt><dd></dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.set_surface">
+<span class="sig-name descname"><span class="pre">set_surface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.set_surface" title="Link to this definition"></a></dt>
+<dd><p>Set the surface of the stimulus</p>
+<p>This method overwrites the surface of the stimulus. It can also handle
+surfaces in form of pygame.PixelArray or Numpy 3D array (RGB or RGBA)
+representations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>surface: pygame.Surface or pygame.PixelArray or numpy.ndarray</strong></dt><dd><p>a representation of the new surface</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>succeeded: boolean</dt><dd><p>setting surface was successful or not</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>CAUTION: This is an expert’s method.
+The method can be used together with get_surface() &amp; get_pixel_array()
+to apply low-level Pygame operations on stimuli. However, users should
+be aware of what they are doing, because the incorrect usage of this
+methods might affect the stability of the experiment.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.surface_size">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_size</span></span><a class="headerlink" href="#expyriment.stimuli.Picture.surface_size" title="Link to this definition"></a></dt>
+<dd><p>Getter for surface_size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.stimuli.Picture.unload">
+<span class="sig-name descname"><span class="pre">unload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keep_surface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Picture.unload" title="Link to this definition"></a></dt>
+<dd><p>Unload the stimulus from memory.</p>
+<p>This will unload preloaded stimuli.
+In OpenGL mode, this method will remove the reference to the OpenGL
+texture and the surface (when ‘keep_surface’ is False).
+When OpenGL is switched off, the reference to the surface will be
+removed (when ‘keep_surface’ is False).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>keep_surface</strong><span class="classifier">bool, optional</span></dt><dd><p>keep the surface after unload (default=False)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>the time it took to execute this method</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#expyriment.stimuli.Picture.clear_surface" title="expyriment.stimuli.Picture.clear_surface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear_surface</span></code></a></dt><dd></dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>Depending on the size of the stimulus, this method may take some time
+to compute!</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.stimuli.Line.html" class="btn btn-neutral float-left" title="expyriment.stimuli.Line" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.stimuli.Rectangle.html" class="btn btn-neutral float-right" title="expyriment.stimuli.Rectangle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
