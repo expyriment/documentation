@@ -7,16 +7,12 @@ jobs:
     steps:
       - name: Checkout expyriment
         run: |
-          echo "$PWD"
           git clone https://github.com/expyriment/expyriment
-          cd expyriment
-          echo "$PWD"
       - name: Checkout documentation
         run: |
+          cd expyriment
           echo "$PWD"
           git clone https://github.com/expyriment/documentation
-          cd documentation
-          echo "$PWD"
       #- name: Checkout
       #  uses: actions/checkout@v4
       #  with:
@@ -38,7 +34,7 @@ jobs:
       - name: Build
         run: |
           echo "$PWD"
-          cd sphinx
+          cd expyriment/documentation/sphinx
           make html
           #python create_rst_api_reference.py
           #sphinx-build -b html _build/html
