@@ -37,3 +37,13 @@ jobs:
           clean-exclude: |
             old/
             0.*/
+      - name: Get Expyriment version without v
+        run: |
+          VERSION=${{ steps.latest.outputs.release }}
+          echo "VERSION=${VERSION:1}" >> $GITHUB_ENV
+      - name: Deploy (version subdirectory)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages-test  # change back to gh-pages after testing
+          folder: _build/html/
+          target-folder: ./${VERSION}/
