@@ -17,6 +17,11 @@ import sys, os, time
 from expyriment import __version__ as version_info
 #sys.path.remove(os.path.abspath("../.."))
 
+# The short X.Y version.
+version = version_info
+
+# The full version, including alpha/beta/rc tags.
+release = version
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
