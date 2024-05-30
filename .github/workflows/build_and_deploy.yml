@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Checkout Documentation
         uses: actions/checkout@v4
-        with:
-          path: documentation
       - name: Get latest Expyriment release
         id: latest
         uses: pozetroninc/github-action-get-latest-release@master
@@ -29,15 +27,12 @@ jobs:
           python -m pip install -U pip wheel
       - name: Build
         run: |
-          echo "$PWD"
-          cd documentation
-          echo "$PWD"
-          make html EXPYRIMENT_PATH=../expyriment
+          make html EXPYRIMENT_PATH=expyriment
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages-test  # change back to gh-pages after testing
-          folder: documentation/_build/html/
+          folder: _build/html/
           target-folder: ./
           clean-exclude: |
             old/
