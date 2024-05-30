@@ -13,9 +13,9 @@
 
 import sys, os, time
 
-sys.path.append(os.path.abspath("../.."))
+#sys.path.append(os.path.abspath("../.."))
 from expyriment import __version__ as version_info
-sys.path.remove(os.path.abspath("../.."))
+#sys.path.remove(os.path.abspath("../.."))
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -34,6 +34,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.autosummary',
               'sphinx.ext.doctest',
               #'sphinx.ext.viewcode',
+              'sphinx_rtd_theme',
               'numpydoc']
 
 autosummary_generate = True
@@ -64,8 +65,8 @@ copyright = u'{0}, Florian Krause & Oliver Lindemann'.format(
 #
 
 # Check if we are building/installing from a built archive/distribution
-filename = os.path.abspath(os.path.join(os.path.split(__file__)[0], '..',
-                                        '..', 'expyriment', '__init__.py'))
+#filename = os.path.abspath(os.path.join(os.path.split(__file__)[0], '..',
+#                                        '..', 'expyriment', '__init__.py'))
 
 rst_epilog = """
 .. |expyriment-wheel| replace:: expyriment-{0}-py3-none-any.whl
