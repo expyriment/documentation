@@ -29,6 +29,14 @@ Attributes
 
    default value: False
 
+.. py:data:: expyriment.control.defaults.display
+
+   default value: 0
+
+.. py:data:: expyriment.control.defaults.display_resolution
+
+   default value: None
+
 .. py:data:: expyriment.control.defaults.event_logging
 
    default value: 1
@@ -52,10 +60,6 @@ Attributes
 .. py:data:: expyriment.control.defaults.open_gl
 
    default value: 2
-
-.. py:data:: expyriment.control.defaults.pause_key
-
-   default value: None
 
 .. py:data:: expyriment.control.defaults.quit_key
 

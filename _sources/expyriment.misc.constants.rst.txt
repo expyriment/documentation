@@ -7,43 +7,43 @@ Attributes
 -----------
 .. py:data:: expyriment.misc.constants.C_BLACK
 
-   default value: <expyriment.misc._colour.Colour object at 0x114c31150>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c880>
 
 .. py:data:: expyriment.misc.constants.C_BLUE
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a250>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c730>
 
 .. py:data:: expyriment.misc.constants.C_DARKGREY
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a350>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c610>
 
 .. py:data:: expyriment.misc.constants.C_EXPYRIMENT_ORANGE
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a390>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c5b0>
 
 .. py:data:: expyriment.misc.constants.C_EXPYRIMENT_PURPLE
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a3d0>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c550>
 
 .. py:data:: expyriment.misc.constants.C_GREEN
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a290>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c970>
 
 .. py:data:: expyriment.misc.constants.C_GREY
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a310>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c670>
 
 .. py:data:: expyriment.misc.constants.C_RED
 
-   default value: <expyriment.misc._colour.Colour object at 0x114700b50>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c910>
 
 .. py:data:: expyriment.misc.constants.C_WHITE
 
-   default value: <expyriment.misc._colour.Colour object at 0x114700990>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c8b0>
 
 .. py:data:: expyriment.misc.constants.C_YELLOW
 
-   default value: <expyriment.misc._colour.Colour object at 0x117c1a2d0>
+   default value: <expyriment.misc._colour.Colour object at 0x7f3ac836c6d0>
 
 .. py:data:: expyriment.misc.constants.EXPYRIMENT_LOGO_FILE
 
@@ -93,7 +93,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_ALL_KEYPAD_DIGITS
 
-   default value: [256, 257, 258, 259, 260, 261, 262, 263, 264, 265]
+   default value: []
 
 .. py:data:: expyriment.misc.constants.K_ALL_LETTERS
 
@@ -125,11 +125,11 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_BREAK
 
-   default value: 318
+   default value: 1073741896
 
 .. py:data:: expyriment.misc.constants.K_CAPSLOCK
 
-   default value: 301
+   default value: 1073741881
 
 .. py:data:: expyriment.misc.constants.K_CARET
 
@@ -137,7 +137,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_CLEAR
 
-   default value: 12
+   default value: 1073741980
 
 .. py:data:: expyriment.misc.constants.K_COLON
 
@@ -157,11 +157,11 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_DOWN
 
-   default value: 274
+   default value: 1073741905
 
 .. py:data:: expyriment.misc.constants.K_END
 
-   default value: 279
+   default value: 1073741901
 
 .. py:data:: expyriment.misc.constants.K_EQUALS
 
@@ -173,7 +173,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_EURO
 
-   default value: 321
+   default value: 1073742004
 
 .. py:data:: expyriment.misc.constants.K_EXCLAIM
 
@@ -181,63 +181,63 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_F1
 
-   default value: 282
+   default value: 1073741882
 
 .. py:data:: expyriment.misc.constants.K_F10
 
-   default value: 291
+   default value: 1073741891
 
 .. py:data:: expyriment.misc.constants.K_F11
 
-   default value: 292
+   default value: 1073741892
 
 .. py:data:: expyriment.misc.constants.K_F12
 
-   default value: 293
+   default value: 1073741893
 
 .. py:data:: expyriment.misc.constants.K_F13
 
-   default value: 294
+   default value: 1073741928
 
 .. py:data:: expyriment.misc.constants.K_F14
 
-   default value: 295
+   default value: 1073741929
 
 .. py:data:: expyriment.misc.constants.K_F15
 
-   default value: 296
+   default value: 1073741930
 
 .. py:data:: expyriment.misc.constants.K_F2
 
-   default value: 283
+   default value: 1073741883
 
 .. py:data:: expyriment.misc.constants.K_F3
 
-   default value: 284
+   default value: 1073741884
 
 .. py:data:: expyriment.misc.constants.K_F4
 
-   default value: 285
+   default value: 1073741885
 
 .. py:data:: expyriment.misc.constants.K_F5
 
-   default value: 286
+   default value: 1073741886
 
 .. py:data:: expyriment.misc.constants.K_F6
 
-   default value: 287
+   default value: 1073741887
 
 .. py:data:: expyriment.misc.constants.K_F7
 
-   default value: 288
+   default value: 1073741888
 
 .. py:data:: expyriment.misc.constants.K_F8
 
-   default value: 289
+   default value: 1073741889
 
 .. py:data:: expyriment.misc.constants.K_F9
 
-   default value: 290
+   default value: 1073741890
 
 .. py:data:: expyriment.misc.constants.K_GREATER
 
@@ -249,95 +249,95 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_HELP
 
-   default value: 315
+   default value: 1073741941
 
 .. py:data:: expyriment.misc.constants.K_HOME
 
-   default value: 278
+   default value: 1073741898
 
 .. py:data:: expyriment.misc.constants.K_INSERT
 
-   default value: 277
+   default value: 1073741897
 
 .. py:data:: expyriment.misc.constants.K_KP0
 
-   default value: 256
+   default value: 1073741922
 
 .. py:data:: expyriment.misc.constants.K_KP1
 
-   default value: 257
+   default value: 1073741913
 
 .. py:data:: expyriment.misc.constants.K_KP2
 
-   default value: 258
+   default value: 1073741914
 
 .. py:data:: expyriment.misc.constants.K_KP3
 
-   default value: 259
+   default value: 1073741915
 
 .. py:data:: expyriment.misc.constants.K_KP4
 
-   default value: 260
+   default value: 1073741916
 
 .. py:data:: expyriment.misc.constants.K_KP5
 
-   default value: 261
+   default value: 1073741917
 
 .. py:data:: expyriment.misc.constants.K_KP6
 
-   default value: 262
+   default value: 1073741918
 
 .. py:data:: expyriment.misc.constants.K_KP7
 
-   default value: 263
+   default value: 1073741919
 
 .. py:data:: expyriment.misc.constants.K_KP8
 
-   default value: 264
+   default value: 1073741920
 
 .. py:data:: expyriment.misc.constants.K_KP9
 
-   default value: 265
+   default value: 1073741921
 
 .. py:data:: expyriment.misc.constants.K_KP_DIVIDE
 
-   default value: 267
+   default value: 1073741908
 
 .. py:data:: expyriment.misc.constants.K_KP_ENTER
 
-   default value: 271
+   default value: 1073741912
 
 .. py:data:: expyriment.misc.constants.K_KP_EQUALS
 
-   default value: 272
+   default value: 1073741927
 
 .. py:data:: expyriment.misc.constants.K_KP_MINUS
 
-   default value: 269
+   default value: 1073741910
 
 .. py:data:: expyriment.misc.constants.K_KP_MULTIPLY
 
-   default value: 268
+   default value: 1073741909
 
 .. py:data:: expyriment.misc.constants.K_KP_PERIOD
 
-   default value: 266
+   default value: 1073741923
 
 .. py:data:: expyriment.misc.constants.K_KP_PLUS
 
-   default value: 270
+   default value: 1073741911
 
 .. py:data:: expyriment.misc.constants.K_LALT
 
-   default value: 308
+   default value: 1073742050
 
 .. py:data:: expyriment.misc.constants.K_LCTRL
 
-   default value: 306
+   default value: 1073742048
 
 .. py:data:: expyriment.misc.constants.K_LEFT
 
-   default value: 276
+   default value: 1073741904
 
 .. py:data:: expyriment.misc.constants.K_LEFTBRACKET
 
@@ -353,19 +353,19 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_LMETA
 
-   default value: 310
+   default value: 1073742051
 
 .. py:data:: expyriment.misc.constants.K_LSHIFT
 
-   default value: 304
+   default value: 1073742049
 
 .. py:data:: expyriment.misc.constants.K_LSUPER
 
-   default value: 311
+   default value: 1073742051
 
 .. py:data:: expyriment.misc.constants.K_MENU
 
-   default value: 319
+   default value: 1073741942
 
 .. py:data:: expyriment.misc.constants.K_MINUS
 
@@ -373,23 +373,23 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_MODE
 
-   default value: 313
+   default value: 1073742081
 
 .. py:data:: expyriment.misc.constants.K_NUMLOCK
 
-   default value: 300
+   default value: 1073741907
 
 .. py:data:: expyriment.misc.constants.K_PAGEDOWN
 
-   default value: 281
+   default value: 1073741902
 
 .. py:data:: expyriment.misc.constants.K_PAGEUP
 
-   default value: 280
+   default value: 1073741899
 
 .. py:data:: expyriment.misc.constants.K_PAUSE
 
-   default value: 19
+   default value: 1073741896
 
 .. py:data:: expyriment.misc.constants.K_PERIOD
 
@@ -401,11 +401,11 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_POWER
 
-   default value: 320
+   default value: 1073741926
 
 .. py:data:: expyriment.misc.constants.K_PRINT
 
-   default value: 316
+   default value: 1073741894
 
 .. py:data:: expyriment.misc.constants.K_QUESTION
 
@@ -421,11 +421,11 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_RALT
 
-   default value: 307
+   default value: 1073742054
 
 .. py:data:: expyriment.misc.constants.K_RCTRL
 
-   default value: 305
+   default value: 1073742052
 
 .. py:data:: expyriment.misc.constants.K_RETURN
 
@@ -433,7 +433,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_RIGHT
 
-   default value: 275
+   default value: 1073741903
 
 .. py:data:: expyriment.misc.constants.K_RIGHTBRACKET
 
@@ -445,19 +445,19 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_RMETA
 
-   default value: 309
+   default value: 1073742055
 
 .. py:data:: expyriment.misc.constants.K_RSHIFT
 
-   default value: 303
+   default value: 1073742053
 
 .. py:data:: expyriment.misc.constants.K_RSUPER
 
-   default value: 312
+   default value: 1073742055
 
 .. py:data:: expyriment.misc.constants.K_SCROLLOCK
 
-   default value: 302
+   default value: 1073741895
 
 .. py:data:: expyriment.misc.constants.K_SEMICOLON
 
@@ -473,7 +473,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_SYSREQ
 
-   default value: 317
+   default value: 1073741978
 
 .. py:data:: expyriment.misc.constants.K_TAB
 
@@ -485,7 +485,7 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.K_UP
 
-   default value: 273
+   default value: 1073741906
 
 .. py:data:: expyriment.misc.constants.K_a
 
@@ -593,11 +593,11 @@ Attributes
 
 .. py:data:: expyriment.misc.constants.P_BALANCED_LATIN_SQUARE
 
-   default value: 'balanced-latin-square'
+   default value: 'balanced'
 
 .. py:data:: expyriment.misc.constants.P_CYCLED_LATIN_SQUARE
 
-   default value: 'cycled-latin-square'
+   default value: 'cycled'
 
 .. py:data:: expyriment.misc.constants.P_RANDOM
 

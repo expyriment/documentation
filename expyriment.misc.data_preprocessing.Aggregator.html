@@ -1,95 +1,49 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>expyriment.misc.data_preprocessing.Aggregator &mdash; Expyriment 0.10.0 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.misc.data_preprocessing.Aggregator &mdash; Expyriment  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="expyriment.misc.defaults" href="expyriment.misc.defaults.html" />
     <link rel="prev" title="expyriment.misc.data_preprocessing" href="expyriment.misc.data_preprocessing.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="index.html" class="icon icon-home"> Expyriment
           
-
-          
-            
-            <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
-          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-              <div class="version">
-                0.10
-              </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
@@ -121,77 +75,37 @@
 <li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Expyriment</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="expyriment.html">expyriment</a> &raquo;</li>
-        
-          <li><a href="expyriment.misc.html">expyriment.misc</a> &raquo;</li>
-        
-          <li><a href="expyriment.misc.data_preprocessing.html">expyriment.misc.data_preprocessing</a> &raquo;</li>
-        
-      <li>expyriment.misc.data_preprocessing.Aggregator</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.misc.html">expyriment.misc</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.misc.data_preprocessing.html">expyriment.misc.data_preprocessing</a></li>
+      <li class="breadcrumb-item active">expyriment.misc.data_preprocessing.Aggregator</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="expyriment-misc-data-preprocessing-aggregator">
-<h1>expyriment.misc.data_preprocessing.Aggregator<a class="headerlink" href="#expyriment-misc-data-preprocessing-aggregator" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="expyriment.misc.data_preprocessing.Aggregator">
-<em class="property">class </em><code class="descclassname">expyriment.misc.data_preprocessing.</code><code class="descname">Aggregator</code><span class="sig-paren">(</span><em>data_folder</em>, <em>file_name</em>, <em>suffix='.xpd'</em>, <em>read_variables=None</em>, <em>names_comprise_glob_pattern=False</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator" title="Permalink to this definition">¶</a></dt>
+             
+  <section id="expyriment-misc-data-preprocessing-aggregator">
+<h1>expyriment.misc.data_preprocessing.Aggregator<a class="headerlink" href="#expyriment-misc-data-preprocessing-aggregator" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.misc.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">Aggregator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.xpd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names_comprise_glob_pattern</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a tool to aggregate Expyriment data.</p>
 <p>This class is used to handle the multiple data files of a Experiment
 and process (i.e, aggregate) the data for further analysis</p>
@@ -200,13 +114,13 @@ and process (i.e, aggregate) the data for further analysis</p>
 of independent variables. E.g., data of a numerical magnitude judgement
 experiment. The code below makes a file with mean and median RTs and a
 second file with the errors and the number of trials</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">expyriment.misc</span> <span class="k">import</span> <span class="n">data_preprocessing</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">expyriment.misc</span> <span class="kn">import</span> <span class="n">data_preprocessing</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span> <span class="o">=</span> <span class="n">data_preprocessing</span><span class="o">.</span><span class="n">Aggregator</span><span class="p">(</span><span class="n">data_folder</span><span class="o">=</span> <span class="s2">&quot;./mydata/&quot;</span><span class="p">,</span>
 <span class="gp">&gt;&gt;&gt; </span>                                    <span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;MagnitudeJudgements&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_computed_variables</span><span class="p">([</span><span class="s2">&quot;parity = target_number % 2&quot;</span><span class="p">,</span>
 <span class="gp">&gt;&gt;&gt; </span>                            <span class="s2">&quot;size = target_number &gt; 65&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_independent_variables</span><span class="p">([</span><span class="s2">&quot;hand&quot;</span><span class="p">,</span> <span class="s2">&quot;size&quot;</span> <span class="p">,</span> <span class="s2">&quot;parity&quot;</span><span class="p">])</span>
-<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_exclusions</span><span class="p">([</span><span class="s2">&quot;trial_counter &lt; 0&quot;</span><span class="p">,</span>
 <span class="gp">&gt;&gt;&gt; </span>                    <span class="s2">&quot;error != 0&quot;</span><span class="p">,</span>
 <span class="gp">&gt;&gt;&gt; </span>                    <span class="s2">&quot;RT &lt; 2*std&quot;</span><span class="p">,</span>
@@ -215,21 +129,19 @@ second file with the errors and the number of trials</p>
 <span class="gp">&gt;&gt;&gt; </span>                   <span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_dependent_variables</span><span class="p">([</span><span class="s2">&quot;mean(RT)&quot;</span><span class="p">,</span> <span class="s2">&quot;median(RT)&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;rts.csv&quot;</span><span class="p">)</span>
-<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_exclusions</span><span class="p">([</span><span class="s2">&quot;trial_counter &lt; 0&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">set_dependent_variables</span><span class="p">([</span><span class="s2">&quot;sum(error)&quot;</span><span class="p">,</span> <span class="s2">&quot;n_trials&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;errors.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>data_folder</em>, <em>file_name</em>, <em>suffix='.xpd'</em>, <em>read_variables=None</em>, <em>names_comprise_glob_pattern=False</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.__init__" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.xpd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names_comprise_glob_pattern</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.__init__" title="Link to this definition"></a></dt>
 <dd><p>Create an aggregator.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>data_folder :str</strong></dt><dd><p>folder which contains the data</p>
 </dd>
 <dt><strong>file_name</strong><span class="classifier">str</span></dt><dd><p>name of the files, all files that start with this name will
@@ -245,30 +157,24 @@ with wildcards such as “*” or “?”; the suffix parameter will
 be ignored</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.add_variables">
-<code class="descname">add_variables</code><span class="sig-paren">(</span><em>variable_names</em>, <em>data_columns</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.add_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.add_variables">
+<span class="sig-name descname"><span class="pre">add_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_columns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.add_variables" title="Link to this definition"></a></dt>
 <dd><p>Adds a new variable to the data.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>variable_names</strong><span class="classifier">str</span></dt><dd><p>name of the new variable(s)</p>
 </dd>
 <dt><strong>data_columns</strong><span class="classifier">numpy.array</span></dt><dd><p>the new data columns as numpy array</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>The amount of variables and added columns must match. The added data
 must also match the number of rows. Manually added variables
@@ -276,63 +182,55 @@ will be lost if cases will be excluded afterwards via a call of
 the method <cite>set_exclusions</cite>.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.added_variables">
-<em class="property">property </em><code class="descname">added_variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.added_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.added_variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">added_variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.added_variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for added variables.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.aggregate">
-<code class="descname">aggregate</code><span class="sig-paren">(</span><em>output_file=None</em>, <em>column_subject_id=0</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.aggregate" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.aggregate">
+<span class="sig-name descname"><span class="pre">aggregate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_subject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.aggregate" title="Link to this definition"></a></dt>
 <dd><p>Aggregate the data as defined by the design.</p>
 <p>The design will be printed and the resulting data will be return as
 numpy.array together with the variable names.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>output_file</strong><span class="classifier">str, optional</span></dt><dd><p>name of data output file. If this output_file is defined the
 function write the results as csv data file</p>
 </dd>
 <dt><strong>column_subject_id</strong><span class="classifier">int, optional</span></dt><dd><p>data column containing the subject id (default=0)</p>
 </dd>
 </dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
 <dt><strong>result</strong><span class="classifier">numpy.array</span></dt><dd></dd>
 <dt><strong>new_variable_names</strong><span class="classifier">list of strings</span></dt><dd></dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.computed_variables">
-<em class="property">property </em><code class="descname">computed_variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.computed_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.computed_variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">computed_variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.computed_variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for computed variables.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.concatenated_data">
-<em class="property">property </em><code class="descname">concatenated_data</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.concatenated_data" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.concatenated_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">concatenated_data</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.concatenated_data" title="Link to this definition"></a></dt>
 <dd><p>Getter for concatenated_data.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>data</strong><span class="classifier">numpy.array</span></dt><dd></dd>
 <dt><strong>variables</strong><span class="classifier">list of str</span></dt><dd></dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>Returns all data of all subjects as numpy.array and all variables
 names (including added variables). According to the defined design, the
@@ -343,34 +241,32 @@ defined the concatenated_data will merely return the previous data
 without re-processing.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.data_files">
-<em class="property">property </em><code class="descname">data_files</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.data_files" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.data_files">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_files</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.data_files" title="Link to this definition"></a></dt>
 <dd><p>Getter for data_files.</p>
 <p>The list of the data files considered for the analysis.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.dependent_variables">
-<em class="property">property </em><code class="descname">dependent_variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.dependent_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.dependent_variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dependent_variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.dependent_variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for dependent variables.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.exclusions">
-<em class="property">property </em><code class="descname">exclusions</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.exclusions" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.exclusions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exclusions</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.exclusions" title="Link to this definition"></a></dt>
 <dd><p>Getter for exclusions.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.get_data">
-<code class="descname">get_data</code><span class="sig-paren">(</span><em>filename</em>, <em>recode_variables=True</em>, <em>compute_new_variables=True</em>, <em>exclude_trials=True</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.get_data" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recode_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_new_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_trials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.get_data" title="Link to this definition"></a></dt>
 <dd><p>Read data from from a single Expyriment data file.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>name of the Expyriment data file</p>
 </dd>
 <dt><strong>recode_variables</strong><span class="classifier">bool, optional</span></dt><dd><p>set to False if defined variable recodings should not be applied
@@ -383,9 +279,9 @@ without re-processing.</p>
 (default=True)</p>
 </dd>
 </dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
 <dt><strong>data</strong><span class="classifier">numpy.array</span></dt><dd></dd>
 <dt><strong>var_names</strong><span class="classifier">list</span></dt><dd><p>list of variable names</p>
 </dd>
@@ -394,10 +290,8 @@ without re-processing.</p>
 <dt><strong>comment</strong><span class="classifier">str</span></dt><dd><p>comments in data</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>The function can be only applied on data of aggregator.data_files,
 that is, on the files in the defined data folder that start with
@@ -406,67 +300,57 @@ contains recoded data together with the new computed variables, and the
 subject variables from the headers of the Expyriment data files.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.get_variable_data">
-<code class="descname">get_variable_data</code><span class="sig-paren">(</span><em>variables</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.get_variable_data" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.get_variable_data">
+<span class="sig-name descname"><span class="pre">get_variable_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.get_variable_data" title="Link to this definition"></a></dt>
 <dd><p>Returns the column of data as numpy array.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>variables</strong><span class="classifier">list of str</span></dt><dd><p>names of the variables to be extracted</p>
 </dd>
 </dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
 <dt><strong>data</strong><span class="classifier">numpy.array</span></dt><dd></dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.independent_variables">
-<em class="property">property </em><code class="descname">independent_variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.independent_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.independent_variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">independent_variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.independent_variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for independent_variables.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.print_n_trials">
-<code class="descname">print_n_trials</code><span class="sig-paren">(</span><em>variables</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.print_n_trials" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.print_n_trials">
+<span class="sig-name descname"><span class="pre">print_n_trials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.print_n_trials" title="Link to this definition"></a></dt>
 <dd><p>Print the number of trials in the combinations of the independent
 variables.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>variables</strong><span class="classifier">str or list</span></dt><dd><p>A string or a list of strings that represent the names of one or
 more data variables (aggregator.variables)</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>The functions is for instance useful to quickly check the experimental
 design.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.reset">
-<code class="descname">reset</code><span class="sig-paren">(</span><em>data_folder</em>, <em>file_name</em>, <em>suffix='.xpd'</em>, <em>variables=None</em>, <em>names_comprise_glob_pattern=False</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.reset" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.xpd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names_comprise_glob_pattern</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.reset" title="Link to this definition"></a></dt>
 <dd><p>Reset the aggregator class and clear design.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>data_folder</strong><span class="classifier">str</span></dt><dd><p>folder which contains the data</p>
 </dd>
 <dt><strong>file_name</strong><span class="classifier">str</span></dt><dd><p>name of the files. All files that start with this name
@@ -482,33 +366,27 @@ with wildcards such as “*” or “?”. The suffix parameter will
 be ignored.</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_computed_variables">
-<code class="descname">set_computed_variables</code><span class="sig-paren">(</span><em>compute_syntax</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_computed_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_computed_variables">
+<span class="sig-name descname"><span class="pre">set_computed_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compute_syntax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_computed_variables" title="Link to this definition"></a></dt>
 <dd><p>Set syntax to compute new variables.</p>
 <p>The method defines the variables, which will be computed. It can not
 be applied on variables that have been added manually via
 <cite>add_variables</cite>. The method requires a re-reading of the data files
 and might be therefore time consuming.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>compute_syntax</strong><span class="classifier">str or list</span></dt><dd><p>A string or a list of strings that represent the syntax to
 compute the new variables</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>Compute Syntax:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">new</span><span class="o">-</span><span class="n">variable</span><span class="p">}</span> <span class="o">=</span> <span class="p">{</span><span class="n">variable</span><span class="p">}</span> <span class="p">{</span><span class="n">relation</span><span class="o">/</span><span class="n">operation</span><span class="p">}</span> <span class="p">{</span><span class="n">variable</span><span class="o">/</span><span class="n">value</span><span class="p">}</span>
@@ -521,23 +399,19 @@ compute the new variables</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_dependent_variables">
-<code class="descname">set_dependent_variables</code><span class="sig-paren">(</span><em>dv_syntax</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_dependent_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_dependent_variables">
+<span class="sig-name descname"><span class="pre">set_dependent_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dv_syntax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_dependent_variables" title="Link to this definition"></a></dt>
 <dd><p>Set dependent variables.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>dv_syntax</strong><span class="classifier">str or list</span></dt><dd><p>syntax describing the dependent variable by a function and variable,
 e.g. mean(RT)</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>Syntax:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">function</span><span class="p">}({</span><span class="n">variable</span><span class="p">})</span>
@@ -549,9 +423,9 @@ e.g. mean(RT)</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_exclusions">
-<code class="descname">set_exclusions</code><span class="sig-paren">(</span><em>rule_syntax</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_exclusions" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_exclusions">
+<span class="sig-name descname"><span class="pre">set_exclusions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rule_syntax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_exclusions" title="Link to this definition"></a></dt>
 <dd><p>Set rules to exclude trials from the analysis.</p>
 <p>The method indicates the rows, which are ignored while reading
 the data files. It can therefore not be applied on variables that have
@@ -559,19 +433,15 @@ been added later via <cite>add_variables</cite> and results in a loss of all
 manually added variables. Setting exclusions requires re-reading of
 the data files and might be therefore time consuming. Thus, call this
 method always at the beginning of your analysis script.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>rule_syntax</strong><span class="classifier">str or list</span></dt><dd><p>A string or a list of strings that represent the rules
 to exclude trials</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>Rule syntax:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">variable</span><span class="p">}</span> <span class="p">{</span><span class="n">relation</span><span class="p">}</span> <span class="p">{</span><span class="n">variable</span><span class="o">/</span><span class="n">value</span><span class="p">}</span>
@@ -588,68 +458,56 @@ to exclude trials</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_independent_variables">
-<code class="descname">set_independent_variables</code><span class="sig-paren">(</span><em>variables</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_independent_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_independent_variables">
+<span class="sig-name descname"><span class="pre">set_independent_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_independent_variables" title="Link to this definition"></a></dt>
 <dd><p>Set the independent variables.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>variables</strong><span class="classifier">str or list</span></dt><dd><p>the name(s) of one or more data variables (aggregator.variables)</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_subject_variables">
-<code class="descname">set_subject_variables</code><span class="sig-paren">(</span><em>variables</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_subject_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_subject_variables">
+<span class="sig-name descname"><span class="pre">set_subject_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_subject_variables" title="Link to this definition"></a></dt>
 <dd><p>Set subject variables to be considered for the analysis.</p>
 <p>The method sets the subject variables. Subject variables are between
 subject factors or other variables defines in the subject information
 section (#s) of the Expyriment data file. The method requires a
 re-reading of the data files and might be therefore time consuming.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>variables</strong><span class="classifier">str or list</span></dt><dd><p>A string or a list of strings that represent the subject
 variables</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.set_variable_recoding">
-<code class="descname">set_variable_recoding</code><span class="sig-paren">(</span><em>recoding_syntax</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_variable_recoding" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.set_variable_recoding">
+<span class="sig-name descname"><span class="pre">set_variable_recoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recoding_syntax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.set_variable_recoding" title="Link to this definition"></a></dt>
 <dd><p>Set syntax to recode variables.</p>
 <p>The method defines the variables, which will recoded.  It can not
 be applied on variables that have been added later via
 <cite>add_variables</cite>. Recoding variables requires re-reading of the data
 files and might be therefore time consuming.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>rule_syntax</strong><span class="classifier">str or list</span></dt><dd><p>A string or a list of strings that represent the variable
 recoding syntax</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Notes</p>
 <p>Recoding syntax:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">variable</span><span class="p">}:</span> <span class="p">{</span><span class="n">old_value1</span><span class="p">}</span> <span class="o">=</span> <span class="p">{</span><span class="n">new_value1</span><span class="p">},</span> <span class="p">{</span><span class="n">old_value2</span><span class="p">}</span> <span class="o">=</span> <span class="p">{</span><span class="n">new_value2</span><span class="p">},</span><span class="o">...</span>
@@ -657,97 +515,75 @@ recoding syntax</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.subject_variables">
-<em class="property">property </em><code class="descname">subject_variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.subject_variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.subject_variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subject_variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.subject_variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for subject variable.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.variable_recodings">
-<em class="property">property </em><code class="descname">variable_recodings</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.variable_recodings" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.variable_recodings">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">variable_recodings</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.variable_recodings" title="Link to this definition"></a></dt>
 <dd><p>Getter for variable recodings.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.variables">
-<em class="property">property </em><code class="descname">variables</code><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.variables" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">variables</span></span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.variables" title="Link to this definition"></a></dt>
 <dd><p>Getter for variables.</p>
 <p>The specified variables including the new computer variables and
 between subject variables and added variables.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="expyriment.misc.data_preprocessing.Aggregator.write_concatenated_data">
-<code class="descname">write_concatenated_data</code><span class="sig-paren">(</span><em>output_file</em>, <em>delimiter='</em>, <em>'</em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.write_concatenated_data" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.misc.data_preprocessing.Aggregator.write_concatenated_data">
+<span class="sig-name descname"><span class="pre">write_concatenated_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delimiter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">','</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.data_preprocessing.Aggregator.write_concatenated_data" title="Link to this definition"></a></dt>
 <dd><p>Concatenates data and writes it to a csv file.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>output_file</strong><span class="classifier">str</span></dt><dd><p>name of data output file</p>
 </dd>
 <dt><strong>delimiter</strong><span class="classifier">str</span></dt><dd><p>delimiter character (default=”,”)</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="expyriment.misc.defaults.html" class="btn btn-neutral float-right" title="expyriment.misc.defaults" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="expyriment.misc.data_preprocessing.html" class="btn btn-neutral float-left" title="expyriment.misc.data_preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.misc.data_preprocessing.html" class="btn btn-neutral float-left" title="expyriment.misc.data_preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.misc.defaults.html" class="btn btn-neutral float-right" title="expyriment.misc.defaults" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, Florian Krause &amp; Oliver Lindemann
-
-    </p>
+    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

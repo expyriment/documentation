@@ -35,6 +35,7 @@ Functions
 .. autofunction:: expyriment.misc.create_colours
 .. autofunction:: expyriment.misc.download_from_stash
 .. autofunction:: expyriment.misc.find_font
+.. autofunction:: expyriment.misc.get_display_info
 .. autofunction:: expyriment.misc.get_experiment_secure_hash
 .. autofunction:: expyriment.misc.get_module_hash_dictionary
 .. autofunction:: expyriment.misc.get_monitor_resolution
@@ -47,7 +48,8 @@ Functions
 .. autofunction:: expyriment.misc.list_fonts
 .. autofunction:: expyriment.misc.module_hashes_as_string
 .. autofunction:: expyriment.misc.numpad_digit_code2ascii
-.. autofunction:: expyriment.misc.py2py3_sort_array
+.. autofunction:: expyriment.misc.round
+.. autofunction:: expyriment.misc.string_sort_array
 .. autofunction:: expyriment.misc.unicode2byte
 .. autofunction:: expyriment.misc.which
 
