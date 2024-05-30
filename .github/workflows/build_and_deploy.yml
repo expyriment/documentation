@@ -5,35 +5,31 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ contains(github.event.head_commit.message, '[build') }}
     steps:
-      - name: Checkout expyriment
-        run: |
-          git clone https://github.com/expyriment/expyriment
-      - name: Checkout documentation
-        run: |
-          cd expyriment
-          echo "$PWD"
-          git clone https://github.com/expyriment/documentation
-      #- name: Checkout
-      #  uses: actions/checkout@v4
-      #  with:
-      #    repository: expyriment/expyriment
-      #    path: expyriment
-      #- name: Checkout
-      #  uses: actions/checkout@v4
+      #- name: Checkout expyriment
+      #  run: |
+      #    git clone https://github.com/expyriment/expyriment
+      #- name: Checkout documentation
+      #  run: |
+      #    cd expyriment
+      #    echo "$PWD"
+      #    git clone https://github.com/expyriment/documentation
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: expyriment/expyriment
+          path: expyriment
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Install dependencies
         run: |
           python -m pip install -U pip wheel
-          python -m pip install sphinx numpydoc sphinx-rtd-theme
-      - name: Install expyriment
-        run: | # change back to normal install after testing
-          echo "nothing"
-          # python -m pip install expyriment
-          #python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --pre expyriment
       - name: Build
         run: |
           echo "$PWD"
+          sudo apt-get install -y tree
+          tree -d
           cd expyriment/documentation/sphinx
           make html
           #python create_rst_api_reference.py
