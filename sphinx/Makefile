@@ -45,8 +45,7 @@ rst:
 
 venv:
 	python -m venv venv
-	venv/bin/pip install -r requirements.txt
-	venv/bin/flit -f ../../pyproject.toml install
+	venv/bin/pip install ../../
 
 expyriment.rst: venv
 	$(PYTHON) create_rst_api_reference.py
