@@ -5,15 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ contains(github.event.head_commit.message, '[build') }}
     steps:
-      #- name: Checkout expyriment
-      #  run: |
-      #    git clone https://github.com/expyriment/expyriment
-      #- name: Checkout documentation
-      #  run: |
-      #    cd expyriment
-      #    echo "$PWD"
-      #    git clone https://github.com/expyriment/documentation
-      
       - name: Checkout Documentation
         uses: actions/checkout@v4
         with:
@@ -38,13 +29,15 @@ jobs:
           python -m pip install -U pip wheel
       - name: Build
         run: |
-          cd documentation/sphinx
+          echo "$PWD"
+          cd documentation/documentation/sphinx
+          echo "$PWD"
           make html EXPYRIMENT_PATH=../expyriment
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages-test  # change back to gh-pages after testing
-          folder: documentation/sphinx/_build/html/
+          folder: documentation/documentation/sphinx/_build/html/
           target-folder: ./
           clean-exclude: |
             old/
