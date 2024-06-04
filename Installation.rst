@@ -10,7 +10,7 @@ Dependencies
 Expyriment depends on the following Python packages:
 
 * Pygame_ (>=2.5.2,<3)
-* PyOpenGL_ (>=3)
+* PyOpenGL_ (>=3, <4)
 
 Additional Python packages, which are optional and only required for some features of 
 Expyriment are:
