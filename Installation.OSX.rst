@@ -88,6 +88,14 @@ Notes
     We therefore strongly suggest to run Expyriment programmes from the command 
     line when testing participants.
 
+**MacOS does not report accurate visual presentation times**
+
+    After the necessary switch to Pygame2 that happened with Expyriment 0.11.0, MacOS does not
+    seem to be reporting accurate visual presentation times. MacOS has a compositor running which
+    cannot be turned off. In theory, fullscreen programmes should be able to bypass it automatically,
+    however, this does not seem to be the case in our experience.
+    While Expyriment on MacOS will work perfecly fine for designing and implementing your experiments,
+    we do not recommend to use MacOS to run an actual experiment (i.e. test participants)!
 
 .. _Python 3.12.1: https://www.python.org/ftp/python/3.12.1/python-3.12.1-macos11.pkg
 .. _ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-5.1.zip
