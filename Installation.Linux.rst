@@ -40,4 +40,15 @@ Notes
     presentation it is important to switch off desktop effects in your window
     manager!
 
+**Switch off Triple-Buffering, when running an experiment**
+
+    On some machines (e.g. with Intel video cards), triple-buffering is switched
+    on by default. For proper timing, this needs to be set off in the Xorg config::
+
+     Option      "TearFree"        "false"
+     Option      "TripleBuffer"    "false"
+
+    For Nvidia, this can often be set in the Nvidia setting tool, rather than in
+    the Xorg configuration file.
+
 .. _`release page`: http://github.com/expyriment/expyriment/releases/latest
