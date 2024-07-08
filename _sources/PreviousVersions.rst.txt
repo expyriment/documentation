@@ -8,3 +8,4 @@ Online documentation of previous Expyriment versions is available for:
 - `Expyriment 0.7.0 <http://docs.expyriment.org/0.7.0>`_
 - `Expyriment 0.8.0 <http://docs.expyriment.org/0.8.0>`_
 - `Expyriment 0.9.0 <http://docs.expyriment.org/0.9.0>`_
+- `Expyriment 0.10.0 <http://docs.expyriment.org/0.10.0>`_

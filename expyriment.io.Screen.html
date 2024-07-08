@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.io.Screen &mdash; Expyriment 0.11.dev1 documentation</title>
+  <title>expyriment.io.Screen &mdash; Expyriment 0.11.dev2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
@@ -17,7 +17,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=10ab73f2"></script>
+        <script src="_static/documentation_options.js?v=2753f998"></script>
         <script src="_static/doctools.js?v=9a2dae69"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -40,7 +40,7 @@
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                0.11.dev1
+                0.11.dev2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -116,7 +116,7 @@
 <h1>expyriment.io.Screen<a class="headerlink" href="#expyriment-io-screen" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.io.Screen">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">Screen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_gl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">Screen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opengl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a screen output.</p>
 <p>Each experiment and all stimuli need a screen instance to function.
 They are expecting this screen instance to be referenced in
@@ -126,14 +126,14 @@ a screen instance and will additionally reference it in exp.screen for
 easy access.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.Screen.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_gl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.__init__" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opengl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.__init__" title="Link to this definition"></a></dt>
 <dd><p>Create and set up a screen output.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>colour</strong><span class="classifier">(int, int, int)</span></dt><dd><p>colour of the screen</p>
 </dd>
-<dt><strong>open_gl</strong><span class="classifier">int or bool</span></dt><dd><p>0/False - No OpenGL (no vsync / no blocking)
+<dt><strong>opengl</strong><span class="classifier">int or bool</span></dt><dd><p>0/False - No OpenGL (no vsync / no blocking)
 1       - OpenGL (vsync / no blocking)
 2/True  - OpenGL (vsync / blocking)</p>
 </dd>
@@ -219,9 +219,9 @@ Please use always the screen of your current experiment.</p>
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="expyriment.io.Screen.open_gl">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open_gl</span></span><a class="headerlink" href="#expyriment.io.Screen.open_gl" title="Link to this definition"></a></dt>
-<dd><p>Getter for open_gl.</p>
+<dt class="sig sig-object py" id="expyriment.io.Screen.opengl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">opengl</span></span><a class="headerlink" href="#expyriment.io.Screen.opengl" title="Link to this definition"></a></dt>
+<dd><p>Getter for opengl.</p>
 </dd></dl>
 
 <dl class="py method">

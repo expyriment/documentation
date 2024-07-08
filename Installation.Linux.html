@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Platform-specific instructions: Linux &mdash; Expyriment 0.11.dev1 documentation</title>
+  <title>Platform-specific instructions: Linux &mdash; Expyriment 0.11.dev2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
@@ -17,7 +17,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=10ab73f2"></script>
+        <script src="_static/documentation_options.js?v=2753f998"></script>
         <script src="_static/doctools.js?v=9a2dae69"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -40,7 +40,7 @@
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                0.11.dev1
+                0.11.dev2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -138,6 +138,17 @@
 3D desktop effects. To get accurate timing of the visual stimulus
 presentation it is important to switch off desktop effects in your window
 manager!</p>
+</div></blockquote>
+<p><strong>Switch off Triple-Buffering, when running an experiment</strong></p>
+<blockquote>
+<div><p>On some machines (e.g. with Intel video cards), triple-buffering is switched
+on by default. For proper timing, this needs to be set off in the Xorg config:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Option</span>      <span class="s2">&quot;TearFree&quot;</span>        <span class="s2">&quot;false&quot;</span>
+<span class="n">Option</span>      <span class="s2">&quot;TripleBuffer&quot;</span>    <span class="s2">&quot;false&quot;</span>
+</pre></div>
+</div>
+<p>For Nvidia, this can often be set in the Nvidia setting tool, rather than in
+the Xorg configuration file.</p>
 </div></blockquote>
 </section>
 </section>

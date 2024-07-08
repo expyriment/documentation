@@ -57,7 +57,7 @@ Attributes
 
    default value: 10
 
-.. py:data:: expyriment.control.defaults.open_gl
+.. py:data:: expyriment.control.defaults.opengl
 
    default value: 2
 
