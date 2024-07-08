@@ -8,3 +8,4 @@ Used to build online documentation via CI at http://docs.expyriment.org.
   ```make html EXPYRIMENT_PATH=<path-to-expyriment-source>```  
   where `<path-to-expyriment-source>` is a (relative or absolute) path to the cloned expyriment source from step 2
 4. Find the built html files in the directory __build/html_
+
