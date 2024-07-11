@@ -97,5 +97,12 @@ Notes
     While Expyriment on MacOS will work perfecly fine for designing and implementing your experiments,
     we do not recommend to use MacOS to run an actual experiment (i.e. test participants)!
 
+**Expyriment will return a scaled screen in window mode**
+
+    MacOS currently does not seem to allow non-scaled (HiDPI) PyGame windows. This means that when in
+    window mode, the Expyriment screen will be in scaled coordinates, and not in pixel coordinates of
+    the monitor. To get a proper non-scaled screen, display scaling has to be switched off in system
+    settings.
+
 .. _Python 3.12.1: https://www.python.org/ftp/python/3.12.3/python-3.12.3-macos11.pkg
 .. _ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-5.1.zip
