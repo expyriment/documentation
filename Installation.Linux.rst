@@ -51,4 +51,12 @@ Notes
     For Nvidia, this can often be set in the Nvidia setting tool, rather than in
     the Xorg configuration file.
 
+**Expyriment might return a scaled screen under Wayland**
+
+    When using Wayland instead of X11, Expyriment might return a scaled screen.
+    This depends on the Wayland implementation, and how it handles XWayland applications.
+    Often this can also be changed explicitely by the user. For instance, under KDE Plasma,
+    there is a global setting in the display settings which will make Expyriment return an
+    unscaled screen ("Legacy Applications (X11)" --> "Apply Scaling Themselves").
+    
 .. _`release page`: http://github.com/expyriment/expyriment/releases/latest
