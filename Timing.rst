@@ -72,13 +72,13 @@ externally, they should at least be stable across different visual stimulus
 presentations and should hence not introduce any differences between
 experimental conditions.*
 
-*When using high-DPI displays, Expyriment will attempt to use the full native
-resulution for fullscreen mode with OpenGL (if the nativive resolution is not
-guessed correctly, it can be manually overwritten by setting 
-``control.defaults.display_resolution``. In all other cases (i.e. no OpenGL
-and/or window mode) Expyriment might return a screen with a scaled resolution,
-according to the operating system's scaling settings. To get a non-scaled
-screen in these cases, scaling has to be deactivated on the operating system
+*When using display scaling (for HiDPI/retina monitors for instance) Expyriment
+will attempt to return an unscaled screen. In fullscreen mode this means the native
+pixel resulution of the actual monitor (if the native resolution is not guessed
+correctly, it can be manually overwritten by setting 
+``control.defaults.display_resolution``. In some cases, however, Expyriment might
+return a screen which is scaled according to the operating system's scaling settings.
+To get a non-scaled screen in these cases, scaling has to be deactivated on the operating system
 level.*
 
 
