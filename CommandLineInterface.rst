@@ -11,14 +11,21 @@ Usage
 
 ::
     
-    expyriment [-h] [-0] [-1] [-2] [-3] [-a] [-d] [-f] [-i] [-t] [-w]
-               [--display INDEX] [--display-resolution WIDTHxHEIGHT]
-               [--opengl MODE] [--window-size WIDTHxHEIGHT] [-A] [-B] [-C] [-D]
-               [-I] [-J] [-S] [-T] [SCRIPT]
-
+    usage: cli.py [-h] [-0] [-1] [-2] [-3] [-a] [-d] [-f] [-i] [-t] [-w]
+                  [--display INDEX] [--display-resolution WIDTHxHEIGHT]
+                  [--opengl MODE] [--text-size SIZE] [--window-size WIDTHxHEIGHT]
+                  [-A] [-B] [-C] [-D] [-I] [-J] [-S] [-T]
+                  [SCRIPT]
+    
+    The Expyriment command line interface provides a convenient way to run
+    experiment scripts and apply default settings, as well as access to a
+    selection of other common functionality. Note: non-capitalized letter
+    arguments are (chainable) options, capitalized letter arguments run single
+    commands
+    
     positional arguments:
       SCRIPT                the experiment script to be executed
-
+    
     options:
       -h, --help            show this help message and exit
       -0, -g, --no-opengl   DEPRECATED: no OpenGL (no vsync / no blocking)
@@ -39,8 +46,9 @@ Usage
       --display-resolution WIDTHxHEIGHT
                             set the display resolution (only in fullscreen mode)
       --opengl MODE         set the OpenGL mode: 0 = No OpenGL (no vsync / no
-                            blocking), 1 = OpenGL (vsync / no blocking), 2 = OpenGL
-                            (vsync / blocking)
+                            blocking), 1 = OpenGL (vsync / no blocking), 2 =
+                            OpenGL (vsync / blocking)
+      --text-size SIZE      set the default text size
       --window-size WIDTHxHEIGHT
                             set the window size (only in window mode)
       -A, --Api             start the API reference tool
