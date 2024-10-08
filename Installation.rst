@@ -15,7 +15,7 @@ Expyriment depends on the following Python packages:
 Additional Python packages, which are optional and only required for some features of 
 Expyriment are:
 
-* NumPy_ (>=1.6,<2) (to use data preprocessing)
+* NumPy_ (>=1.6,<3) (to use data preprocessing)
 * mediadecoder_ (>=0.1,<1) (to use enhanced video playback with support for various formats)
 * sounddevice_ (>=0.3,<1) (to use enhanced video playback with support for various formats with audio)
 * PySerial_ (>=3.0,<4) (to use serial port communication)
@@ -67,11 +67,11 @@ Expyriment here:
 
 .. _`Python`: https://www.python.org/
 .. _Pygame: https://www.pygame.org/
-.. _PyOpenGl: http://www.pyopengl.sourceforge.net
+.. _PyOpenGl: https://pyopengl.sourceforge.net/
 .. _sounddevice: https://python-sounddevice.readthedocs.io
 .. _mediadecoder: https://dschreij.github.io/projects/python-mediadecoder
-.. _PyParallel: http://pyserial.sourceforge.net
-.. _PySerial: http://pyserial.sourceforge.net/pyparallel.html
+.. _PyParallel: https://github.com/pyserial/pyparallel
+.. _PySerial: https://github.com/pyserial/pyserial
 .. _Numpy: https://numpy.org/
 .. _Requests: https://requests.readthedocs.io/
 .. _`release page`: https://github.com/expyriment/expyriment/releases
