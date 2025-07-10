@@ -10,15 +10,17 @@ alternative method.
 Default installation (online)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Install `Python 3.13.0`_ (during installation, also select "Install launcher [...]"!)
+1. Install `Python 3.13.5`_ (during installation, also select "Install launcher [...]"!)
 
-2. In a command prompt, run::
+2. Optional, but highly recommended: `Create (and activate) virtual environment`_
+
+3. In a command prompt, run::
 
     py -3 -m pip install -U expyriment[all]
     
    (Omit ``[all]`` to install without additional optional features)
 
-3. To use parallel port communication, install inpout32_ or dlportio_
+4. To use parallel port communication, install inpout32_ or dlportio_
    (according to the instructions given at each link)
 
 
@@ -29,7 +31,7 @@ Alternative installation (offline)
 
 1. On the Desktop, create a directory called ``Expyriment_Installation``
 
-2. Download `Python 3.13.0`_ to ``Expyriment_Installation``
+2. Download `Python 3.13.5`_ to ``Expyriment_Installation``
 
 3. In a command prompt, run::
 
@@ -49,19 +51,21 @@ Alternative installation (offline)
 
 1. Copy the directory ``Expyriment_Installation`` from the portable storage device to the Desktop
 
-2. Install ``Expyriment_Installation\python-3.13.0-amd64.exe``
+2. Install ``Expyriment_Installation\python-3.13.5-amd64.exe``
 
-3. In a command prompt, run::
+3. Optional, but highly recommended: `Create (and activate) virtual environment`_
+
+4. In a command prompt, run::
 
     py -3 -m pip install --no-index --find-links %userprofile%/Desktop/Expyriment_Installation --upgrade expyriment[all]
 
    (Omit ``[all]`` to install without additional optional features)
    
-4. To use enhanced video playback, unzip ``Expyriment_Installation\ffmpeg-latest-win32-static.zip`` and copy the
+5. To use enhanced video playback, unzip ``Expyriment_Installation\ffmpeg-latest-win32-static.zip`` and copy the
    file ``bin\ffmpeg.exe`` to a directory on the local hard drive (e.g. ``C:\ffmpeg\bin\``) and
    `add it to the environment variable PATH`_!)
 
-5. To use parallel port communication, install inpout32_ or dlportio_
+6. To use parallel port communication, install inpout32_ or dlportio_
    (according to the instructions given at each link)
 
 
@@ -78,9 +82,10 @@ Notes
     We therefore strongly suggest to run Expyriment programmes from the command 
     line when testing participants.
 
-.. _`Python 3.13.0`: https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
+.. _`Python 3.13.5`: https://www.python.org/ftp/python/3.13.5/python-3.13.5-amd64.exe
 .. _inpout32: https://www.highrez.co.uk/Downloads/InpOut32/
 .. _dlportio: https://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/
 .. _ffmpeg: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 .. _`add it to the environment variable PATH`: https://www.computerhope.com/issues/ch000549.htm
 .. _`release page`: https://github.com/expyriment/expyriment/releases/
+.. _Create (and activate) virtual environment: https://docs.python.org/3/tutorial/venv.html
