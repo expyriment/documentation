@@ -45,6 +45,7 @@ After installation you can use Expyriment like any other Python package.
 
     py -m pip install -U expyriment
 
+   (Add the option ``--user`` after ``install`` when not using a virtual environment)
 
 Offline
 -------
@@ -81,6 +82,7 @@ After installation your can use Expyriment like any other Python package.
 
     py -m pip install --no-index --find-links %userprofile%/Desktop/Expyriment_Installation --upgrade expyriment
 
+   (Add the option ``--user`` after ``install`` when not using a virtual environment)
 
 
 Notes
@@ -105,7 +107,4 @@ Notes
 .. _`pipx`: https://pipx.pypa.io
 .. _inpout32: https://www.highrez.co.uk/Downloads/InpOut32/
 .. _dlportio: https://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/
-.. _ffmpeg: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-.. _`add it to the environment variable PATH`: https://www.computerhope.com/issues/ch000549.htm
-.. _`release page`: https://github.com/expyriment/expyriment/releases/
 .. _Create (and activate) virtual environment: https://docs.python.org/3/tutorial/venv.html
