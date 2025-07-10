@@ -15,13 +15,16 @@ not alter the Python environment provided by Apple.
 Default installation (online)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Install `Python 3.13.0`_
+1. Install `Python 3.13.5`_
 
-2. In a terminal, run::
+2. Optional, but highly recommended: `Create (and activate) virtual environment`_
 
-    sudo python3 -m pip install -U expyriment[all]
+3. In a terminal, run::
+
+    python3 -m pip install -U expyriment[all]
    
-   (Omit ``[all]`` to install without additional optional features)
+   (Omit ``[all]`` to install without additional optional features;
+   prepend ``sudo`` to the command when not using a virtual environment)
 
     
 Alternative installation (offline)
@@ -31,7 +34,7 @@ Alternative installation (offline)
 
 1. On the Desktop, create a directory called ``Expyriment_Installation``
 
-2. Download `Python 3.13.0`_ to  ``Expyriment_Installation``
+2. Download `Python 3.13.5`_ to  ``Expyriment_Installation``
 
 3. In a terminal, run::
 
@@ -48,15 +51,18 @@ Alternative installation (offline)
 
 1. Copy the directory ``Expyriment_Installation`` from the portable storage device to the Desktop
 
-2. Install ``Expyriment_Installation/python-3.13.0-macos11.pkg``
+2. Install ``Expyriment_Installation/python-3.13.5-macos11.pkg``
 
-3. In a command prompt, run::
+3. Optional, but highly recommended: `Create (and activate) virtual environment`_
 
-    sudo python3 -m pip install --no-index --find-links ~/Desktop/Expyriment_Installation -U expyriment[all]
+4. In a command prompt, run::
+
+    python3 -m pip install --no-index --find-links ~/Desktop/Expyriment_Installation -U expyriment[all]
     
-   (Omit ``[all]`` to install without additional optional features)
+   (Omit ``[all]`` to install without additional optional features;
+   prepend ``sudo`` to the command when not using a virtual environment)
 
-6. To use enhanced video playback, run::
+5. To use enhanced video playback, run::
 
     mkdir -p ~/.local/bin
     cd ~/Desktop/Expyriment_Installation
@@ -104,5 +110,6 @@ Notes
     the monitor. To get a proper non-scaled screen, display scaling has to be switched off in system
     settings.
 
-.. _Python 3.13.0: https://www.python.org/ftp/python/3.13.0/python-3.13.0-macos11.pkg
+.. _Python 3.13.5: https://www.python.org/ftp/python/3.13.5/python-3.13.5-macos11.pkg
 .. _ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-5.1.zip
+.. _Create (and activate) virtual environment: https://docs.python.org/3/tutorial/venv.html
