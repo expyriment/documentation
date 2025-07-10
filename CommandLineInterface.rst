@@ -3,25 +3,24 @@ Command line interface
 
 The Expyriment command line interface provides a convenient way to run
 experiment scripts and apply default settings, as well as access to a selection
-of other common functionality. Note: non-capitalized letter arguments are
-(chainable) options, capitalized letter arguments run single commands.
+of other common functionality through the ``expyriment`` command.
+
+Note
+----
+Non-capitalized letter arguments are (chainable) options, capitalized
+letter arguments run single commands.
 
 Usage
 -----
 
 ::
     
-    usage: cli.py [-h] [-0] [-1] [-2] [-3] [-a] [-d] [-f] [-i] [-t] [-w]
-                  [--display INDEX] [--display-resolution WIDTHxHEIGHT]
-                  [--opengl MODE] [--text-size SIZE] [--window-size WIDTHxHEIGHT]
-                  [-A] [-B] [-C] [-D] [-I] [-J] [-S] [-T]
-                  [SCRIPT]
-    
-    The Expyriment command line interface provides a convenient way to run
-    experiment scripts and apply default settings, as well as access to a
-    selection of other common functionality. Note: non-capitalized letter
-    arguments are (chainable) options, capitalized letter arguments run single
-    commands
+    expyriment [-h] [-0] [-1] [-2] [-3] [-a] [-d] [-f] [-i] [-t] [-w]
+               [--display INDEX] [--display-resolution WIDTHxHEIGHT]
+               [--opengl MODE] [--text-size SIZE] [--window-size WIDTHxHEIGHT]
+               [-A] [-B] [-C] [-D] [-I] [-J] [-S] [-T]
+               [SCRIPT]
+
     
     positional arguments:
       SCRIPT                the experiment script to be executed
