@@ -26,13 +26,13 @@ Expyriment (and its dependencies) can be installed with:
 
 ::
 
-    pip install expyriment
+    pipx install expyriment
 
 or
 
 ::
     
-    pipx install expyriment
+    pip install expyriment
 
 
 Platform-specific instructions
