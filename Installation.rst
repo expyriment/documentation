@@ -19,10 +19,10 @@ Expyriment depends on the following Python packages:
 Please be aware that Expyriment plugins (extras) might have further dependencies.
 
 
-Installing with pip or pipx
----------------------------
+Installing Expyriment
+---------------------
 
-Expyriment (and its dependencies) can be installed with
+Expyriment (and its dependencies) can be installed with:
 
 ::
 
