@@ -57,6 +57,11 @@ After installation you can use Expyriment like any other Python package.
 Offline
 -------
 
+If you don't have an internet connection on the computer you want to install Expyriment on,
+you can download the necessary packages on a different computer that has, and then transfer
+them to the target computer and install them there.
+After installation your can use Expyriment like any other Python package.
+
 **On an computer with internet connection (same OS, architecture and Python version!)**
 
 1. On the Desktop, create a directory called ``Expyriment_Installation``
