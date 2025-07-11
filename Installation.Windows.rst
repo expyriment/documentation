@@ -3,7 +3,7 @@ Platform-specific instructions: Windows
 
 There are multiple ways to install Expyriment. The recommended methods
 require an active internet connection. If you need to install Expyriment on
-a computer that has no internet connection (like lab PCs), please use the
+a computer that has no internet connection (like lab computers), please use the
 offline method.
 
 
@@ -19,16 +19,17 @@ After installation you can use Expyriment through the :doc:`CommandLineInterface
 
 1. Install `Python 3.13.5`_ (during installation, also select "Install launcher [...]"!)
 
-2. To install pipx, in a command prompt, run::
+2. To install pipx, run in a terminal:
+   ::
 
-    py -m pip install --user pipx
-    pipx ensurepath
+       py -m pip install --user pipx
 
-3. To install Expyriment, in a command prompt, run::
+3. To install Expyriment, run in a terminal:
+   ::
 
-    pipx install -U expyriment
+       pipx install expyriment
+       pipx ensurepath
 
-   (Replace 'install' with 'run' to run Expyriment once without installing it)
 
 Using pip
 ~~~~~~~~~
@@ -39,50 +40,57 @@ After installation you can use Expyriment like any other Python package.
 
 1. Install `Python 3.13.5`_ (during installation, also select "Install launcher [...]"!)
 
-2. Optional, but highly recommended: `Create (and activate) virtual environment`_
+2. To create (and activate) a `virtual environment`_, run in a terminal:
+   ::
 
-3. In a command prompt, run::
+       py -m venv xpy-env
+       xpy-env\Scripts\activate
 
-    py -m pip install -U expyriment
+3. To install Expyriment, run in a terminal:
+   ::
 
-   (Add the option ``--user`` after ``install`` when not using a virtual environment)
+       pip install -U pip
+       pip install expyriment
+
 
 Offline
 -------
 
-Using pip
-~~~~~~~~~
 If you don't have an internet connection on the computer you want to install Expyriment on,
 you can download the necessary packages on a different computer that has, and then transfer
 them to the target computer and install them there.
 After installation your can use Expyriment like any other Python package.
 
-**On an PC with internet connection (same OS, architecture and Python version!)**
+**On an computer with internet connection (same OS, architecture and Python version!)**
 
 1. On the Desktop, create a directory called ``Expyriment_Installation``
 
 2. Download `Python 3.13.5`_ to ``Expyriment_Installation``
 
-3. In a command prompt, run::
+3. To download Expyriment and dependencies into ``Expyriment_Installation``, run in a terminal:
+   ::
 
-    py -m pip download -d %userprofile%/Desktop/Expyriment_Installation expyriment
+       py -m pip download -d %userprofile%\Desktop\Expyriment_Installation expyriment
 
 4. Copy the directory ``Expyriment_Installation`` from the Desktop to a portable storage device
 
 
-**On the target PC**
+**On the target computer**
 
 1. Copy the directory ``Expyriment_Installation`` from the portable storage device to the Desktop
 
 2. Install ``Expyriment_Installation\python-3.13.5-amd64.exe``
 
-3. Optional, but highly recommended: `Create (and activate) virtual environment`_
+3. To create (and activate) a `virtual environment`_, run in a terminal:
+   ::
 
-4. In a command prompt, run::
+       py -m venv xpy-env
+       xpy-env\Scripts\activate
 
-    py -m pip install --no-index --find-links %userprofile%/Desktop/Expyriment_Installation --upgrade expyriment
+4. To install Expyriment, run in a terminal:
+   ::
 
-   (Add the option ``--user`` after ``install`` when not using a virtual environment)
+       pip install --no-index --find-links %userprofile%\Desktop\Expyriment_Installation expyriment
 
 
 Notes
@@ -107,4 +115,4 @@ Notes
 .. _`pipx`: https://pipx.pypa.io
 .. _inpout32: https://www.highrez.co.uk/Downloads/InpOut32/
 .. _dlportio: https://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/
-.. _Create (and activate) virtual environment: https://docs.python.org/3/tutorial/venv.html
+.. _`virtual environment`: https://docs.python.org/3/tutorial/venv.html
