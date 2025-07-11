@@ -47,7 +47,7 @@ Expyriment here:
 
    Windows <Installation.Windows>
    Linux <Installation.Linux>
-   Mac OS X <Installation.macOS>
+   macOS <Installation.macOS>
    Android <Installation.Android>
 
 
