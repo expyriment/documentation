@@ -1,7 +1,7 @@
 Installation
 ============
 
-Expyriment works with `Python`_ 3 (>=3.9).
+Expyriment works with `Python`_ 3 (>=3.10).
 
 
 Dependencies
