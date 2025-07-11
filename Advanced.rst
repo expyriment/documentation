@@ -6,7 +6,7 @@ Advanced
     :maxdepth: 2
 
     API reference tool <APIReferenceTool>
-    Test suite <Testsuite>
+    Test suite <TestSuite>
     Command line interface <CommandLineInterface>
     Data preprocessing and exporting <DataPreprocessing>
     Using non-English characters <Unicode>
