@@ -86,6 +86,7 @@ for lazy-loading, so be sure to document it properly:
             def some_static_method(**args):
                """Static method docstring."""
 
+               from ._myextraplugin import MyExtraPlugin
                return MyExtraPlugin.some_static_method(**args)
 
 For design and misc extras this is all there is, but for io and stimuli plugins,
