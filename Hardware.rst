@@ -7,10 +7,10 @@ While Expyriment will run on all video cards, not all configurations seem
 to support accurate reports of stimulus presentation times when using the
 (default) OpenGL mode with blocking (``control.defaults.opengl=2``; see
 also notes below).
-We generally have good experiences with NVIDIA cards.  OpenGL mode should
-work with all drivers that use an OpenGL specification >=  2.0.  Drivers
-implementing an older OpenGL specification (>= 1.4) should work  when the
-'GL_ARB_texture_non_power_of_two' extension is present.
+We generally have good experiences with NVIDIA cards.
+OpenGL mode should work with all drivers that use an OpenGL specification
+>=  2.0.  Drivers implementing an older OpenGL specification (>= 1.4)
+should work  when the 'GL_ARB_texture_non_power_of_two' extension is present.
 
 Working configurations (with accurate timing reports)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
