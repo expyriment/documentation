@@ -111,7 +111,7 @@ Attributes
 
 .. py:data:: expyriment.stimuli.defaults.tempdir
 
-   default value: '/tmp/expyriment_v8qz9zyu'
+   default value: '/tmp/expyriment_kbh2qamy'
 
 .. py:data:: expyriment.stimuli.defaults.textbox_background_colour
 
@@ -265,13 +265,17 @@ Attributes
 
    default value: 44100
 
-.. py:data:: expyriment.stimuli.defaults.video_backend
+.. py:data:: expyriment.stimuli.defaults.video_audio_backend
 
-   default value: 'mediadecoder'
+   default value: 'pygame'
 
 .. py:data:: expyriment.stimuli.defaults.video_position
 
    default value: [0, 0]
+
+.. py:data:: expyriment.stimuli.defaults.video_resizing
+
+   default value: (None, None)
 
 .. py:data:: expyriment.stimuli.defaults.visual_position
 

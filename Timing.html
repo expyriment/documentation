@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timing and empirical testing of Expyriment &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>Timing and empirical testing of Expyriment &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -55,7 +50,7 @@
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced.html">Advanced</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="APIReferenceTool.html">API reference tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Testsuite.html">Test suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TestSuite.html">Test suite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CommandLineInterface.html">Command line interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataPreprocessing.html">Data preprocessing and exporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Unicode.html">Using non-English characters</a></li>
@@ -103,7 +98,7 @@
 <p>In general, the Expyriment clock can feature up to 1 ms accuracy. The exact
 timing, however, is subject to various factors, which we discuss here.</p>
 <p>Time and compatibility issues can be conveniently tested using the
-<a class="reference internal" href="Testsuite.html"><span class="doc">Expyriment test suite</span></a>.</p>
+<a class="reference internal" href="TestSuite.html"><span class="doc">Expyriment test suite</span></a>.</p>
 <section id="stimulus-presentation">
 <h2>Stimulus presentation<a class="headerlink" href="#stimulus-presentation" title="Link to this heading"></a></h2>
 <section id="visual">
@@ -159,14 +154,14 @@ NOT captured by the visual test in the test suite and have to be measured
 externally, they should at least be stable across different visual stimulus
 presentations and should hence not introduce any differences between
 experimental conditions.</em></p>
-<p><em>When using high-DPI displays, Expyriment will attempt to use the full native
-resulution for fullscreen mode with OpenGL (if the nativive resolution is not
-guessed correctly, it can be manually overwritten by setting
-``control.defaults.display_resolution``. In all other cases (i.e. no OpenGL
-and/or window mode) Expyriment might return a screen with a scaled resolution,
-according to the operating system’s scaling settings. To get a non-scaled
-screen in these cases, scaling has to be deactivated on the operating system
-level.</em></p>
+<p><em>When using display scaling on the operating system level (for HiDPI/retina
+monitors for instance) Expyriment will attempt to return an unscaled screen.
+In fullscreen mode this means the native pixel resulution of the actual monitor
+(if the native resolution is not guessed correctly, it can be manually overwritten
+by setting  ``control.defaults.display_resolution``. In some cases, however,
+Expyriment might return a screen which is scaled according to the operating
+system’s scaling settings. To get a non-scaled screen in these cases, scaling has
+to be deactivated on the operating system level.</em></p>
 <p><strong>Test results</strong></p>
 <p>We tested the visual timing by presented a white and a black fullscreen
 rectangle directly after each other. The brightness of the left upper edge of
@@ -322,7 +317,7 @@ is only able to read from Acknowledge, Paper-Out and Selected pins!</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

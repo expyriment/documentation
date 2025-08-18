@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.misc &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.misc &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -69,6 +64,7 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.MediaTime.html">expyriment.misc.MediaTime</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
@@ -128,6 +124,7 @@
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="expyriment.misc.MediaTime.html">expyriment.misc.MediaTime</a></li>
 </ul>
 </div>
 </section>
@@ -151,8 +148,8 @@ Expyriment, such that they are found when only giving their name
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.byte2unicode">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">byte2unicode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.byte2unicode" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.bytes_to_unicode">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">bytes_to_unicode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.bytes_to_unicode" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -232,6 +229,26 @@ the given font name.</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>font</strong><span class="classifier">str</span></dt><dd><p>the font that is most similar
 If no font is found, an empty string will be returned.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="expyriment.misc.get_audio_devices">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">get_audio_devices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_devices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.get_audio_devices" title="Link to this definition"></a></dt>
+<dd><p>Get the names of available audio devices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>input_devices</strong><span class="classifier">bool, optional</span></dt><dd><p>return input (instead of output) device names (default=False)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>audio_devices</strong><span class="classifier">list</span></dt><dd><p>a list of audio device names</p>
 </dd>
 </dl>
 </dd>
@@ -336,8 +353,8 @@ secure hashes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="expyriment.misc.is_interactive_mode">
 <span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">is_interactive_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.is_interactive_mode" title="Link to this definition"></a></dt>
-<dd><p>Returns if Python is running in interactive mode (such as IDLE or
-IPthon)</p>
+<dd><p>Return if Python is running in interactive mode (such as IDLE or
+IPython)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -368,8 +385,8 @@ absolute path to the font file.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.numpad_digit_code2ascii">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">numpad_digit_code2ascii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keycode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.numpad_digit_code2ascii" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.numpad_digit_code_to_ascii">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">numpad_digit_code_to_ascii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keycode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.numpad_digit_code_to_ascii" title="Link to this definition"></a></dt>
 <dd><p>Convert numpad keycode to the ascii code of that particular number</p>
 <p>If it is not a keypad digit code, no conversion takes place and the
 same code will be returned.</p>
@@ -383,12 +400,12 @@ same code will be returned.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.round">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">round</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ndigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.round" title="Link to this definition"></a></dt>
-<dd><p>Round half away from zero.</p>
+<dt class="sig sig-object py" id="expyriment.misc.py2_round">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">py2_round</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ndigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.py2_round" title="Link to this definition"></a></dt>
+<dd><p>Round half away from zero and always return a float.</p>
 <p>This method implements the Python 2 way of rounding.
 For “bankers rounding” (round half to even), please use the builtin <cite>round</cite>
-function in Python 3 or Numpy’s <cite>around</cite> function.</p>
+function or Numpy’s <cite>around</cite> function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -415,15 +432,16 @@ Sorts in place!</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt>array: the sorted array</dt><dd></dd>
+<dt><strong>array</strong><span class="classifier">list</span></dt><dd><p>the sorted array</p>
+</dd>
 </dl>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.unicode2byte">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">unicode2byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.unicode2byte" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.unicode_to_bytes">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">unicode_to_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.unicode_to_bytes" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -461,7 +479,7 @@ Sorts in place!</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

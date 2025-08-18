@@ -24,6 +24,7 @@ Functions
 .. autofunction:: expyriment.control.end
 .. autofunction:: expyriment.control.get_audiosystem_is_playing
 .. autofunction:: expyriment.control.get_defaults
+.. autofunction:: expyriment.control.initialise
 .. autofunction:: expyriment.control.initialize
 .. autofunction:: expyriment.control.pause
 .. autofunction:: expyriment.control.register_wait_callback_function

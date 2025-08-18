@@ -22,10 +22,8 @@ Classes
    expyriment.stimuli.BlankScreen
    expyriment.stimuli.Canvas
    expyriment.stimuli.Circle
-   expyriment.stimuli.Dot
    expyriment.stimuli.Ellipse
    expyriment.stimuli.FixCross
-   expyriment.stimuli.Frame
    expyriment.stimuli.Line
    expyriment.stimuli.Picture
    expyriment.stimuli.Rectangle

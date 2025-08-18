@@ -10,7 +10,7 @@ Usage
 -----
 To show the API reference tool, call the following from within Python::
 
-    expyriment.show_documentation(3)
+    expyriment.show_documentation(2)
 
 
 Alternatively, the API reference tool can be started with the :doc:`CommandLineInterface`::

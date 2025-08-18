@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beginner’s tutorial to get started with Expyriment &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>Beginner’s tutorial to get started with Expyriment &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -103,7 +98,7 @@ that runs on Windows, Linux and OS X.</p>
 <p>Let’s start right away with a very basic example!</p>
 <p>Write the following code into an empty text file and save the file as
 first_experiment.py:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">design</span><span class="o">.</span><span class="n">Experiment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;First Experiment&quot;</span><span class="p">)</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
@@ -129,7 +124,7 @@ seconds</p></li>
 </ul>
 <p>Let’s see what we just did in more detail:</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 </pre></div>
 </div>
 <p>We imported the Expyriment package into Python, such that we can use it
@@ -172,7 +167,7 @@ the “Ending experiment…” screen.</p>
 </div></blockquote>
 <p>Okay great, now let’s actually do something in this experiment. Let’s say we
 want to present a stimulus. Change the code to look like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">design</span><span class="o">.</span><span class="n">Experiment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;First Experiment&quot;</span><span class="p">)</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
@@ -223,7 +218,7 @@ did not present something else afterwards).</p>
 <p>Let’s add some common experimental design structures to get a bit more
 organized.
 Modify the code to look like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">design</span><span class="o">.</span><span class="n">Experiment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;First Experiment&quot;</span><span class="p">)</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
@@ -280,7 +275,7 @@ submodule.</p>
 <p>Of course this is only makes sense when more blocks and trials are used.
 Let’s now create two blocks with 2 Trials each. Each of those trials will have
 exactly one stimulus. Change the code to look like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">design</span><span class="o">.</span><span class="n">Experiment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;First Experiment&quot;</span><span class="p">)</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
@@ -380,7 +375,7 @@ one to each trial). After each stimulus presentation we wait for 1000 ms.</p>
 </div></blockquote>
 <p>We now want to measure some reaction times after each stimulus presentation.
 Modify the code to look like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">design</span><span class="o">.</span><span class="n">Experiment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Text Experiment&quot;</span><span class="p">)</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>
@@ -489,7 +484,7 @@ the start screen and subject ID query):</p>
 <p>That’s it so far. We are at the end of the getting started tutorial. As a
 summary, have a look at the following code, which again shows the overall
 structure of an Expyriment file with the 3 main parts:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 
 <span class="c1"># Any global settings go here</span>
 
@@ -521,7 +516,7 @@ structure of an Expyriment file with the 3 main parts:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

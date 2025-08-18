@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.design.Experiment &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.design.Experiment &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -60,6 +55,7 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.defaults.html">expyriment.design.defaults</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.extras.html">expyriment.design.extras</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.permute.html">expyriment.design.permute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.randomise.html">expyriment.design.randomise</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.randomize.html">expyriment.design.randomize</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.design.Block.html">expyriment.design.Block</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.design.Experiment</a></li>
@@ -104,7 +100,7 @@
 <h1>expyriment.design.Experiment<a class="headerlink" href="#expyriment-design-experiment" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.design.Experiment">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.design.</span></span><span class="sig-name descname"><span class="pre">Experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreground_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename_suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Experiment" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.design.</span></span><span class="sig-name descname"><span class="pre">Experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">foreground_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename_suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Experiment" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a basic experiment.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.__init__">
@@ -226,36 +222,47 @@ factors while permutation.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.background_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">background_colour</span></span><a class="headerlink" href="#expyriment.design.Experiment.background_colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">background_colour</span></span><a class="headerlink" href="#expyriment.design.Experiment.background_colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for background_colour.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.block_list_factor_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">block_list_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.block_list_factor_names" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">block_list_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.block_list_factor_names" title="Link to this definition"></a></dt>
 <dd><p>Getter for block_list_factor_names.</p>
 <p>Get all factor names defined in all blocks.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.blocks">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">blocks</span></span><a class="headerlink" href="#expyriment.design.Experiment.blocks" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">blocks</span></span><a class="headerlink" href="#expyriment.design.Experiment.blocks" title="Link to this definition"></a></dt>
 <dd><p>Getter for blocks.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.bws_factor_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bws_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.bws_factor_names" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bws_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.bws_factor_names" title="Link to this definition"></a></dt>
 <dd><p>Getter for factors keys.</p>
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="expyriment.design.Experiment.bws_factor_randomized">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bws_factor_randomized</span></span><a class="headerlink" href="#expyriment.design.Experiment.bws_factor_randomized" title="Link to this definition"></a></dt>
-<dd><p>Getter for bws_factor_randomized.</p>
+<dt class="sig sig-object py" id="expyriment.design.Experiment.bws_factor_randomised">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bws_factor_randomised</span></span><a class="headerlink" href="#expyriment.design.Experiment.bws_factor_randomised" title="Link to this definition"></a></dt>
+<dd><p>Getter for bws_factor_randomised.</p>
 <p class="rubric">Notes</p>
-<p>Is between subject factor randomized? (True/False).</p>
-<p>If True conditions will be assigned randomized
+<p>Is between subject factor randomised? (True/False).</p>
+<p>If True conditions will be assigned randomised
+otherwise (default) conditions will be systematically permuted across
+subjects.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Experiment.bws_factor_randomized">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bws_factor_randomized</span></span><a class="headerlink" href="#expyriment.design.Experiment.bws_factor_randomized" title="Link to this definition"></a></dt>
+<dd><p>Getter for bws_factor_randomised.</p>
+<p class="rubric">Notes</p>
+<p>Is between subject factor randomised? (True/False).</p>
+<p>If True conditions will be assigned randomised
 otherwise (default) conditions will be systematically permuted across
 subjects.</p>
 </dd></dl>
@@ -280,44 +287,44 @@ subjects.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.clock">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clock</span></span><a class="headerlink" href="#expyriment.design.Experiment.clock" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clock</span></span><a class="headerlink" href="#expyriment.design.Experiment.clock" title="Link to this definition"></a></dt>
 <dd><p>Getter for global clock.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#expyriment.design.Experiment.data" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#expyriment.design.Experiment.data" title="Link to this definition"></a></dt>
 <dd><p>Getter for main data file.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.data_variable_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_variable_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.data_variable_names" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_variable_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.data_variable_names" title="Link to this definition"></a></dt>
 <dd><p>Getter for data_variable_names.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.design_as_text">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">design_as_text</span></span><a class="headerlink" href="#expyriment.design.Experiment.design_as_text" title="Link to this definition"></a></dt>
-<dd><p>Getter for desing_as_text.</p>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">design_as_text</span></span><a class="headerlink" href="#expyriment.design.Experiment.design_as_text" title="Link to this definition"></a></dt>
+<dd><p>Getter for design_as_text.</p>
 <p>Trial list as csv table.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.events">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">events</span></span><a class="headerlink" href="#expyriment.design.Experiment.events" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">events</span></span><a class="headerlink" href="#expyriment.design.Experiment.events" title="Link to this definition"></a></dt>
 <dd><p>Getter for main event files.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.experiment_info">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">experiment_info</span></span><a class="headerlink" href="#expyriment.design.Experiment.experiment_info" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">experiment_info</span></span><a class="headerlink" href="#expyriment.design.Experiment.experiment_info" title="Link to this definition"></a></dt>
 <dd><p>Getter for experiment_info.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.filename_suffix">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename_suffix</span></span><a class="headerlink" href="#expyriment.design.Experiment.filename_suffix" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename_suffix</span></span><a class="headerlink" href="#expyriment.design.Experiment.filename_suffix" title="Link to this definition"></a></dt>
 <dd><p>Getter for filename suffix.</p>
 </dd></dl>
 
@@ -334,7 +341,7 @@ subjects.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt>pos: int</dt><dd><p>positions as a list or None if not in block list.</p>
+<dt>pos: list of int</dt><dd><p>positions as a list or None if not in block list.</p>
 </dd>
 </dl>
 </dd>
@@ -343,7 +350,7 @@ subjects.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.foreground_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">foreground_colour</span></span><a class="headerlink" href="#expyriment.design.Experiment.foreground_colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">foreground_colour</span></span><a class="headerlink" href="#expyriment.design.Experiment.foreground_colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for foreground_colour.</p>
 </dd></dl>
 
@@ -416,26 +423,32 @@ particular subject will be returned.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.is_callback_registered">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_callback_registered</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_callback_registered" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_callback_registered</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_callback_registered" title="Link to this definition"></a></dt>
 <dd><p>This property indicates whether a callback function has been
 registered or not.</p>
 </dd></dl>
 
 <dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Experiment.is_initialised">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_initialised</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_initialised" title="Link to this definition"></a></dt>
+<dd><p>Getter for is_initialised.</p>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.is_initialized">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_initialized</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_initialized" title="Link to this definition"></a></dt>
-<dd><p>Getter for is_initialized.</p>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_initialized</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_initialized" title="Link to this definition"></a></dt>
+<dd><p>Getter for is_initialised.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.is_started">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_started</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_started" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_started</span></span><a class="headerlink" href="#expyriment.design.Experiment.is_started" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_started.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.keyboard">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">keyboard</span></span><a class="headerlink" href="#expyriment.design.Experiment.keyboard" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">keyboard</span></span><a class="headerlink" href="#expyriment.design.Experiment.keyboard" title="Link to this definition"></a></dt>
 <dd><p>Getter for global keyboard.</p>
 </dd></dl>
 
@@ -464,7 +477,7 @@ factors and data_variables.</p>
 <dt class="sig sig-object py" id="expyriment.design.Experiment.log_design_to_event_file">
 <span class="sig-name descname"><span class="pre">log_design_to_event_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">additional_comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Experiment.log_design_to_event_file" title="Link to this definition"></a></dt>
 <dd><p>Log the design (as comment) to the current main event file.</p>
-<p>If no experiment is initialized or no event file exists the function
+<p>If no experiment is initialised or no event file exists the function
 will not do anything. This function will be automatically called after
 an experiment has been started.</p>
 <dl class="field-list simple">
@@ -485,33 +498,33 @@ an experiment has been started.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.log_level">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#expyriment.design.Experiment.log_level" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#expyriment.design.Experiment.log_level" title="Link to this definition"></a></dt>
 <dd><p>Getter for event logging.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.mouse">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mouse</span></span><a class="headerlink" href="#expyriment.design.Experiment.mouse" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mouse</span></span><a class="headerlink" href="#expyriment.design.Experiment.mouse" title="Link to this definition"></a></dt>
 <dd><p>Getter for global keyboard.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.n_blocks">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_blocks</span></span><a class="headerlink" href="#expyriment.design.Experiment.n_blocks" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_blocks</span></span><a class="headerlink" href="#expyriment.design.Experiment.n_blocks" title="Link to this definition"></a></dt>
 <dd><p>Getter for n_blocks.</p>
 <p>Number of blocks.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.n_bws_factor_conditions">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_bws_factor_conditions</span></span><a class="headerlink" href="#expyriment.design.Experiment.n_bws_factor_conditions" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_bws_factor_conditions</span></span><a class="headerlink" href="#expyriment.design.Experiment.n_bws_factor_conditions" title="Link to this definition"></a></dt>
 <dd><p>Getter for n_bws_factor_conditions.</p>
 <p>Total number of conditions in all bws_factors.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.name">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#expyriment.design.Experiment.name" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#expyriment.design.Experiment.name" title="Link to this definition"></a></dt>
 <dd><p>Getter for name.</p>
 </dd></dl>
 
@@ -639,7 +652,7 @@ factors and data_variables.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.screen">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">screen</span></span><a class="headerlink" href="#expyriment.design.Experiment.screen" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">screen</span></span><a class="headerlink" href="#expyriment.design.Experiment.screen" title="Link to this definition"></a></dt>
 <dd><p>Getter for global screen.</p>
 </dd></dl>
 
@@ -667,7 +680,7 @@ debugging proposes</p></li>
 If log files become to big due to certain repetitive events, it is
 suggested to switch of the logging of individual stimuli or IO event.
 (see the method <cite>.set_logging()</cite> of this objects)</p>
-<p>The logging of events can be also changed before initialize via the
+<p>The logging of events can be also changed before initialise via the
 default value <cite>expyriment.control.defaults.event_logging</cite>.</p>
 </dd></dl>
 
@@ -675,14 +688,14 @@ default value <cite>expyriment.control.defaults.event_logging</cite>.</p>
 <dt class="sig sig-object py" id="expyriment.design.Experiment.shuffle_blocks">
 <span class="sig-name descname"><span class="pre">shuffle_blocks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_repetitions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_segments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Experiment.shuffle_blocks" title="Link to this definition"></a></dt>
 <dd><p>Shuffle all blocks.</p>
-<p>The function returns False if no randomization could be found that
+<p>The function returns False if no randomisation could be found that
 fulfills the max immediate block repetition criterion. The different
 type of blocks are only defined by the factors. Shuffle does not
 take into account the added trials.</p>
-<p>The following randomization methods are defined:</p>
+<p>The following randomisation methods are defined:</p>
 <blockquote>
-<div><p>0 = total randomization of block order (default)</p>
-<p>1 = randomization within small miniblocks. Each miniblock
+<div><p>0 = total randomisation of block order (default)</p>
+<p>1 = randomisation within small miniblocks. Each miniblock
 contains one block of each type (only defined by factors!);
 in other words, copies of one block type are always in
 different miniblocks</p>
@@ -690,18 +703,18 @@ different miniblocks</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>method</strong><span class="classifier">int, optional</span></dt><dd><p>method of block randomization (default=0)</p>
+<dt><strong>method</strong><span class="classifier">int, optional</span></dt><dd><p>method of block randomisation (default=0)</p>
 </dd>
-<dt><strong>max_repetitions</strong><span class="classifier">int, optional</span></dt><dd><p>see documentation of <cite>randomize.shuffle_list</cite> (default = None)</p>
+<dt><strong>max_repetitions</strong><span class="classifier">int, optional</span></dt><dd><p>see documentation of <cite>randomise.shuffle_list</cite> (default = None)</p>
 </dd>
-<dt><strong>n_segments</strong><span class="classifier">int, optional</span></dt><dd><p>this parameter will be only considered for randomization method 0;
-see documentation of <cite>randomize.shuffle_list</cite> (default = None)</p>
+<dt><strong>n_segments</strong><span class="classifier">int, optional</span></dt><dd><p>this parameter will be only considered for randomisation method 0;
+see documentation of <cite>randomise.shuffle_list</cite> (default = None)</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>succeeded</strong><span class="classifier">bool</span></dt><dd><p>returns if randomization was successful and fulfilled the specified
+<dt><strong>succeeded</strong><span class="classifier">bool</span></dt><dd><p>returns if randomisation was successful and fulfilled the specified
 constrains (see max_repetitions)</p>
 </dd>
 </dl>
@@ -717,7 +730,7 @@ constrains (see max_repetitions)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.subject">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subject</span></span><a class="headerlink" href="#expyriment.design.Experiment.subject" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subject</span></span><a class="headerlink" href="#expyriment.design.Experiment.subject" title="Link to this definition"></a></dt>
 <dd><p>Getter for global subject id.</p>
 </dd></dl>
 
@@ -739,19 +752,19 @@ constrains (see max_repetitions)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.text_font">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_font</span></span><a class="headerlink" href="#expyriment.design.Experiment.text_font" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_font</span></span><a class="headerlink" href="#expyriment.design.Experiment.text_font" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_font.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.text_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_size</span></span><a class="headerlink" href="#expyriment.design.Experiment.text_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_size</span></span><a class="headerlink" href="#expyriment.design.Experiment.text_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_size.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.design.Experiment.trial_factor_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trial_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.trial_factor_names" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trial_factor_names</span></span><a class="headerlink" href="#expyriment.design.Experiment.trial_factor_names" title="Link to this definition"></a></dt>
 <dd><p>Getter for trial_factor_nanes.</p>
 <p>Get all factor names defined in the trial lists of all blocks.</p>
 </dd></dl>
@@ -777,7 +790,7 @@ constrains (see max_repetitions)</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

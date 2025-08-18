@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.io.Screen &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.io.Screen &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -116,12 +111,12 @@
 <h1>expyriment.io.Screen<a class="headerlink" href="#expyriment-io-screen" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.io.Screen">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">Screen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opengl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">Screen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colour</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opengl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_mode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a screen output.</p>
 <p>Each experiment and all stimuli need a screen instance to function.
 They are expecting this screen instance to be referenced in
 expyriment._active_exp.screen.
-Calling expyriment.control.initialize(exp) will automatically create such
+Calling expyriment.control.initialise(exp) will automatically create such
 a screen instance and will additionally reference it in exp.screen for
 easy access.</p>
 <dl class="py method">
@@ -158,19 +153,19 @@ Pygame version &gt;= 2)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.center_x">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_x</span></span><a class="headerlink" href="#expyriment.io.Screen.center_x" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_x</span></span><a class="headerlink" href="#expyriment.io.Screen.center_x" title="Link to this definition"></a></dt>
 <dd><p>Getter for X-coordinate of the screen center.</p>
 <p class="rubric">Notes</p>
-<p>Each initialized experiment has its one screen (exp.screen).
+<p>Each initialised experiment has its one screen (exp.screen).
 Please use always the screen of your current experiment.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.center_y">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_y</span></span><a class="headerlink" href="#expyriment.io.Screen.center_y" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_y</span></span><a class="headerlink" href="#expyriment.io.Screen.center_y" title="Link to this definition"></a></dt>
 <dd><p>Getter for the Y-coordinate of the screen center.</p>
 <p class="rubric">Notes</p>
-<p>Each initialized experiment has its one screen (exp.screen).
+<p>Each initialised experiment has its one screen (exp.screen).
 Please use always the screen of your current experiment.</p>
 </dd></dl>
 
@@ -183,44 +178,44 @@ Please use always the screen of your current experiment.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">colour</span></span><a class="headerlink" href="#expyriment.io.Screen.colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">colour</span></span><a class="headerlink" href="#expyriment.io.Screen.colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for colour.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.display">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display</span></span><a class="headerlink" href="#expyriment.io.Screen.display" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display</span></span><a class="headerlink" href="#expyriment.io.Screen.display" title="Link to this definition"></a></dt>
 <dd><p>Getter for display.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.display_resolution">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_resolution</span></span><a class="headerlink" href="#expyriment.io.Screen.display_resolution" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_resolution</span></span><a class="headerlink" href="#expyriment.io.Screen.display_resolution" title="Link to this definition"></a></dt>
 <dd><p>Getter for display_resolution.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.logging">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.Screen.logging" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.Screen.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.monitor_resolution">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">monitor_resolution</span></span><a class="headerlink" href="#expyriment.io.Screen.monitor_resolution" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">monitor_resolution</span></span><a class="headerlink" href="#expyriment.io.Screen.monitor_resolution" title="Link to this definition"></a></dt>
 <dd><p>Getter for monitor_resolution.</p>
 <p>DEPRECATED! Use display_resolution instead.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.no_frame">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">no_frame</span></span><a class="headerlink" href="#expyriment.io.Screen.no_frame" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">no_frame</span></span><a class="headerlink" href="#expyriment.io.Screen.no_frame" title="Link to this definition"></a></dt>
 <dd><p>Getter for no_frame boolean</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.opengl">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">opengl</span></span><a class="headerlink" href="#expyriment.io.Screen.opengl" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">opengl</span></span><a class="headerlink" href="#expyriment.io.Screen.opengl" title="Link to this definition"></a></dt>
 <dd><p>Getter for opengl.</p>
 </dd></dl>
 
@@ -261,24 +256,32 @@ TGA, PNG, or JPEG, with the default being TGA)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.io.Screen.size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.io.Screen.size" title="Link to this definition"></a></dt>
 <dd><p>Getter for the size of the screen.</p>
 <p class="rubric">Notes</p>
-<p>Each initialized experiment has its one screen (exp.screen).
+<p>Each initialised experiment has its one screen (exp.screen).
 Please use always the screen of your current experiment.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.surface">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface</span></span><a class="headerlink" href="#expyriment.io.Screen.surface" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface</span></span><a class="headerlink" href="#expyriment.io.Screen.surface" title="Link to this definition"></a></dt>
 <dd><p>Getter for surface.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.Screen.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.update" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.Screen.update" title="Link to this definition"></a></dt>
 <dd><p>Update the screen.</p>
 <p>This will flip the display double buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>blocking</strong><span class="classifier">bool, optional</span></dt><dd><p>whether to block on vertical retrace (OpenGL only; default=True)</p>
+</dd>
+</dl>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -299,13 +302,13 @@ Please use always the screen of your current experiment.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.window_mode">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_mode</span></span><a class="headerlink" href="#expyriment.io.Screen.window_mode" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_mode</span></span><a class="headerlink" href="#expyriment.io.Screen.window_mode" title="Link to this definition"></a></dt>
 <dd><p>Getter for window_mode.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.Screen.window_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_size</span></span><a class="headerlink" href="#expyriment.io.Screen.window_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_size</span></span><a class="headerlink" href="#expyriment.io.Screen.window_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for window_size.</p>
 </dd></dl>
 
@@ -324,7 +327,7 @@ Please use always the screen of your current experiment.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

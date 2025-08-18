@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.io.ParallelPort &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.io.ParallelPort &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -116,14 +111,14 @@
 <h1>expyriment.io.ParallelPort<a class="headerlink" href="#expyriment-io-parallelport" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">ParallelPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">ParallelPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a parallel port input and output.</p>
 <p class="rubric">Notes</p>
 <p>CAUTION: On Windows, one of the following parallel port drivers needs to
-be installed: ‘inpout32’ (<a class="reference external" href="http://www.highrez.co.uk/Downloads/InpOut32/">http://www.highrez.co.uk/Downloads/InpOut32/</a>) or
-‘dlportio’ (<a class="reference external" href="http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/">http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/</a>).
+be installed: ‘inpout32’ (<a class="reference external" href="https://www.highrez.co.uk/Downloads/InpOut32/">https://www.highrez.co.uk/Downloads/InpOut32/</a>) or
+‘dlportio’ (<a class="reference external" href="https://real.kyiv.ua/2010/11/29/dlportio-and-32-bit-windows/">https://real.kyiv.ua/2010/11/29/dlportio-and-32-bit-windows/</a>).
 On Linux, the Python package ‘PyParallel’
-(<a class="reference external" href="http://pyserial.sourceforge.net/pyparallel.html">http://pyserial.sourceforge.net/pyparallel.html</a>) has to be installed.</p>
+(<a class="reference external" href="https://pypi.org/project/pyparallel/">https://pypi.org/project/pyparallel/</a>) has to be installed.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort.__init__" title="Link to this definition"></a></dt>
@@ -154,7 +149,7 @@ Reverse mode enables to read from the data pins.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.address">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.address" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.address" title="Link to this definition"></a></dt>
 <dd><p>Getter for address.</p>
 </dd></dl>
 
@@ -167,7 +162,7 @@ Reverse mode enables to read from the data pins.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.get_available_ports">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_available_ports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort.get_available_ports" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_available_ports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort.get_available_ports" title="Link to this definition"></a></dt>
 <dd><p>Return an array of strings representing available parallel ports.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -183,30 +178,30 @@ Reverse mode enables to read from the data pins.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.get_driver">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_driver</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort.get_driver" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_driver</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.ParallelPort.get_driver" title="Link to this definition"></a></dt>
 <dd><p>Return the driver used for interacting with parallel ports.</p>
 <p>On Windows, one of the following parallel port drivers needs to
-be installed: ‘input32’ (<a class="reference external" href="http://www.highrez.co.uk/Downloads/InpOut32/">http://www.highrez.co.uk/Downloads/InpOut32/</a>) or
-‘dlportio’ (<a class="reference external" href="http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/">http://real.kiev.ua/2010/11/29/dlportio-and-32-bit-windows/</a>).
+be installed: ‘input32’ (<a class="reference external" href="https://www.highrez.co.uk/Downloads/InpOut32/">https://www.highrez.co.uk/Downloads/InpOut32/</a>) or
+‘dlportio’ (<a class="reference external" href="https://real.kyiv.ua/2010/11/29/dlportio-and-32-bit-windows/">https://real.kyiv.ua/2010/11/29/dlportio-and-32-bit-windows/</a>).
 On Linux, the Python package ‘PyParallel’
-(<a class="reference external" href="http://pyserial.sourceforge.net/pyparallel.html">http://pyserial.sourceforge.net/pyparallel.html</a>) has to be installed.</p>
+(<a class="reference external" href="https://pypi.org/project/pyparallel/">https://pypi.org/project/pyparallel/</a>) has to be installed.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.has_input_history">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_input_history</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.has_input_history" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_input_history</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.has_input_history" title="Link to this definition"></a></dt>
 <dd><p>Returns always False, because ParallelPort has no input history.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.logging">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.logging" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.parallel">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parallel</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.parallel" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parallel</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.parallel" title="Link to this definition"></a></dt>
 <dd><p>Getter for parallel.</p>
 </dd></dl>
 
@@ -321,7 +316,7 @@ and control pins (1, 14, 16, 17).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.ParallelPort.reverse">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reverse</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.reverse" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reverse</span></span><a class="headerlink" href="#expyriment.io.ParallelPort.reverse" title="Link to this definition"></a></dt>
 <dd><p>Getter for reverse.</p>
 </dd></dl>
 
@@ -440,7 +435,7 @@ parallel port.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

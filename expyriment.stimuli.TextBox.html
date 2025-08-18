@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.stimuli.TextBox &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.stimuli.TextBox &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -66,10 +61,8 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.BlankScreen.html">expyriment.stimuli.BlankScreen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Canvas.html">expyriment.stimuli.Canvas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Circle.html">expyriment.stimuli.Circle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Dot.html">expyriment.stimuli.Dot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Ellipse.html">expyriment.stimuli.Ellipse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.FixCross.html">expyriment.stimuli.FixCross</a></li>
-<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Frame.html">expyriment.stimuli.Frame</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Line.html">expyriment.stimuli.Line</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Picture.html">expyriment.stimuli.Picture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Rectangle.html">expyriment.stimuli.Rectangle</a></li>
@@ -116,7 +109,7 @@
 <h1>expyriment.stimuli.TextBox<a class="headerlink" href="#expyriment-stimuli-textbox" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">TextBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_bold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_italic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_underline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_justification</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_not_trim_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.TextBox" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">TextBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_bold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_italic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_underline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_justification</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_not_trim_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.TextBox" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a text box with wrapped text.</p>
 <p>This wraps a given multiline string into a formatted mutliline text box,
 strips of leading and trailing lines and gets rid of additional
@@ -169,7 +162,7 @@ resemble the font that is actually in use!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.absolute_position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">absolute_position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.absolute_position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">absolute_position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.absolute_position" title="Link to this definition"></a></dt>
 <dd><p>Getter for absolute_position.</p>
 <p class="rubric">Notes</p>
 <p>The absolute position differs for instance from the (relative) position, if the
@@ -206,7 +199,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.background_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">background_colour</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.background_colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">background_colour</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.background_colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for background_colour.</p>
 </dd></dl>
 
@@ -219,7 +212,7 @@ to compute!</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of bluring</p>
+<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of blurring</p>
 </dd>
 </dl>
 </dd>
@@ -261,7 +254,7 @@ to compute!</p>
 <span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.TextBox.compress" title="Link to this definition"></a></dt>
 <dd><p>“Compress the stimulus.</p>
 <p>This will create a temporary file on the disk where the surface of the
-stimululs is written to.
+stimulus is written to.
 The surface will now be read from the disk to free memory.
 Compressed stimuli cannot do surface operations!
 Preloading compressed stimuli is possible and highly recommended.
@@ -421,13 +414,13 @@ using RGBA coding.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.has_surface">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_surface</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.has_surface" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_surface</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.has_surface" title="Link to this definition"></a></dt>
 <dd><p>Getter for has_surface.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.id" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.id" title="Link to this definition"></a></dt>
 <dd><p>Getter for id.</p>
 </dd></dl>
 
@@ -459,19 +452,19 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.is_compressed">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_compressed</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.is_compressed" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_compressed</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.is_compressed" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_compressed.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.is_preloaded">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.is_preloaded" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.is_preloaded" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_preloaded.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.logging">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.logging" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
@@ -605,13 +598,13 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.polar_position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polar_position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.polar_position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polar_position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.polar_position" title="Link to this definition"></a></dt>
 <dd><p>Getter for the position in polar coordinates (radial, angle[degrees])</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.position" title="Link to this definition"></a></dt>
 <dd><p>Getter for position.</p>
 </dd></dl>
 
@@ -913,61 +906,61 @@ methods might affect the stability of the experiment.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.size" title="Link to this definition"></a></dt>
 <dd><p>Getter for size.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.surface_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.surface_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.surface_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for surface_size.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text" title="Link to this definition"></a></dt>
 <dd><p>Getter for text.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_bold">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_bold</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_bold" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_bold</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_bold" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_bold.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_colour</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_colour</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_colour.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_font">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_font</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_font" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_font</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_font" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_font.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_italic">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_italic</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_italic" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_italic</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_italic" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_italic.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_justification">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_justification</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_justification" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_justification</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_justification" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_justification.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_size</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_size.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.TextBox.text_underline">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_underline</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_underline" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">text_underline</span></span><a class="headerlink" href="#expyriment.stimuli.TextBox.text_underline" title="Link to this definition"></a></dt>
 <dd><p>Getter for text_underline.</p>
 </dd></dl>
 
@@ -1020,7 +1013,7 @@ to compute!</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Presenting videos in Expyriment &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>Presenting videos in Expyriment &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -55,7 +50,7 @@
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced.html">Advanced</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="APIReferenceTool.html">API reference tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Testsuite.html">Test suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TestSuite.html">Test suite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CommandLineInterface.html">Command line interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataPreprocessing.html">Data preprocessing and exporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Unicode.html">Using non-English characters</a></li>
@@ -101,24 +96,13 @@
 <h1>Presenting videos in Expyriment<a class="headerlink" href="#presenting-videos-in-expyriment" title="Link to this heading"></a></h1>
 <section id="video-formats">
 <h2>Video formats<a class="headerlink" href="#video-formats" title="Link to this heading"></a></h2>
-<p>Since version 0.9.0 Expyriment uses FFMPEG (<a class="reference external" href="https://www.ffmpeg.org">https://www.ffmpeg.org</a>) by default to decode video files (the <code class="docutils literal notranslate"><span class="pre">mediadecoder</span></code> backend) if enhanced video playback support has been installed (see <a class="reference internal" href="Installation.html"><span class="doc">Installation</span></a>). This means that a large variety of video formats are automatically supported.</p>
-<p>The old video backend is still available as <code class="docutils literal notranslate"><span class="pre">pygame</span></code>, and only plays MPEG1 videos with MP3 audio.
-If you have to use the old backend, you can encode any video into this correct format using FFMPEG directly:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="o">&lt;</span><span class="n">inputfile</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">vcodec</span> <span class="n">mpeg1video</span> <span class="o">-</span><span class="n">acodec</span> <span class="n">libmp3lame</span> <span class="o">-</span><span class="n">intra</span> <span class="o">-</span><span class="n">qscale</span> <span class="mi">2</span>  <span class="o">&lt;</span><span class="n">outputfile</span><span class="o">.</span><span class="n">mpg</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">-qscale</span></code> option is the quality setting. It can take values from 1 to 31. 1 is the best quality, but big file size. 31 is the worst quality, but small file size. Play around with this setting to get a good balance between quality and file size.</p>
+<p>Expyriment uses FFmpeg (<a class="reference external" href="https://www.ffmpeg.org">https://www.ffmpeg.org</a>) to decode video files. This means that a large variety of video formats are automatically supported.</p>
 </section>
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Create a video object:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_video</span> <span class="o">=</span> <span class="n">expyriment</span><span class="o">.</span><span class="n">stimuli</span><span class="o">.</span><span class="n">Video</span><span class="p">(</span><span class="s2">&quot;filename&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><p>If the video has sound, then the audio system has to be stopped (temporarily), such that the video system can play sound):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">stop_audiosystem</span><span class="p">()</span>
 </pre></div>
 </div>
 </li>
@@ -129,9 +113,9 @@ If you have to use the old backend, you can encode any video into this correct f
 </li>
 <li><p>To actually present the video on screen, understanding the various methods of the video object is crucial:</p>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">play()</span></code></dt><dd><p>will simply start video (and audio) playback in the background. This has no effect on the screen, no frames from the video are presented automatically.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">play()</span></code></dt><dd><p>simply starts video (and audio) playback in the background. This has no effect on the screen, no frames from the video are presented automatically.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">present()</span></code></dt><dd><p>waits for a new frame, then presents this frame on the screen. The method blocks until the new frame has been presented on the screen (if in OpenGL mode).</p>
+<dt><code class="docutils literal notranslate"><span class="pre">present()</span></code></dt><dd><p>starts video (and audio) playback (if not started yet) and waits for a new frame, then presents this frame on the screen. The method blocks until the new frame has been presented on the screen (if in OpenGL mode).</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">update()</span></code></dt><dd><p>presents the currently available frame immediately (i.e. without waiting for a new one). The methods blocks until the currently available frame has been presented on the screen (if in OpenGL mode).</p>
 </dd>
@@ -139,26 +123,22 @@ If you have to use the old backend, you can encode any video into this correct f
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">wait_frame()</span></code></dt><dd><p>behaves like <code class="docutils literal notranslate"><span class="pre">wait_end()</span></code>, with the difference that it waits until frame number <cite>frame</cite> instead of the last frame.</p>
 </dd>
+<dt><cite>wait_time()`</cite></dt><dd><p>behaves like <code class="docutils literal notranslate"><span class="pre">wait_frame()</span></code>, with the difference that it waits until a certain time instead of a frame number.</p>
+</dd>
 </dl>
-<p>The perhaps most common situation is thus to use a combination of <code class="docutils literal notranslate"><span class="pre">play()</span></code>, <code class="docutils literal notranslate"><span class="pre">present()</span></code> and <code class="docutils literal notranslate"><span class="pre">wait_end()</span></code>.</p>
-</li>
-<li><p>When done, delete the video stimulus:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">my_video</span>
-</pre></div>
-</div>
+<p>The perhaps most common situation is thus to use a combination of <code class="docutils literal notranslate"><span class="pre">present()</span></code> and <code class="docutils literal notranslate"><span class="pre">wait_end()</span></code>.</p>
 </li>
 </ol>
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
 <p>Simple example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span> <span class="k">as</span> <span class="nn">xpy</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xpy</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">xpy</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
-<span class="n">v</span> <span class="o">=</span> <span class="n">xpy</span><span class="o">.</span><span class="n">stimuli</span><span class="o">.</span><span class="n">Video</span><span class="p">(</span><span class="s2">&quot;file.mpg&quot;</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">xpy</span><span class="o">.</span><span class="n">stimuli</span><span class="o">.</span><span class="n">Video</span><span class="p">(</span><span class="s2">&quot;file.mp4&quot;</span><span class="p">)</span>
 <span class="n">v</span><span class="o">.</span><span class="n">preload</span><span class="p">()</span>
 
-<span class="n">v</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
 <span class="n">v</span><span class="o">.</span><span class="n">present</span><span class="p">()</span>
 <span class="n">video_presentation_time</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">time</span>
 <span class="n">v</span><span class="o">.</span><span class="n">wait_end</span><span class="p">()</span>
@@ -166,7 +146,7 @@ If you have to use the old backend, you can encode any video into this correct f
 </pre></div>
 </div>
 <p>If key presses (other than the control keys) need to be checked during the video playback:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span> <span class="k">as</span> <span class="nn">xpy</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xpy</span>
 
 <span class="n">exp</span> <span class="o">=</span> <span class="n">xpy</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
 <span class="n">v</span> <span class="o">=</span> <span class="n">xpy</span><span class="o">.</span><span class="n">stimuli</span><span class="o">.</span><span class="n">Video</span><span class="p">(</span><span class="s2">&quot;file.mpg&quot;</span><span class="p">)</span>
@@ -176,15 +156,16 @@ If you have to use the old backend, you can encode any video into this correct f
 <span class="n">v</span><span class="o">.</span><span class="n">present</span><span class="p">()</span>
 <span class="n">video_presentation_time</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">time</span>
 <span class="k">while</span> <span class="n">v</span><span class="o">.</span><span class="n">is_playing</span><span class="p">:</span>
-    <span class="k">while</span> <span class="ow">not</span> <span class="n">v</span><span class="o">.</span><span class="n">new_frame_available</span><span class="p">:</span>
-        <span class="n">key</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">keyboard</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="n">xpy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">K_SPACE</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">new_frame_available</span><span class="p">:</span>
+        <span class="n">video</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">keyboard</span><span class="o">.</span><span class="n">check</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">key</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">key_pressed</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">v</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
 <span class="n">v</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>NOTE</strong>: Do not infer reaction times from this!</p>
+<p><strong>NOTE</strong>: Be aware that infering reaction times from this might not be fully accurate, due to multiple threads running in the background to enable video frame updating and audio playback.</p>
 </section>
 </section>
 
@@ -199,7 +180,7 @@ If you have to use the old backend, you can encode any video into this correct f
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

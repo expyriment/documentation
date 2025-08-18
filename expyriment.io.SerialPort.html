@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.io.SerialPort &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.io.SerialPort &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -116,7 +111,7 @@
 <h1>expyriment.io.SerialPort<a class="headerlink" href="#expyriment-io-serialport" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">SerialPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baudrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytesize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopbits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xonxoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rtscts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsrdtr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os_buffer_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.io.</span></span><span class="sig-name descname"><span class="pre">SerialPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baudrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytesize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopbits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xonxoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rtscts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsrdtr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os_buffer_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a serial port input and output.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.__init__">
@@ -169,13 +164,13 @@ bytes have to be transferred to the input_history.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.baudrate">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baudrate</span></span><a class="headerlink" href="#expyriment.io.SerialPort.baudrate" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baudrate</span></span><a class="headerlink" href="#expyriment.io.SerialPort.baudrate" title="Link to this definition"></a></dt>
 <dd><p>Getter for baudrate.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.bytesize">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bytesize</span></span><a class="headerlink" href="#expyriment.io.SerialPort.bytesize" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bytesize</span></span><a class="headerlink" href="#expyriment.io.SerialPort.bytesize" title="Link to this definition"></a></dt>
 <dd><p>Getter for bytesize.</p>
 </dd></dl>
 
@@ -202,7 +197,7 @@ data into the input_history using the skip_input_history parameter.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.clock">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clock</span></span><a class="headerlink" href="#expyriment.io.SerialPort.clock" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clock</span></span><a class="headerlink" href="#expyriment.io.SerialPort.clock" title="Link to this definition"></a></dt>
 <dd><p>Getter for clock.</p>
 </dd></dl>
 
@@ -214,13 +209,13 @@ data into the input_history using the skip_input_history parameter.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.dsrdtr">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dsrdtr</span></span><a class="headerlink" href="#expyriment.io.SerialPort.dsrdtr" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dsrdtr</span></span><a class="headerlink" href="#expyriment.io.SerialPort.dsrdtr" title="Link to this definition"></a></dt>
 <dd><p>Getter for dsrdtr.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.get_available_ports">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_available_ports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort.get_available_ports" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_available_ports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort.get_available_ports" title="Link to this definition"></a></dt>
 <dd><p>Return a list of strings representing the available serial ports.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -236,31 +231,31 @@ data into the input_history using the skip_input_history parameter.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.has_input_history">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_input_history</span></span><a class="headerlink" href="#expyriment.io.SerialPort.has_input_history" title="Link to this definition"></a></dt>
-<dd><p>Returns if a input_history exists or not (True / False).</p>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_input_history</span></span><a class="headerlink" href="#expyriment.io.SerialPort.has_input_history" title="Link to this definition"></a></dt>
+<dd><p>Returns if an input_history exists or not (True / False).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.input_history">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_history</span></span><a class="headerlink" href="#expyriment.io.SerialPort.input_history" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_history</span></span><a class="headerlink" href="#expyriment.io.SerialPort.input_history" title="Link to this definition"></a></dt>
 <dd><p>Getter for input_history.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.logging">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.SerialPort.logging" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.io.SerialPort.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.os_buffer_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">os_buffer_size</span></span><a class="headerlink" href="#expyriment.io.SerialPort.os_buffer_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">os_buffer_size</span></span><a class="headerlink" href="#expyriment.io.SerialPort.os_buffer_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for os_buffer_size.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.parity">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parity</span></span><a class="headerlink" href="#expyriment.io.SerialPort.parity" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parity</span></span><a class="headerlink" href="#expyriment.io.SerialPort.parity" title="Link to this definition"></a></dt>
 <dd><p>Getter for parity.</p>
 </dd></dl>
 
@@ -268,7 +263,7 @@ data into the input_history using the skip_input_history parameter.</p>
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.poll">
 <span class="sig-name descname"><span class="pre">poll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort.poll" title="Link to this definition"></a></dt>
 <dd><p>Poll the serial port.</p>
-<p>If a input_history is used, it will be added.</p>
+<p>If an input_history is used, it will be added.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -283,7 +278,7 @@ data into the input_history using the skip_input_history parameter.</p>
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.read_input">
 <span class="sig-name descname"><span class="pre">read_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.io.SerialPort.read_input" title="Link to this definition"></a></dt>
 <dd><p>Read all input from serial port.</p>
-<p>If a input_history is used, all received data will be added.</p>
+<p>If an input_history is used, all received data will be added.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -332,7 +327,7 @@ received by a Keyboard().check() anymore!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.rtscts">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rtscts</span></span><a class="headerlink" href="#expyriment.io.SerialPort.rtscts" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rtscts</span></span><a class="headerlink" href="#expyriment.io.SerialPort.rtscts" title="Link to this definition"></a></dt>
 <dd><p>Getter for rtscts.</p>
 </dd></dl>
 
@@ -370,7 +365,7 @@ received by a Keyboard().check() anymore!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.serial">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">serial</span></span><a class="headerlink" href="#expyriment.io.SerialPort.serial" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">serial</span></span><a class="headerlink" href="#expyriment.io.SerialPort.serial" title="Link to this definition"></a></dt>
 <dd><p>Getter for serial.</p>
 </dd></dl>
 
@@ -396,19 +391,19 @@ received by a Keyboard().check() anymore!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.stopbits">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stopbits</span></span><a class="headerlink" href="#expyriment.io.SerialPort.stopbits" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stopbits</span></span><a class="headerlink" href="#expyriment.io.SerialPort.stopbits" title="Link to this definition"></a></dt>
 <dd><p>Getter for stopbits.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.timeout">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timeout</span></span><a class="headerlink" href="#expyriment.io.SerialPort.timeout" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timeout</span></span><a class="headerlink" href="#expyriment.io.SerialPort.timeout" title="Link to this definition"></a></dt>
 <dd><p>Getter for timeout.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.io.SerialPort.xonxoff">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xonxoff</span></span><a class="headerlink" href="#expyriment.io.SerialPort.xonxoff" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xonxoff</span></span><a class="headerlink" href="#expyriment.io.SerialPort.xonxoff" title="Link to this definition"></a></dt>
 <dd><p>Getter for xonxoff.</p>
 </dd></dl>
 
@@ -427,7 +422,7 @@ received by a Keyboard().check() anymore!</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

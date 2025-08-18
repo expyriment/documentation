@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.control.defaults &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.control.defaults &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -99,16 +94,30 @@
 <span id="expyriment-control-defaults"></span><h1>expyriment.control.defaults<a class="headerlink" href="#module-expyriment.control.defaults" title="Link to this heading"></a></h1>
 <p>Default settings for the control package.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">audiosystem_autostart</span> <span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">start</span> <span class="n">the</span> <span class="n">audiosystem</span> <span class="n">when</span> <span class="n">Expyriment</span> <span class="ow">is</span> <span class="n">initialized</span>
+    <span class="n">start</span> <span class="n">the</span> <span class="n">audiosystem</span> <span class="n">when</span> <span class="n">Expyriment</span> <span class="ow">is</span> <span class="n">initialised</span>
 
 <span class="n">audiosystem_bit_depth</span> <span class="p">:</span> <span class="nb">int</span>
-    <span class="n">the</span> <span class="n">audio</span> <span class="n">bit</span> <span class="n">depth</span><span class="p">;</span> <span class="n">negative</span> <span class="n">values</span> <span class="n">mean</span> <span class="n">signed</span> <span class="n">sample</span> <span class="n">values</span>
+    <span class="mi">8</span>   <span class="o">=</span> <span class="mi">8</span> <span class="n">bit</span> <span class="n">unsigned</span> <span class="n">integer</span> <span class="p">(</span><span class="mi">8</span><span class="o">-</span><span class="n">bit</span> <span class="n">audio</span><span class="p">)</span>
+    <span class="o">-</span><span class="mi">8</span>  <span class="o">=</span> <span class="mi">8</span> <span class="n">bit</span> <span class="n">signed</span> <span class="n">integer</span> <span class="p">(</span><span class="n">uncommon</span><span class="p">)</span>
+    <span class="mi">16</span>  <span class="o">=</span> <span class="mi">16</span> <span class="n">bit</span> <span class="n">unsigned</span> <span class="n">integer</span> <span class="p">(</span><span class="n">uncommon</span><span class="p">)</span>
+    <span class="o">-</span><span class="mi">16</span> <span class="o">=</span> <span class="mi">16</span> <span class="n">bit</span> <span class="n">signed</span> <span class="n">integer</span> <span class="p">(</span><span class="mi">16</span><span class="o">-</span><span class="n">bit</span> <span class="n">audio</span><span class="p">)</span>
+    <span class="mi">32</span>  <span class="o">=</span> <span class="mi">32</span> <span class="n">bit</span> <span class="n">floating</span> <span class="n">point</span> <span class="p">(</span><span class="mi">32</span><span class="o">-</span><span class="n">bit</span> <span class="nb">float</span> <span class="n">audio</span><span class="p">)</span>
 
 <span class="n">audiosystem_buffer_size</span><span class="p">:</span> <span class="nb">int</span>
     <span class="n">the</span> <span class="n">audio</span> <span class="n">buffer</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">samples</span>
 
+    <span class="n">NOTE</span>
+    <span class="o">====</span>
+    <span class="n">Smaller</span> <span class="n">buffer</span> <span class="n">sizes</span> <span class="n">reduce</span> <span class="n">the</span> <span class="n">delay</span> <span class="ow">in</span> <span class="n">audio</span> <span class="n">playback</span><span class="p">,</span> <span class="n">but</span> <span class="n">a</span> <span class="n">too</span>
+    <span class="n">small</span> <span class="n">buffer</span> <span class="n">size</span> <span class="n">might</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">distorted</span> <span class="n">audio</span><span class="o">.</span> <span class="n">The</span> <span class="n">optimal</span> <span class="n">buffer</span>
+    <span class="n">size</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">smallest</span> <span class="n">one</span> <span class="n">that</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">distort</span> <span class="n">the</span> <span class="n">audio</span><span class="p">,</span> <span class="ow">and</span> <span class="n">can</span>
+    <span class="n">differ</span> <span class="n">between</span> <span class="n">systems</span><span class="o">.</span>
+
 <span class="n">audiosystem_channels</span> <span class="p">:</span> <span class="nb">int</span>
     <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">audio</span> <span class="n">channels</span>
+
+<span class="n">audiosystem_device</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">audio</span> <span class="n">device</span> <span class="n">to</span> <span class="n">use</span>
 
 <span class="n">audiosystem_sample_rate</span> <span class="p">:</span> <span class="nb">int</span>
     <span class="n">the</span> <span class="n">audio</span> <span class="n">sample</span> <span class="n">rate</span>
@@ -151,7 +160,7 @@
 <span class="n">goodbye_text</span> <span class="p">:</span> <span class="nb">str</span>
     <span class="n">the</span> <span class="n">text</span> <span class="n">to</span> <span class="n">be</span> <span class="n">shown</span> <span class="n">when</span> <span class="n">ending</span> <span class="n">an</span> <span class="n">experiment</span>
 
-<span class="n">initialize_delay</span> <span class="p">:</span> <span class="nb">int</span>
+<span class="n">initialise_delay</span> <span class="p">:</span> <span class="nb">int</span>
     <span class="n">a</span> <span class="n">delay</span> <span class="p">(</span><span class="ow">in</span> <span class="n">seconds</span><span class="p">)</span> <span class="n">to</span> <span class="n">wait</span> <span class="n">before</span> <span class="n">running</span> <span class="n">an</span> <span class="n">experiment</span> <span class="n">to</span> <span class="n">give</span>
     <span class="n">Python</span> <span class="n">time</span> <span class="n">to</span> <span class="n">start</span> <span class="n">properly</span>
 
@@ -178,7 +187,7 @@
     <span class="n">This</span> <span class="n">mode</span> <span class="n">can</span> <span class="n">be</span> <span class="n">useful</span> <span class="k">for</span> <span class="n">dynamic</span> <span class="n">displays</span><span class="p">,</span> <span class="n">where</span> <span class="n">an</span> <span class="n">accurate</span>
     <span class="n">stimulus</span> <span class="n">timing</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">required</span><span class="p">,</span> <span class="n">but</span> <span class="n">rather</span> <span class="n">very</span> <span class="n">fast</span> <span class="n">display</span> <span class="n">changes</span>
     <span class="n">have</span> <span class="n">high</span> <span class="n">priority</span> <span class="ow">and</span> <span class="n">stimuli</span> <span class="n">have</span> <span class="n">to</span> <span class="n">be</span> <span class="n">created</span> <span class="ow">and</span> <span class="n">on</span> <span class="n">the</span> <span class="n">fly</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span>
-    <span class="n">questionnairs</span><span class="p">,</span> <span class="n">video</span> <span class="n">game</span><span class="o">-</span><span class="n">like</span> <span class="n">scenarios</span><span class="p">)</span><span class="o">.</span>
+    <span class="n">questionnaires</span><span class="p">,</span> <span class="n">video</span> <span class="n">game</span><span class="o">-</span><span class="n">like</span> <span class="n">scenarios</span><span class="p">)</span><span class="o">.</span>
 
     <span class="n">OpenGL</span> <span class="p">(</span><span class="n">vsync</span> <span class="o">/</span> <span class="n">no</span> <span class="n">blocking</span><span class="p">)</span>
     <span class="o">----------------------------</span>
@@ -188,7 +197,7 @@
     <span class="o">*</span> <span class="n">Synchronized</span> <span class="n">display</span> <span class="n">updating</span>
         <span class="n">Pixels</span> <span class="n">are</span> <span class="n">starting</span> <span class="n">to</span> <span class="n">change</span> <span class="n">always</span> <span class="n">when</span> <span class="n">the</span> <span class="n">vertical</span> <span class="n">retrace</span> <span class="ow">is</span>
         <span class="n">at</span> <span class="n">the</span> <span class="n">left</span> <span class="n">top</span> <span class="n">corner</span>
-    <span class="o">*</span> <span class="n">Innaccurate</span> <span class="n">presentation</span> <span class="n">time</span> <span class="n">reporting</span>
+    <span class="o">*</span> <span class="n">Inaccurate</span> <span class="n">presentation</span> <span class="n">time</span> <span class="n">reporting</span>
         <span class="n">Exact</span> <span class="n">time</span> <span class="n">of</span> <span class="n">pixels</span> <span class="n">changing</span> <span class="n">on</span> <span class="n">screen</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">known</span>
 
     <span class="n">This</span> <span class="n">mode</span> <span class="n">can</span> <span class="n">be</span> <span class="n">useful</span> <span class="k">for</span> <span class="n">dynamic</span> <span class="n">displays</span><span class="p">,</span> <span class="n">where</span> <span class="n">an</span> <span class="n">accurate</span>
@@ -252,13 +261,19 @@
 <dl class="py data">
 <dt class="sig sig-object py" id="expyriment.control.defaults.expyriment.control.defaults.audiosystem_buffer_size">
 <span class="sig-prename descclassname"><span class="pre">expyriment.control.defaults.</span></span><span class="sig-name descname"><span class="pre">audiosystem_buffer_size</span></span><a class="headerlink" href="#expyriment.control.defaults.expyriment.control.defaults.audiosystem_buffer_size" title="Link to this definition"></a></dt>
-<dd><p>default value: 2048</p>
+<dd><p>default value: 512</p>
 </dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="expyriment.control.defaults.expyriment.control.defaults.audiosystem_channels">
 <span class="sig-prename descclassname"><span class="pre">expyriment.control.defaults.</span></span><span class="sig-name descname"><span class="pre">audiosystem_channels</span></span><a class="headerlink" href="#expyriment.control.defaults.expyriment.control.defaults.audiosystem_channels" title="Link to this definition"></a></dt>
 <dd><p>default value: 2</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.control.defaults.expyriment.control.defaults.audiosystem_device">
+<span class="sig-prename descclassname"><span class="pre">expyriment.control.defaults.</span></span><span class="sig-name descname"><span class="pre">audiosystem_device</span></span><a class="headerlink" href="#expyriment.control.defaults.expyriment.control.defaults.audiosystem_device" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
 </dd></dl>
 
 <dl class="py data">
@@ -310,8 +325,8 @@
 </dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="expyriment.control.defaults.expyriment.control.defaults.initialize_delay">
-<span class="sig-prename descclassname"><span class="pre">expyriment.control.defaults.</span></span><span class="sig-name descname"><span class="pre">initialize_delay</span></span><a class="headerlink" href="#expyriment.control.defaults.expyriment.control.defaults.initialize_delay" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.control.defaults.expyriment.control.defaults.initialise_delay">
+<span class="sig-prename descclassname"><span class="pre">expyriment.control.defaults.</span></span><span class="sig-name descname"><span class="pre">initialise_delay</span></span><a class="headerlink" href="#expyriment.control.defaults.expyriment.control.defaults.initialise_delay" title="Link to this definition"></a></dt>
 <dd><p>default value: 10</p>
 </dd></dl>
 
@@ -365,7 +380,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

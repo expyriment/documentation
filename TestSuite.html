@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test suite &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>Test suite &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -113,7 +108,7 @@ information about the system.</p>
 <p>The test suite can either be started from within an experiment, or from an
 interactive Python session (for instance with IPython). To start the test
 suite, just call:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">run_test_suite</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -122,7 +117,8 @@ suite, just call:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ expyriment.cli -T
 </pre></div>
 </div>
-<p><strong>Please note that all changes to the</strong> <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a> <strong>prior to starting the test suite apply!</strong></p>
+<p><strong>Please note that all changes to the</strong> <a class="reference internal" href="Defaults.html"><span class="doc">Defaults (settings)</span></a> <strong>prior to starting the
+test suite apply!</strong></p>
 </section>
 <section id="menu-overview">
 <h3>Menu overview<a class="headerlink" href="#menu-overview" title="Link to this heading"></a></h3>
@@ -131,38 +127,70 @@ suite, just call:</p>
 <li><p><strong>Visual stimulus presentation</strong></p></li>
 </ol>
 <blockquote>
+<div><ul>
+<li><p>Tests the visual stimulus presentation timing specifics of the system.</p>
+<p>The following results will be reported:</p>
+<blockquote>
 <div><ul class="simple">
-<li><p>Tests the visual stimulus presentation timing specifics of the system</p></li>
+<li><p><strong>Estimated Screen Refresh Rate</strong>: The refresh rate of the screen in Hz
+and the approximated time of a single refresh in milliseconds. The most
+common refresh rates are 60 Hz, 75 Hz, 120 Hz, 144 Hz and 240 Hz (marked
+green), but specialised displays might also have refresh rates between 50
+and 360 Hz (marked orange). Reported refresh rates outside of this range
+(marged red) are most likely erroneous.</p></li>
+<li><p><strong>Detected Framebuffer Pages</strong>: The amount of buffers used for drawing to
+the screen; if only one buffer is used, new stimuli will be drawn directly
+to the screen. If two buffers (double buffer) are used, new stimuli will
+be drawn to an additional page, and a screen update will replace the
+screen with this page and put the screen contents into the page (i.e. the
+two buffers are swapped). If three buffers (triple buffer) are used, new
+stimuli will be drawn to a third page, and a screen update will replace
+the screen with this page, and put the screen contents into the second
+page (i.e. a history of 2 former screens is kept). Only when 2 buffers are
+uses (marked green) blocking on the vertical retrace can function properly
+and lead to accurate presentation time reports.</p></li>
+<li><p><strong>Average Reporting Inaccuracy</strong>: The average time in milliseconds between
+Expyriment reporting that the stimulus has been presented (i.e. the
+<code class="docutils literal notranslate"><span class="pre">present()</span></code> method returns) and the actual time the stimulus could
+actually been physically shown on the screen, given the refresh rate. An
+inaccuracy of 0 ms (marked green) will indicate that blocking on the
+vertical retrace functions properly. An inaccuracy between 1 ms and 1/4th
+of the length of a single refresh cycle (e.g. ~4 ms for a refresh rate of
+60 Hz, marked orange) could indicate a problem with blocking on the
+vertical retrace (e.g. due to the presence of a compositor and/or adaptive
+v-sync mechanism) and requires further measurements by the researcher
+(e.g. with a photodiode) to assess timing accuracy. A delay of more than a
+single refresh cycle (e.g. ~4 ms for a refresh rate of 60 Hz, marked red)
+will indicate that blocking on the vertical retrace does not function
+properly and lead to inaccurate presentation time reports.</p></li>
+<li><p><strong>Unexplained Presentation Delays</strong>: The amount in percent of
+presentations that will take longer (or shorter) than a single refresh
+cycle. It encompasses of two different types of delays:</p>
+<ul>
+<li><p><em>Accurately Reported</em>: Presentations delayed by one or more full refresh
+cycles. While these presentations appear later than intended, the time
+they are displayed on screen should be accurately reported. It is not
+uncommon to see up to 5% of presentations delayed in this manner (marked
+green). For delays exceeding this threshold (marked orange), the
+researcher must determine whether the delay is acceptable.</p></li>
+<li><p><em>Inaccurately Reported</em>: Presentations delayed by amounts that do not
+correspond to full refresh cycles. If blocking on the vertical retrace
+functions correctly, such delays should not occur and are likely
+reported incorrectly. A very low percentage of these delays (up to 1%,
+marked green) is acceptable and may indicate rounding errors. Higher
+percentages (up to 10%, marked orange) could suggest issues with
+blocking on the vertical retrace (e.g., due to the presence of a
+compositor and/or adaptive v-sync mechanism) and require further
+measurements by the researcher (e.g., using a photodiode) to assess
+timing accuracy. Percentages exceeding this range (marked red) indicate
+a high likelihood that presentation timing reporting is inaccurate.</p></li>
 </ul>
-<dl class="simple">
-<dt>The following results will be reported:</dt><dd><ul class="simple">
-<li><p><em>Estimated Screen Refresh Rate</em>: The refresh rate of the screen in Hz and
-the approximated time of a single refresh in milliseconds. The most common refresh
-rate is arguably 60Hz (marked green), but specialised displays might also have
-refresh rates between 50 and 120 Hz (marked orange). Reported refresh rates outside
-of this range (marged red) are most probably erroneous.</p></li>
-<li><p><em>Detected Framebuffer Pages</em>: The amount of buffers used for drawing to the
-screen; if only one buffer is used, new stimuli will be drawn directly to the
-screen; if two buffers (double buffer) are used, new stimuli will be drawn to
-an additional page, and a screen update will replace the screen with this page
-and put the screen contents into the page (i.e. the two buffers are swapped);
-if three buffers (triple buffer) are used, new stimuli will be drawn to a third
-page, and a screen update will replace the screen with this page, and put the
-screen contents into the second page (i.e. a history of 2 former screens is
-kept)</p></li>
-<li><p><em>Average Reporting Inaccuracy</em>: The average time in milliseconds between Expyriment
-reporting that the stimulus has been presented (i.e. the present() method
-returns) and the actual time the stimulus could actually been physically
-shown on the screen, given the refresh rate; an inaccuracy of 0 milliseconds (marked
-green) will indicate that blocking on the vertical retrace functions
-properly; an inaccuracy of 1 millisecond or more (marked red) will indicate that
-blocking on the vertical does not function properly</p></li>
-<li><p><em>Unexplained Presentation Delays</em>: The amount in percent of presentations
-that will take longer than a single refresh rate</p></li>
+</li>
 <li><p>A histogram showing the obtained presentation timings</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
+</li>
+</ul>
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p><strong>Auditory stimulus presentation</strong></p></li>
@@ -237,7 +265,7 @@ file.</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

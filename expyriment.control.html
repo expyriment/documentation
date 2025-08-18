@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.control &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.control &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -133,7 +128,7 @@
 </dd>
 <dt><strong>system_exit</strong><span class="classifier">bool, optional</span></dt><dd><p>call Python’s sys.exit() method when ending expyriment (default = False)</p>
 </dd>
-<dt><strong>pre_quit_function</strong><span class="classifier">function, optional</span></dt><dd><p>function to be called before quitting Pygame</p>
+<dt><strong>pre_quit_function</strong><span class="classifier">function or list of functions, optional</span></dt><dd><p>function(s) to be called before quitting Pygame</p>
 </dd>
 </dl>
 </dd>
@@ -184,18 +179,18 @@ environment. The keys represent the variables names.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.control.initialize">
-<span class="sig-prename descclassname"><span class="pre">expyriment.control.</span></span><span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.control.initialize" title="Link to this definition"></a></dt>
-<dd><p>Initialize an experiment.</p>
-<p>This initializes an experiment defined by ‘experiment’ as well as the
+<dt class="sig sig-object py" id="expyriment.control.initialise">
+<span class="sig-prename descclassname"><span class="pre">expyriment.control.</span></span><span class="sig-name descname"><span class="pre">initialise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.control.initialise" title="Link to this definition"></a></dt>
+<dd><p>Initialise an experiment.</p>
+<p>This initialises an experiment defined by ‘experiment’ as well as the
 underlying expyriment system. If ‘experiment’ is None, a new Experiment
 object will be created and returned. Furthermore, a screen, a clock, a
-keyboard and a event file are created and added to the experiment. The
-initialization screen is shown for a short delay to ensure that Python
-is fully initialized and time accurate. Afterwards, “Preparing
+keyboard and an event file are created and added to the experiment. The
+initialisation screen is shown for a short delay to ensure that Python
+is fully initialised and time accurate. Afterwards, “Preparing
 experiment…” is presented on the screen.</p>
-<p>After experiment initialize the following additional properties are
-available:</p>
+<p>After the experiment has been initialised, the following additional
+properties are available:</p>
 <ul class="simple">
 <li><p>experiment.screen   – the current screen</p></li>
 <li><p>experiment.clock    – the main clock</p></li>
@@ -206,13 +201,49 @@ available:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>experiment</strong><span class="classifier">design.Experiment, optional</span></dt><dd><p>the experiment to initialize</p>
+<dt><strong>experiment</strong><span class="classifier">design.Experiment, optional</span></dt><dd><p>the experiment to initialise</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>exp</strong><span class="classifier">design.Experiment</span></dt><dd><p>initialized experiment</p>
+<dt><strong>exp</strong><span class="classifier">design.Experiment</span></dt><dd><p>initialised experiment</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="expyriment.control.initialize">
+<span class="sig-prename descclassname"><span class="pre">expyriment.control.</span></span><span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.control.initialize" title="Link to this definition"></a></dt>
+<dd><p>Initialise an experiment.</p>
+<p>This initialises an experiment defined by ‘experiment’ as well as the
+underlying expyriment system. If ‘experiment’ is None, a new Experiment
+object will be created and returned. Furthermore, a screen, a clock, a
+keyboard and an event file are created and added to the experiment. The
+initialisation screen is shown for a short delay to ensure that Python
+is fully initialised and time accurate. Afterwards, “Preparing
+experiment…” is presented on the screen.</p>
+<p>After the experiment has been initialised, the following additional
+properties are available:</p>
+<ul class="simple">
+<li><p>experiment.screen   – the current screen</p></li>
+<li><p>experiment.clock    – the main clock</p></li>
+<li><p>experiment.keyboard – the main keyboard</p></li>
+<li><p>experiment.mouse    – the main mouse</p></li>
+<li><p>experiment.event    – the main event file</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>experiment</strong><span class="classifier">design.Experiment, optional</span></dt><dd><p>the experiment to initialise</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>exp</strong><span class="classifier">design.Experiment</span></dt><dd><p>initialised experiment</p>
 </dd>
 </dl>
 </dd>
@@ -230,7 +261,7 @@ pressed to continue.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>text</strong><span class="classifier">str, optional</span></dt><dd><p>the text to be shown at the pause screen (default=”Paused”)</p>
 </dd>
-<dt><strong>key</strong><span class="classifier">int, optional</span></dt><dd><p>the key to be pressed for continueing (default=misc.constants.K_RETURN)</p>
+<dt><strong>key</strong><span class="classifier">int, optional</span></dt><dd><p>the key to be pressed for continuing (default=misc.constants.K_RETURN)</p>
 </dd>
 </dl>
 </dd>
@@ -320,7 +351,7 @@ in <code class="docutils literal notranslate"><span class="pre">expyriment.io</s
 </dl>
 <p class="rubric">Notes</p>
 <p>The function set the following global variables</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">defaults</span><span class="o">.</span><span class="n">initialize_delay</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">defaults</span><span class="o">.</span><span class="n">initialise_delay</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">defaults</span><span class="o">.</span><span class="n">window_mode</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">defaults</span><span class="o">.</span><span class="n">fast_quit</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">expyriment</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">defaults</span><span class="o">.</span><span class="n">auto_create_subject_id</span> <span class="o">=</span> <span class="kc">True</span>
@@ -331,14 +362,15 @@ in <code class="docutils literal notranslate"><span class="pre">expyriment.io</s
 
 <dl class="py function">
 <dt class="sig sig-object py" id="expyriment.control.start">
-<span class="sig-prename descclassname"><span class="pre">expyriment.control.</span></span><span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_create_subject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_ready_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.control.start" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">expyriment.control.</span></span><span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_create_subject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_ready_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.control.start" title="Link to this definition"></a></dt>
 <dd><p>Start an experiment.</p>
-<p>This starts an experiment defined by ‘experiment’ and asks for the subject
+<p>This starts the currently initialised experiment and asks for the subject
 number. When the subject number is entered and confirmed by ENTER, a data
 file is created.
 Eventually, “Ready” will be shown on the screen and the method waits for
 ENTER to be pressed.</p>
-<p>After experiment start the following additional properties are available:</p>
+<p>After the experiment has been started, the following additional properties
+are available:</p>
 <ul class="simple">
 <li><p>experiment.subject – the current subject id</p></li>
 <li><p>experiment.data    – the main data file</p></li>
@@ -346,8 +378,6 @@ ENTER to be pressed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>experiment</strong><span class="classifier">design.Experiment, optional (DEPRECATED)</span></dt><dd><p>don’t use this parameter, it only exists to keep backward compatibility</p>
-</dd>
 <dt><strong>auto_create_subject_id</strong><span class="classifier">bool, optional</span></dt><dd><p>if True new subject id will be created automatically</p>
 </dd>
 <dt><strong>subject_id</strong><span class="classifier">integer, optional</span></dt><dd><p>start with a specific subject_id;
@@ -440,7 +470,7 @@ received by a Keyboard().check() anymore!</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

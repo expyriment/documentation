@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Expyriment plugin system (extras) &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>The Expyriment plugin system (extras) &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -55,7 +50,7 @@
 <li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced.html">Advanced</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="APIReferenceTool.html">API reference tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Testsuite.html">Test suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TestSuite.html">Test suite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CommandLineInterface.html">Command line interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataPreprocessing.html">Data preprocessing and exporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Unicode.html">Using non-English characters</a></li>
@@ -117,20 +112,20 @@ package (e.g. <code class="docutils literal notranslate"><span class="pre">expyr
 <p>There are three ways to import extras:</p>
 <ol class="arabic">
 <li><p>Import all extras in one go:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
 <span class="n">expyriment</span><span class="o">.</span><span class="n">import_all_extras</span><span class="p">()</span>
 </pre></div>
 </div>
 </li>
 <li><p>Import all extras from a specific package:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
-<span class="kn">import</span> <span class="nn">expyriment.stimuli.extras</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">expyriment.stimuli.extras</span>
 </pre></div>
 </div>
 </li>
 <li><p>Import a specific plugin:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">expyriment</span>
-<span class="kn">from</span> <span class="nn">expyriment_stimuli_extras.dotcloud</span> <span class="kn">import</span> <span class="n">DotCloud</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">expyriment</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">expyriment_stimuli_extras.dotcloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">DotCloud</span>
 </pre></div>
 </div>
 </li>
@@ -138,7 +133,7 @@ package (e.g. <code class="docutils literal notranslate"><span class="pre">expyr
 </section>
 <section id="download-plugins-from-stash">
 <h2>Download plugins from stash<a class="headerlink" href="#download-plugins-from-stash" title="Link to this heading"></a></h2>
-<p>Several extra plugins can be found in the <a class="reference external" href="http://stash.expyriment.org">Expyriment stash</a>. When Expyriment
+<p>Several extra plugins can be found in the <a class="reference external" href="https://github.com/expyriment/expyriment-stash">Expyriment stash</a>. When Expyriment
 has been installed with the option <code class="docutils literal notranslate"><span class="pre">download</span></code> (or <code class="docutils literal notranslate"><span class="pre">all</span></code>), all plugins can be
 downloaded automatically by calling:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">expyriment</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">download_from_stash</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;extras&quot;</span><span class="p">)</span>
@@ -152,12 +147,40 @@ downloaded automatically by calling:</p>
 <section id="development">
 <h2>Development<a class="headerlink" href="#development" title="Link to this heading"></a></h2>
 <p>When developing extra plugins, please consider making them available publicly in
-the <a class="reference external" href="http://stash.expyriment.org">Expyriment stash</a>, by creating a pull request.</p>
-<p>Basically, extra plugins are a simple Python module with a single class, where
-the filename is the class name in lowercase. Additionally a file called
-<code class="docutils literal notranslate"><span class="pre">classname_defaults.py</span></code> can be created which will hold the default values for
-all parameters given when initializing the class. The naming convention is
-<code class="docutils literal notranslate"><span class="pre">classname_parameter</span></code>.</p>
+the <a class="reference external" href="https://github.com/expyriment/expyriment-stash">Expyriment stash</a>, by creating a pull request.</p>
+<p>Extra plugins are implemented as a class wrapped in a Python package, where the name of the
+package is the the name of the class in lowercase.</p>
+<p>Here is an overview of the structure of an example plugin:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>myextraplugin
+├── __init__.py
+└── _myextraplugin.py
+</pre></div>
+</div>
+<p>The file <code class="docutils literal notranslate"><span class="pre">_myextraplugin.py</span></code> contains the actual plugin class <code class="docutils literal notranslate"><span class="pre">MyExtraPlugin</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file contains an abstract class with the same name that exposes the
+<code class="docutils literal notranslate"><span class="pre">__init__</span></code> method and any potential static methods of the actual plugin class
+for lazy-loading, so be sure to document it properly:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyExtraPlugin</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Class docstring.&quot;&quot;&quot;</span><span class="s2">&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">args</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Init docstring&quot;&quot;&quot;</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">._myextraplugin</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyExtraPlugin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span> <span class="o">=</span> <span class="n">MyExtraPlugin</span>
+        <span class="n">MyExtraPlugin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">args</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">some_static_method</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">):</span>
+<span class="w">           </span><span class="sd">&quot;&quot;&quot;Static method docstring.&quot;&quot;&quot;</span>
+
+           <span class="kn">from</span><span class="w"> </span><span class="nn">._myextraplugin</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyExtraPlugin</span>
+           <span class="k">return</span> <span class="n">MyExtraPlugin</span><span class="o">.</span><span class="n">some_static_method</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>For design and misc extras this is all there is, but for io and stimuli plugins,
 additional conventions need to be taken care of.</p>
 <section id="io-extras">
@@ -187,7 +210,7 @@ plotted or presented.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

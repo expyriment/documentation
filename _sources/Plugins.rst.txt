@@ -51,11 +51,43 @@ Development
 When developing extra plugins, please consider making them available publicly in
 the `Expyriment stash`_, by creating a pull request.
 
-Basically, extra plugins are a simple Python module with a single class, where
-the filename is the class name in lowercase. Additionally a file called
-``classname_defaults.py`` can be created which will hold the default values for
-all parameters given when initializing the class. The naming convention is
-``classname_parameter``.
+Extra plugins are implemented as a class wrapped in a Python package, where the name of the
+package is the the name of the class in lowercase.
+
+Here is an overview of the structure of an example plugin:
+::
+
+       myextraplugin
+       ├── __init__.py
+       └── _myextraplugin.py
+
+The file ``_myextraplugin.py`` contains the actual plugin class ``MyExtraPlugin``.
+
+The ``__init__.py`` file contains an abstract class with the same name that exposes the
+``__init__`` method and any potential static methods of the actual plugin class
+for lazy-loading, so be sure to document it properly:
+
+.. code-block:: python
+
+    from abc import ABC
+
+
+    class MyExtraPlugin(ABC):
+        """Class docstring.""""
+
+        def __init__(self, **args):
+            """Init docstring"""
+
+            from ._myextraplugin import MyExtraPlugin
+            self.__class__ = MyExtraPlugin
+            MyExtraPlugin.__init__(self, **args)
+
+        @staticmethod
+            def some_static_method(**args):
+               """Static method docstring."""
+
+               from ._myextraplugin import MyExtraPlugin
+               return MyExtraPlugin.some_static_method(**args)
 
 For design and misc extras this is all there is, but for io and stimuli plugins,
 additional conventions need to be taken care of.
@@ -74,5 +106,5 @@ needs a ``_create_surface`` method that defines what happens when the stimulus i
 plotted or presented.
 
 
-.. _`Expyriment stash`: http://stash.expyriment.org
+.. _`Expyriment stash`: https://github.com/expyriment/expyriment-stash
 .. _`Command Line Interface`: CommandLineInterface.html

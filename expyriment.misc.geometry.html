@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.misc.geometry &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.misc.geometry &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -72,6 +67,7 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.MediaTime.html">expyriment.misc.MediaTime</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
@@ -121,8 +117,8 @@
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.cartesian2polar">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">cartesian2polar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radians</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.cartesian2polar" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.cartesian_to_polar">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">cartesian_to_polar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radians</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.cartesian_to_polar" title="Link to this definition"></a></dt>
 <dd><p>Convert a cartesian coordinate (x,y) to a polar coordinate
 (radial, angle[degrees]).</p>
 <dl class="field-list simple">
@@ -144,8 +140,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.coordinates2position">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">coordinates2position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.coordinates2position" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.coordinates_to_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">coordinates_to_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.coordinates_to_position" title="Link to this definition"></a></dt>
 <dd><p>Convert coordinates on the screen or surface to an
 Expyriment position.</p>
 <dl class="field-list simple">
@@ -220,9 +216,9 @@ to the screen</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.points2vertices">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">points2vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.points2vertices" title="Link to this definition"></a></dt>
-<dd><p>Returns vertex representation of the points (list of misc.XYPoints)</p>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.points_to_vertices">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">points_to_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.points_to_vertices" title="Link to this definition"></a></dt>
+<dd><p>Returns vertex representation of the points (list of tuples (x,y)).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -240,14 +236,8 @@ to the screen</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.points_to_vertices">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">points_to_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.points_to_vertices" title="Link to this definition"></a></dt>
-<dd><p>OBSOLETE FUNCTION! Please use <cite>points2vertices</cite>!</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.polar2cartesian">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">polar2cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">polar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radians</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.polar2cartesian" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.polar_to_cartesian">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">polar_to_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">polar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radians</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.polar_to_cartesian" title="Link to this definition"></a></dt>
 <dd><p>Convert a polar coordinate (radial, angle[degrees]) to a polar
 coordinate (x, y)</p>
 <dl class="field-list simple">
@@ -269,14 +259,8 @@ coordinate (x, y)</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.position2coordinate">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">position2coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.position2coordinate" title="Link to this definition"></a></dt>
-<dd><p>“OBSOLETE FUNCTION: Please use ‘position2coordinates’.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.position2coordinates">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">position2coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.position2coordinates" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.position_to_coordinates">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">position_to_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.position_to_coordinates" title="Link to this definition"></a></dt>
 <dd><p>Convert an Expyriment position to coordinates on the
 screen or surface.</p>
 <dl class="field-list simple">
@@ -299,8 +283,8 @@ to the screen</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.position2visual_angle">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">position2visual_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewing_distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitor_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.position2visual_angle" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.position_to_visual_angle">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">position_to_visual_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewing_distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitor_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.position_to_visual_angle" title="Link to this definition"></a></dt>
 <dd><p>Convert an expyriment position (pixel) to a visual angle from center.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -309,7 +293,7 @@ to the screen</p>
 </dd>
 <dt><strong>viewing_distance</strong><span class="classifier">numeric</span></dt><dd><p>viewing distance in cm</p>
 </dd>
-<dt><strong>monitior_size</strong><span class="classifier">numeric</span></dt><dd><p>physical size of the monitor in cm (x, y)</p>
+<dt><strong>monitor_size</strong><span class="classifier">numeric</span></dt><dd><p>physical size of the monitor in cm (x, y)</p>
 </dd>
 </dl>
 </dd>
@@ -323,8 +307,8 @@ to the screen</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.tuples2points">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">tuples2points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_tuples</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.tuples2points" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.tuples_to_points">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">tuples_to_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_tuples</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.tuples_to_points" title="Link to this definition"></a></dt>
 <dd><p>Converts a list of tuples (x,y) to a list of misc.XYPoints</p>
 </dd></dl>
 
@@ -519,8 +503,8 @@ stimuli.Shape(vertex_list=…).</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="expyriment.misc.geometry.visual_angle2position">
-<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">visual_angle2position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visual_angle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewing_distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitor_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.visual_angle2position" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="expyriment.misc.geometry.visual_angle_to_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.geometry.</span></span><span class="sig-name descname"><span class="pre">visual_angle_to_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visual_angle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewing_distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitor_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.geometry.visual_angle_to_position" title="Link to this definition"></a></dt>
 <dd><p>Convert an position defined as visual angle from center to expyriment
 position (pixel).</p>
 <dl class="field-list simple">
@@ -530,7 +514,7 @@ position (pixel).</p>
 </dd>
 <dt><strong>viewing_distance</strong><span class="classifier">numeric</span></dt><dd><p>viewing distance in cm</p>
 </dd>
-<dt><strong>monitior_size</strong><span class="classifier">(numeric, numeric)</span></dt><dd><p>physical size of the monitor in cm (x, y)</p>
+<dt><strong>monitor_size</strong><span class="classifier">(numeric, numeric)</span></dt><dd><p>physical size of the monitor in cm (x, y)</p>
 </dd>
 </dl>
 </dd>
@@ -557,7 +541,7 @@ position (pixel).</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

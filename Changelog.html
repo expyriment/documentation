@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Changelog &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>Changelog &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -84,6 +79,263 @@
              
   <section id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading"></a></h1>
+<section id="version-1-0-0-18-aug-2025">
+<h2>Version 1.0.0 (18 Aug 2025)<a class="headerlink" href="#version-1-0-0-18-aug-2025" title="Link to this heading"></a></h2>
+<p>New Features:</p>
+<ul>
+<li><p>Expyriment is now based on Pygame 2 (using SDL 2) and depends also on
+numpy &amp; mediadecoder</p></li>
+<li><p>It’s no longer necessary to install additional features via pip with
+<cite>[feature]</cite>, since all dependencies are installed by default.</p></li>
+<li><dl class="simple">
+<dt>test suite:</dt><dd><ul class="simple">
+<li><p>option to run single tests</p></li>
+<li><p>improvements in reporting visual timing test results</p></li>
+<li><p>improved audio test</p></li>
+<li><p>format changes in saved protocol</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>command line interface:</dt><dd><ul class="simple">
+<li><p>option <code class="docutils literal notranslate"><span class="pre">-I</span></code> starts an interactive session</p></li>
+<li><p>option <code class="docutils literal notranslate"><span class="pre">--display</span></code> defines which display to show the (fullscreen)
+window on</p></li>
+<li><p>option <code class="docutils literal notranslate"><span class="pre">--display-resolution</span></code> sets the fullscreen resolution to use
+(overwrites automatically detected maximal display resolution)</p></li>
+<li><p>option <code class="docutils literal notranslate"><span class="pre">--text-size</span></code> sets the default experiment text size (as defined
+in <code class="docutils literal notranslate"><span class="pre">design.defaults.experiment_text_size</span></code>)</p></li>
+<li><p>option <code class="docutils literal notranslate"><span class="pre">--window-size</span></code> sets the default size of the window (when using
+window-mode)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>all wait methods have new parameter <code class="docutils literal notranslate"><span class="pre">low_performance</span></code> which allows for
+other threads to be processed while waiting (at the cost of accuracy)</p></li>
+<li><dl class="simple">
+<dt>control.Keyboard.process_control_events:</dt><dd><ul class="simple">
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">event_detected_function</span></code> to set a function that is
+called as soon as a quit event is detected (but before the end function
+is called)</p></li>
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">quit_denied_function</span></code> to set a function that is called
+when a user declines the quitting (i.e. presses “n”)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>control.Mouse.process_quit_event:</dt><dd><ul class="simple">
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">event_detected_function</span></code> to set a function that is
+called as soon as a quit event is detected (but before the end function
+is called)</p></li>
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">quit_confirmed_function</span></code> to set a function that is
+called when a user confirms the quitting (i.e. presses “y”)</p></li>
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">quit_denied_function</span></code> to set a function that is called
+when a user declines the quitting (i.e. presses “n”)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>control.pause: added <code class="docutils literal notranslate"><span class="pre">text</span></code> and <code class="docutils literal notranslate"><span class="pre">key</span></code> parameters</p></li>
+<li><dl class="simple">
+<dt>control.defaults:</dt><dd><ul class="simple">
+<li><p>added <code class="docutils literal notranslate"><span class="pre">display</span></code> to set display index for showing screen on</p></li>
+<li><p>added <code class="docutils literal notranslate"><span class="pre">display_resolution</span></code> to overwrite detected native resolution</p></li>
+<li><p>added <code class="docutils literal notranslate"><span class="pre">audiosystem_device</span></code> to select audio device</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>stimuli.Audio:</dt><dd><ul class="simple">
+<li><p>not limited to .wav/.ogg files anymore</p></li>
+<li><p>should support most common formats (i.e. WAV, AIFF, MP3, Ogg, Opus, FLAC)</p></li>
+<li><p>new property <code class="docutils literal notranslate"><span class="pre">is_playing</span></code> to check whether the audio stimulus is
+playing</p></li>
+<li><p>new property <code class="docutils literal notranslate"><span class="pre">length</span></code> to get the length of the audio stimulus</p></li>
+<li><p>new property <code class="docutils literal notranslate"><span class="pre">time</span></code> to get the current playback time</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">wait_time</span></code> to wait until specified playback time is reached</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">wait_end</span></code> to wait until the audio stimulus has finished
+playing</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">pause</span></code> to pause (and unpause) playback of the audio stimulus</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">seek</span></code> to seek to a specified playback time</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">forward</span></code> to forward playback by specified duration</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">rewind</span></code> to rewind playback by specified duration or to the
+start</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">seek</span></code>, <code class="docutils literal notranslate"><span class="pre">rewind</span></code>, <code class="docutils literal notranslate"><span class="pre">forward</span></code>, <code class="docutils literal notranslate"><span class="pre">wait_time</span></code> methods all take multiple
+convenient time formats now (e.g. “00:01:30”)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>stimuli.Video:</dt><dd><ul class="simple">
+<li><p>general improvements</p></li>
+<li><p>Pygame video backend removed (always relies on mediadecoder)</p></li>
+<li><p>Pygame audio backend is now the default (instead of sounddevice)</p></li>
+<li><p>new parameter <code class="docutils literal notranslate"><span class="pre">audio_backend</span></code></p></li>
+<li><p>new stimuli default <code class="docutils literal notranslate"><span class="pre">video_audio_backend</span></code></p></li>
+<li><p>Pygame audio backend uses current audiosystem (if started)</p></li>
+<li><p>present method will start playback if not started already</p></li>
+<li><p>frame dropping check is now located in update method (was in present)</p></li>
+<li><p>update method allows for updating without blocking on vertical retrace
+(OpenGL mode only)</p></li>
+<li><p>new property <code class="docutils literal notranslate"><span class="pre">n_frames</span></code> to get the total number of frames of the video</p></li>
+<li><p>new property <code class="docutils literal notranslate"><span class="pre">fps</span></code> to get the frame rate in frames per second</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">wait_time</span></code> to wait until a certain time</p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">seek</span></code> to seek to any position in the video</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">seek</span></code>, <code class="docutils literal notranslate"><span class="pre">rewind</span></code>, <code class="docutils literal notranslate"><span class="pre">forward</span></code>, <code class="docutils literal notranslate"><span class="pre">wait_time</span></code> methods all take multiple</p></li>
+</ul>
+<blockquote>
+<div><p>convenient time formats now (e.g. “00:01:30”)</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>io.Screen:</dt><dd><ul class="simple">
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">get_display_resolution</span></code></p></li>
+<li><p>new method <code class="docutils literal notranslate"><span class="pre">misc.get_display_info</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">update</span></code> method has new <code class="docutils literal notranslate"><span class="pre">blocking</span></code> parameter to control blocking on
+vertical retrace (OpenGL mode only) behaviour per call</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>io.TextInput: <code class="docutils literal notranslate"><span class="pre">get</span></code> method now has parameter <code class="docutils literal notranslate"><span class="pre">clear_event_cue</span></code></p></li>
+<li><dl class="simple">
+<dt>misc:</dt><dd><ul class="simple">
+<li><p>new class``MediaTime`` for representing time as used in the context of
+media playback</p></li>
+<li><p>new function <code class="docutils literal notranslate"><span class="pre">misc.get_audio_devices</span></code> to get a list of available audio
+devices</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Changed:</p>
+<ul>
+<li><p>Python 2 support has been removed
+Expyriment now only works with Python 3.9 or higher</p></li>
+<li><dl class="simple">
+<dt>deprecated and obsolete classes, methods and parameter were removed</dt><dd><ul class="simple">
+<li><p>parameter <cite>experiment</cite> in control.start</p></li>
+<li><p>permute.balanced_latin_square(), permute.cycled_latin_square()</p></li>
+<li><p>geometry.position2coordinate(), geometry.points_to_vertice()</p></li>
+<li><p>statistics.frequence_table()</p></li>
+<li><p>stimulus.Dot, stimulus. Frame</p></li>
+<li><p>Clock.cpu_time()</p></li>
+<li><p>Visual.replace()</p></li>
+<li><p>Circle.get_polar_coordiantes(), Circle.set_polar_coordinates()</p></li>
+<li><p>FixCross.cross_size</p></li>
+<li><p>Shape.is_point_inside(), Shape.is_shape_overlapping()</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>package building with flit and pyproject.toml</p></li>
+<li><p>revision number and build data (<cite>__revision__</cite>, <cite>__date__</cite>) removed from
+source files</p></li>
+<li><p>Python 2 support has been removed
+Expyriment now only works with Python 3.10 or higher</p></li>
+<li><p>Documentation not shipped with Expyriment anymore (i.e. no offline
+documentation available, only online)</p></li>
+<li><p>rewrite of permutation module</p></li>
+<li><p>pause_key has been removed</p></li>
+<li><p>When running in virtual environment, Expyriment settings folder will be local
+to that environment</p></li>
+<li><p>Always use maximal display resolution by default for fullscreen mode (unless
+overwritten by control.defaults.display_resolution)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">expyriment.control.defaults.openg_gl</span></code> is now called
+<code class="docutils literal notranslate"><span class="pre">expyriment.control.defaults.opengl</span></code></p></li>
+<li><p>OpenGL mode “3” has been removed: OpenGL mode “2” (default) now does what
+“3” used to do (i.e. “alternative blocking”)</p></li>
+<li><dl class="simple">
+<dt>updated command line interface options:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-0</span></code>, <code class="docutils literal notranslate"><span class="pre">-g</span></code>, <code class="docutils literal notranslate"><span class="pre">--no-opengl</span></code>, <code class="docutils literal notranslate"><span class="pre">-1</span></code>, <code class="docutils literal notranslate"><span class="pre">-2</span></code>, <code class="docutils literal notranslate"><span class="pre">-3</span></code> are deprecated</p></li>
+<li><p>OpenGL mode can now be set with new option <code class="docutils literal notranslate"><span class="pre">--opengl</span></code></p></li>
+<li><p>all arguments are now also available as alternative long names</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>io.TextMenu: <cite>width</cite> is now an optional parameter. If not defined, surface
+width is based on the widest item in the menu</p></li>
+<li><p>io.GamePad.wait_press: removed <code class="docutils literal notranslate"><span class="pre">time.sleep(0.0005)</span></code></p></li>
+<li><p>Deprecated io.Screen.get_monitor_resolution and misc.get_monitor_resolution</p></li>
+<li><dl class="simple">
+<dt>misc.get_system_info:</dt><dd><ul class="simple">
+<li><p>additions and improvements</p></li>
+<li><p>format changes for <code class="docutils literal notranslate"><span class="pre">as_text</span></code> output</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>renaming: <cite>misc.py2py3_sort_array()</cite> to <cite>misc.string_sort_array()</cite></p></li>
+<li><p>more consistent function naming in <cite>misc</cite>:</p>
+<ul class="simple">
+<li><p><cite>byte2unicode()</cite> to <cite>bytes_to_unicode()</cite></p></li>
+<li><p><cite>unicode2byte()</cite> to <cite>unicode_to_bytes()</cite></p></li>
+<li><p><cite>str2unicode()</cite> to <cite>str_to_unicode()</cite></p></li>
+<li><p><cite>unicode2str()</cite> to <cite>unicode_to_str()</cite></p></li>
+<li><p><cite>number2ascii()</cite> to <cite>numpad_digit_code_to_ascii()</cite></p></li>
+</ul>
+</li>
+<li><dl class="simple">
+<dt>more consistent function naming in <cite>misc.geometry</cite>:</dt><dd><ul class="simple">
+<li><p><cite>position2coordinates()</cite> to <cite>position_to_coordinates()</cite></p></li>
+<li><p><cite>coordinates2position`() to `coordinates_to_position()</cite></p></li>
+<li><p><cite>cartesian2polar()</cite> to <cite>cartesian_to_polar()</cite></p></li>
+<li><p><cite>position2visual_angle()</cite> to <cite>position_to_visual_angle()</cite></p></li>
+<li><p><cite>tuples2points()</cite> to <cite>tuples_to_points()</cite></p></li>
+<li><p><cite>polar2cartesian()</cite> to <cite>polar_to_cartesian()</cite></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>components with American spelling are now also available in British spelling,
+enhancing consistency with the overall spelling in the library:</p>
+<blockquote>
+<div><ul>
+<li><p>method <code class="docutils literal notranslate"><span class="pre">control.initialize</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">control.initialise</span></code></p></li>
+<li><dl class="simple">
+<dt>module <code class="docutils literal notranslate"><span class="pre">design.randomize</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">design.randomise</span></code></dt><dd><ul class="simple">
+<li><p>property <code class="docutils literal notranslate"><span class="pre">design.Experiment.is_initialized</span></code> -&gt;</p></li>
+</ul>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">design.Experiment.is_initialised</span></code></dt><dd><ul class="simple">
+<li><p>property <code class="docutils literal notranslate"><span class="pre">design.Experiment.bws_factor_randomized</span></code> -&gt;</p></li>
+</ul>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">design.Experiment.bws_factor_randomised</span></code></dt><dd><ul class="simple">
+<li><p>constant <code class="docutils literal notranslate"><span class="pre">control.defaults.initialize_delay</span></code> -&gt;</p></li>
+</ul>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">control.defaults.initialise_delay</span></code></p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Fixed:</p>
+<ul class="simple">
+<li><p>bug in colour.is_hex &amp; colour.is_colour</p></li>
+<li><p>data_preprocessing: adds suffix “.csv” to filename when writing csv files</p></li>
+<li><p>bug when reusing subject id within a minute</p></li>
+<li><p>test suite: close serial port after test</p></li>
+<li><p>io.Keyboard: 0.5 ms timing inaccuracy in wait methods</p></li>
+<li><p>Visual stimuli: don’t clear the original canvas when copying</p></li>
+<li><p>stimuli.Ellipse: bug when using uneven <cite>line_width</cite> values</p></li>
+<li><p>io.Screen: bug in saving screenshots with <cite>save</cite> when using OpenGL</p></li>
+<li><p>io.Screen: bug in showing Expyriment logo in task bar</p></li>
+<li><p>bug in <cite>misc.get_display_info</cite></p></li>
+<li><p>several bugs in misc.get_system_info</p></li>
+</ul>
+</section>
 <section id="version-0-10-0-30-oct-2019">
 <h2>Version 0.10.0 (30 Oct 2019)<a class="headerlink" href="#version-0-10-0-30-oct-2019" title="Link to this heading"></a></h2>
 <p>New Features:</p>
@@ -96,7 +348,7 @@ using the optional <code class="docutils literal notranslate"><span class="pre">
 <li><p>all visual stimuli now have <code class="docutils literal notranslate"><span class="pre">get_surface_array</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">set_surface_array</span></code>
 methods for direct pixel manipulations with numpy</p></li>
 <li><p>all visual stimuli have a getter and setter for the position in polar
-coordinates: <code class="docutils literal notranslate"><span class="pre">polar_coordiante</span></code></p></li>
+coordinates: <code class="docutils literal notranslate"><span class="pre">polar_coordinate</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cartesian2polar</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">polar2cartesian</span></code> in <code class="docutils literal notranslate"><span class="pre">misc.geometry</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">design</span></code>: trials, blocks and experiment objects have the method
 <code class="docutils literal notranslate"><span class="pre">has_factor</span></code> to check if a factor is defined</p></li>
@@ -110,7 +362,7 @@ shapes used for plotting with <code class="docutils literal notranslate"><span c
 lines</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">stimuli.Line</span></code> is internally based on <code class="docutils literal notranslate"><span class="pre">stimuli.Shape</span></code> and has the new
 methods <code class="docutils literal notranslate"><span class="pre">get_shape</span></code> and <code class="docutils literal notranslate"><span class="pre">get_connected_shape</span></code></p></li>
-<li><p>new function <code class="docutils literal notranslate"><span class="pre">misc.round</span></code>, implementing the old Python 2 rounding behaviour</p></li>
+<li><p>new function <code class="docutils literal notranslate"><span class="pre">misc.py2_round</span></code>, implementing the old Python 2 rounding behaviour</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">io.keyboard.check</span></code> now has an argument <code class="docutils literal notranslate"><span class="pre">check_for_keyup</span></code> which will
 check for keyup events instead of keydown events</p></li>
 <li><p>new class <code class="docutils literal notranslate"><span class="pre">misc.Colour</span></code>: create colours by names, Hex strings or RGB values;
@@ -147,7 +399,7 @@ be instead downloaded from the Expyriment stash (see
 <code class="docutils literal notranslate"><span class="pre">position2coordinates</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">position2coordinates</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">coordinates2position</span></code> have a new optional
 argument to calculate positions relative to a surfaces</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">stimuli.Circle</span></code>: <code class="docutils literal notranslate"><span class="pre">get_polar_coordiantes</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">set_polar_coordiantes</span></code> are
+<li><p><code class="docutils literal notranslate"><span class="pre">stimuli.Circle</span></code>: <code class="docutils literal notranslate"><span class="pre">get_polar_coordinates</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">set_polar_coordinates</span></code> are
 obsolete; use <code class="docutils literal notranslate"><span class="pre">polar_position</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">design</span></code>: <code class="docutils literal notranslate"><span class="pre">Trial().get_factor</span></code>, <code class="docutils literal notranslate"><span class="pre">Block().get_factor</span></code> and
 <code class="docutils literal notranslate"><span class="pre">Experiment().get_bws_factor</span></code> now raise an exception if the factor is not
@@ -175,7 +427,7 @@ account</p></li>
 <li><p>bug in <code class="docutils literal notranslate"><span class="pre">io.Keyboard.wait</span></code></p></li>
 <li><p>bug when drawing textures to screen (OpenGL) leading to 1-pixel inaccuracies</p></li>
 <li><p>bug in <code class="docutils literal notranslate"><span class="pre">stimuli.Ellipse</span></code> with uneven <cite>line_width</cite> argument</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">io.TextIput</span></code>: argument <code class="docutils literal notranslate"><span class="pre">background_stimulus</span></code> now takes all Expyriment
+<li><p><code class="docutils literal notranslate"><span class="pre">io.TextInput</span></code>: argument <code class="docutils literal notranslate"><span class="pre">background_stimulus</span></code> now takes all Expyriment
 stimuli</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">misc.get_system_info()</span></code> uses <code class="docutils literal notranslate"><span class="pre">PIL.__version__</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">io.TextMenu</span></code> mouse wheel scrolling</p></li>
@@ -237,7 +489,7 @@ module_hashes_as_string and get_system_info from expyriment to misc</p></li>
 <ul class="simple">
 <li><p>unicode bug on Windows for font files</p></li>
 <li><p>unicode bug on Windows for Audio and Picture</p></li>
-<li><p>bug fix in unicode2str</p></li>
+<li><p>bug fix in unicode_to_str</p></li>
 <li><p>bug fix Experiment.add_experiment_info</p></li>
 <li><p>bug: issue #65, tempfolder at multiuser systems</p></li>
 <li><p>minor bug fixes in _secure_hash.py, _files.py</p></li>
@@ -267,10 +519,10 @@ variables (see parameter <cite>read_variables</cite>)</p></li>
 <li><p>new feature: Expyriment asks in interactive mode if initializing a fullscreen</p></li>
 <li><p>new method: stimulus.visual.scale_to_fullscreen</p></li>
 <li><p>new class: design.extras.StimulationProtocol</p></li>
-<li><p>new method in data_preprocessing: save to to R data frame</p></li>
+<li><p>new method in data_preprocessing: save to R data frame</p></li>
 <li><p>new method in data_preprocessing: get_experiment_duration</p></li>
 <li><p>new method/property: misc.get_monitor_resolution &amp; Screen.monitor_resolution</p></li>
-<li><p>new mouse function: experiments can be quited by mouse events (triple click);
+<li><p>new mouse function: experiments can be quit by mouse events (triple click);
 see documentation of property “mouse_quit_event”. This function is only switched
 on per default under Android</p></li>
 <li><p>new method visual stimuli.replace</p></li>
@@ -334,7 +586,7 @@ obsolete</p></li>
 <li><p>stimuli with odd dimensions missed a pixel in each dimension in OpenGL mode</p></li>
 <li><p>bug in stimuli.Audio.unload() and stimuli.Video.unload()</p></li>
 <li><p>bug in io.ParallelPort.poll (now io.extras.SimpleParallelPort)</p></li>
-<li><p>bug in Shape: shapes now comensate for the Pygame bug of extended polygons
+<li><p>bug in Shape: shapes now compensate for the Pygame bug of extended polygons
 along the horizontal axes</p></li>
 <li><p>bug in stimuli.extras.DotCloud: colour of dots could not be changed</p></li>
 </ul>
@@ -504,7 +756,7 @@ see __inti__ and reset</p></li>
 <li><p>stimuli.Dot is deprecated now, use stimuli.Circle instead</p></li>
 <li><p>stimuli.Shape: is_point_inside and is_shape_overlapping are deprecated now</p></li>
 <li><p>stimuli.Shape.native_scaling does now optionally scale also the line_width</p></li>
-<li><p>stimuli.Frame: property line_width is now renmes to frame_line_width. Since
+<li><p>stimuli.Frame: property line_width is now renamed to frame_line_width. Since
 line_width is a property the underlying shape and always 0 (filled shapes)</p></li>
 <li><p>stimuli.Frame is deprecated now, use stimuli.Rectangle with line_width &gt; 0</p></li>
 <li><p>stimuli.Rectangle was rewritten and is not inherited from Shape anymore;
@@ -516,8 +768,8 @@ the old Rectangle stimulus is now known as stimuli.extras.PolygonRectangle</p></
 <p>New Features:</p>
 <ul class="simple">
 <li><p>data_preprocessing.print_n_trials(variables)</p></li>
-<li><p>data_preporcessing.get_variable_data: get data as numpy arrays.</p></li>
-<li><p>data_preporcessing.add_variable: add data from numpy.</p></li>
+<li><p>data_preprocessing.get_variable_data: get data as numpy arrays.</p></li>
+<li><p>data_preprocessing.add_variable: add data from numpy.</p></li>
 <li><p>read trials from csv file into a block design.block.add_trials_from_csv_file</p></li>
 <li><p>block.read_design (counterpart to save_design)</p></li>
 <li><p>the main event_file logs now also the standard output and Python errors</p></li>
@@ -536,7 +788,7 @@ the old Rectangle stimulus is now known as stimuli.extras.PolygonRectangle</p></
 <li><p>Fixes and adjustments for default logging</p></li>
 <li><p>API browser now works on OS X</p></li>
 <li><p>API browser fonts on Windows</p></li>
-<li><p>several bug fixes in data_preporcessing</p></li>
+<li><p>several bug fixes in data_preprocessing</p></li>
 </ul>
 </section>
 <section id="version-0-5-1-07-mar-2012">
@@ -544,7 +796,7 @@ the old Rectangle stimulus is now known as stimuli.extras.PolygonRectangle</p></
 <p>Fixed:</p>
 <ul class="simple">
 <li><p>Bug in Serial Port test when no input is received</p></li>
-<li><p>Bug for get_verrsion() under Python 2.6 under OS X</p></li>
+<li><p>Bug for get_version() under Python 2.6 under OS X</p></li>
 </ul>
 <p>Changed:</p>
 <ul class="simple">
@@ -834,7 +1086,7 @@ stimuli anymore</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

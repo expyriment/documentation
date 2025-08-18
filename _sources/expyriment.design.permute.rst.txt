@@ -21,8 +21,6 @@ Attributes
 
 Functions
 -----------
-.. autofunction:: expyriment.design.permute.balanced_latin_square
-.. autofunction:: expyriment.design.permute.cycled_latin_square
 .. autofunction:: expyriment.design.permute.is_permutation_type
 .. autofunction:: expyriment.design.permute.latin_square
 

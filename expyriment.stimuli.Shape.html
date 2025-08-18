@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.stimuli.Shape &mdash; Expyriment 0.11.dev2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>expyriment.stimuli.Shape &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2753f998"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,9 +37,6 @@
             Expyriment
               <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.11.dev2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -66,10 +61,8 @@
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.BlankScreen.html">expyriment.stimuli.BlankScreen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Canvas.html">expyriment.stimuli.Canvas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Circle.html">expyriment.stimuli.Circle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Dot.html">expyriment.stimuli.Dot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Ellipse.html">expyriment.stimuli.Ellipse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.FixCross.html">expyriment.stimuli.FixCross</a></li>
-<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Frame.html">expyriment.stimuli.Frame</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Line.html">expyriment.stimuli.Line</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Picture.html">expyriment.stimuli.Picture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Rectangle.html">expyriment.stimuli.Rectangle</a></li>
@@ -116,15 +109,15 @@
 <h1>expyriment.stimuli.Shape<a class="headerlink" href="#expyriment-stimuli-shape" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">Shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anti_aliasing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug_contour_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">Shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anti_aliasing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug_contour_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a shape.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anti_aliasing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug_contour_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape.__init__" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anti_aliasing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug_contour_colour</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape.__init__" title="Link to this definition"></a></dt>
 <dd><p>Create a shape.</p>
 <p>A shape is an object described by vertices. For more details about
 vertex representations see:
-<a class="reference external" href="http://en.wikipedia.org/wiki/Vertex_(geometry">http://en.wikipedia.org/wiki/Vertex_(geometry</a>)</p>
+<a class="reference external" href="https://en.wikipedia.org/wiki/Vertex_(geometry">https://en.wikipedia.org/wiki/Vertex_(geometry</a>)</p>
 <p>The vertex representation describes the contour of an object. Think of
 it as if you would draw with a pen. You start somewhere and make
 movements in different directions. Shapes are always closed. Thus, a
@@ -199,7 +192,7 @@ shapes (see example 3).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.absolute_position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">absolute_position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.absolute_position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">absolute_position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.absolute_position" title="Link to this definition"></a></dt>
 <dd><p>Getter for absolute_position.</p>
 <p class="rubric">Notes</p>
 <p>The absolute position differs for instance from the (relative) position, if the
@@ -255,7 +248,7 @@ to compute!</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>vertex_list</strong><span class="classifier">((int, int))</span></dt><dd><p>list of vertices ((int, int))</p>
+<dt><strong>vertex_list</strong><span class="classifier">((int, int))</span></dt><dd><p>list of vertices as tuples((int, int))</p>
 </dd>
 </dl>
 </dd>
@@ -264,7 +257,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.anti_aliasing">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.anti_aliasing" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.anti_aliasing" title="Link to this definition"></a></dt>
 <dd><p>Getter for anti_aliasing.</p>
 </dd></dl>
 
@@ -281,7 +274,7 @@ may take some time!</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of bluring</p>
+<dt><strong>level</strong><span class="classifier">int</span></dt><dd><p>level of blurring</p>
 </dd>
 </dl>
 </dd>
@@ -317,7 +310,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for colour.</p>
 </dd></dl>
 
@@ -326,7 +319,7 @@ to compute!</p>
 <span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape.compress" title="Link to this definition"></a></dt>
 <dd><p>“Compress the stimulus.</p>
 <p>This will create a temporary file on the disk where the surface of the
-stimululs is written to.
+stimulus is written to.
 The surface will now be read from the disk to free memory.
 Compressed stimuli cannot do surface operations!
 Preloading compressed stimuli is possible and highly recommended.
@@ -374,8 +367,8 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.debug_contour_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">debug_contour_colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.debug_contour_colour" title="Link to this definition"></a></dt>
-<dd><p>Getter for conture_colour.</p>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">debug_contour_colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.debug_contour_colour" title="Link to this definition"></a></dt>
+<dd><p>Getter for contour_colour.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -450,7 +443,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.flipping">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">flipping</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.flipping" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">flipping</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.flipping" title="Link to this definition"></a></dt>
 <dd><p>“Getter for the total native flipping.</p>
 </dd></dl>
 
@@ -502,13 +495,13 @@ using RGBA coding.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.has_surface">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_surface</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.has_surface" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_surface</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.has_surface" title="Link to this definition"></a></dt>
 <dd><p>Getter for has_surface.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.id" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.id" title="Link to this definition"></a></dt>
 <dd><p>Getter for id.</p>
 </dd></dl>
 
@@ -540,31 +533,19 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.is_compressed">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_compressed</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.is_compressed" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_compressed</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.is_compressed" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_compressed.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="expyriment.stimuli.Shape.is_point_inside">
-<span class="sig-name descname"><span class="pre">is_point_inside</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_xy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape.is_point_inside" title="Link to this definition"></a></dt>
-<dd><p>“OBSOLETE METHOD: Please use ‘overlapping_with_position’.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.is_preloaded">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.is_preloaded" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.is_preloaded" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_preloaded.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="expyriment.stimuli.Shape.is_shape_overlapping">
-<span class="sig-name descname"><span class="pre">is_shape_overlapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Shape.is_shape_overlapping" title="Link to this definition"></a></dt>
-<dd><p>OBSOLETE METHOD: Please use ‘overlapping_with_shape’.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.logging">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.logging" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
@@ -786,7 +767,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.points">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.points" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.points" title="Link to this definition"></a></dt>
 <dd><dl class="simple">
 <dt>Returns shape as list of tuples (x, y) representing points.</dt><dd><p>see Shape.xy_points</p>
 </dd>
@@ -808,8 +789,8 @@ flipping)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.points_on_screen">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points_on_screen</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.points_on_screen" title="Link to this definition"></a></dt>
-<dd><p>Returns shape as list of tuples (x, y) resenting points on the
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points_on_screen</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.points_on_screen" title="Link to this definition"></a></dt>
+<dd><p>Returns shape as list of tuples (x, y) representing points on the
 screen. see Shape.xy_points_on_screen.</p>
 <p>In contrast to Shape.points, it takes into account the position on
 screen.</p>
@@ -828,13 +809,13 @@ flipping).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.polar_position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polar_position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.polar_position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polar_position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.polar_position" title="Link to this definition"></a></dt>
 <dd><p>Getter for the position in polar coordinates (radial, angle[degrees])</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.position">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.position" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.position" title="Link to this definition"></a></dt>
 <dd><p>Getter for position.</p>
 </dd></dl>
 
@@ -905,11 +886,11 @@ appended at the end of the event file</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.rect">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rect</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rect" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rect</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rect" title="Link to this definition"></a></dt>
 <dd><p>Getter for bouncing rectangular
 rect = pygame.Rect(left, top, width, height)</p>
 <p class="rubric">Notes</p>
-<p>Fom version 0.9.1 on, this is a pygame.Rect</p>
+<p>From version 0.9.1 on, this is a pygame.Rect</p>
 </dd></dl>
 
 <dl class="py method">
@@ -971,19 +952,19 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.rotation">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation" title="Link to this definition"></a></dt>
 <dd><p>“Getter for the total native rotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.rotation_centre">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_centre</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation_centre" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_centre</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation_centre" title="Link to this definition"></a></dt>
 <dd><p>Getter for rotation_centre.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.rotation_centre_display_colour">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_centre_display_colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation_centre_display_colour" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rotation_centre_display_colour</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.rotation_centre_display_colour" title="Link to this definition"></a></dt>
 <dd><p>Getter for rotation_centre_display_colour.</p>
 </dd></dl>
 
@@ -1063,7 +1044,7 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.scaling">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scaling</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.scaling" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scaling</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.scaling" title="Link to this definition"></a></dt>
 <dd><p>“Getter for the total native scaling.</p>
 </dd></dl>
 
@@ -1143,7 +1124,7 @@ methods might affect the stability of the experiment.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.surface_size">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_size</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.surface_size" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_size</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.surface_size" title="Link to this definition"></a></dt>
 <dd><p>Getter for surface_size.</p>
 </dd></dl>
 
@@ -1183,13 +1164,13 @@ to compute!</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.vertices">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertices</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.vertices" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertices</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.vertices" title="Link to this definition"></a></dt>
 <dd><p>Getter for the polygon vertices.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.xy_points">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xy_points</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.xy_points" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xy_points</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.xy_points" title="Link to this definition"></a></dt>
 <dd><p>Returns the shape as list of XYPoints.</p>
 <p>The representation does not take into account the position. Use
 xy_points_on_screen for position-depended representation.</p>
@@ -1208,7 +1189,7 @@ flipping).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Shape.xy_points_on_screen">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xy_points_on_screen</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.xy_points_on_screen" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xy_points_on_screen</span></span><a class="headerlink" href="#expyriment.stimuli.Shape.xy_points_on_screen" title="Link to this definition"></a></dt>
 <dd><p>Returns the shape as list of XYPoints in Expyriment coordinates.</p>
 <p>In contrast to xy_points, it takes into account the position on
 screen.</p>
@@ -1240,7 +1221,7 @@ flipping).</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

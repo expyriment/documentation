@@ -7,43 +7,43 @@ Attributes
 -----------
 .. py:data:: expyriment.misc.constants.C_BLACK
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797d960>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a989220>
 
 .. py:data:: expyriment.misc.constants.C_BLUE
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797dab0>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a9e0a10>
 
 .. py:data:: expyriment.misc.constants.C_DARKGREY
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797dbd0>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9cacb290>
 
 .. py:data:: expyriment.misc.constants.C_EXPYRIMENT_ORANGE
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797dc30>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9b9fa870>
 
 .. py:data:: expyriment.misc.constants.C_EXPYRIMENT_PURPLE
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797dc90>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a508110>
 
 .. py:data:: expyriment.misc.constants.C_GREEN
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797da50>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a9e0bf0>
 
 .. py:data:: expyriment.misc.constants.C_GREY
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797db70>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a9e0e30>
 
 .. py:data:: expyriment.misc.constants.C_RED
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797d9f0>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a9e0cb0>
 
 .. py:data:: expyriment.misc.constants.C_WHITE
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797d990>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9b1c7fb0>
 
 .. py:data:: expyriment.misc.constants.C_YELLOW
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f546797db10>
+   default value: <expyriment.misc._colour.Colour object at 0x7fdd9a9e0d70>
 
 .. py:data:: expyriment.misc.constants.EXPYRIMENT_LOGO_FILE
 

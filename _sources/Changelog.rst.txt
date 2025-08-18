@@ -1,6 +1,189 @@
 Changelog
 ==========
 
+Version 1.0.0 (18 Aug 2025)
+---------------------------
+
+
+New Features:
+
+- Expyriment is now based on Pygame 2 (using SDL 2) and depends also on
+  numpy & mediadecoder
+- It's no longer necessary to install additional features via pip with
+  `[feature]`, since all dependencies are installed by default.
+- test suite:
+    - option to run single tests
+    - improvements in reporting visual timing test results
+    - improved audio test
+    - format changes in saved protocol
+- command line interface:
+    - option ``-I`` starts an interactive session
+    - option ``--display`` defines which display to show the (fullscreen)
+      window on
+    - option ``--display-resolution`` sets the fullscreen resolution to use
+      (overwrites automatically detected maximal display resolution)
+    - option ``--text-size`` sets the default experiment text size (as defined
+      in ``design.defaults.experiment_text_size``)
+    - option ``--window-size`` sets the default size of the window (when using
+      window-mode)
+-  all wait methods have new parameter ``low_performance`` which allows for
+   other threads to be processed while waiting (at the cost of accuracy)
+- control.Keyboard.process_control_events:
+    - new parameter ``event_detected_function`` to set a function that is
+      called as soon as a quit event is detected (but before the end function
+      is called)
+    - new parameter ``quit_denied_function`` to set a function that is called
+      when a user declines the quitting (i.e. presses "n")
+- control.Mouse.process_quit_event:
+    - new parameter ``event_detected_function`` to set a function that is
+      called as soon as a quit event is detected (but before the end function
+      is called)
+    - new parameter ``quit_confirmed_function`` to set a function that is
+      called when a user confirms the quitting (i.e. presses "y")
+    - new parameter ``quit_denied_function`` to set a function that is called
+      when a user declines the quitting (i.e. presses "n")
+- control.pause: added ``text`` and ``key`` parameters
+- control.defaults:
+    - added ``display`` to set display index for showing screen on
+    - added ``display_resolution`` to overwrite detected native resolution
+    - added ``audiosystem_device`` to select audio device
+- stimuli.Audio:
+    - not limited to .wav/.ogg files anymore
+    - should support most common formats (i.e. WAV, AIFF, MP3, Ogg, Opus, FLAC)
+    - new property ``is_playing`` to check whether the audio stimulus is
+      playing
+    - new property ``length`` to get the length of the audio stimulus
+    - new property ``time`` to get the current playback time
+    - new method ``wait_time`` to wait until specified playback time is reached
+    - new method ``wait_end`` to wait until the audio stimulus has finished
+      playing
+    - new method ``pause`` to pause (and unpause) playback of the audio stimulus
+    - new method ``seek`` to seek to a specified playback time
+    - new method ``forward`` to forward playback by specified duration
+    - new method ``rewind`` to rewind playback by specified duration or to the
+      start
+    - ``seek``, ``rewind``, ``forward``, ``wait_time`` methods all take multiple
+      convenient time formats now (e.g. "00:01:30")
+- stimuli.Video:
+    - general improvements
+    - Pygame video backend removed (always relies on mediadecoder)
+    - Pygame audio backend is now the default (instead of sounddevice)
+    - new parameter ``audio_backend``
+    - new stimuli default ``video_audio_backend``
+    - Pygame audio backend uses current audiosystem (if started)
+    - present method will start playback if not started already
+    - frame dropping check is now located in update method (was in present)
+    - update method allows for updating without blocking on vertical retrace
+      (OpenGL mode only)
+    - new property ``n_frames`` to get the total number of frames of the video
+    - new property ``fps`` to get the frame rate in frames per second
+    - new method ``wait_time`` to wait until a certain time
+    - new method ``seek`` to seek to any position in the video
+    - ``seek``, ``rewind``, ``forward``, ``wait_time`` methods all take multiple
+     convenient time formats now (e.g. "00:01:30")
+- io.Screen:
+    - new method ``get_display_resolution``
+    - new method ``misc.get_display_info``
+    - ``update`` method has new ``blocking`` parameter to control blocking on
+      vertical retrace (OpenGL mode only) behaviour per call
+- io.TextInput: ``get`` method now has parameter ``clear_event_cue``
+- misc:
+    - new class``MediaTime`` for representing time as used in the context of
+      media playback
+    - new function ``misc.get_audio_devices`` to get a list of available audio
+      devices
+
+
+Changed:
+
+- Python 2 support has been removed
+  Expyriment now only works with Python 3.9 or higher
+- deprecated and obsolete classes, methods and parameter were removed
+	- parameter `experiment` in control.start
+	- permute.balanced_latin_square(), permute.cycled_latin_square()
+	- geometry.position2coordinate(), geometry.points_to_vertice()
+	- statistics.frequence_table()
+	- stimulus.Dot, stimulus. Frame
+	- Clock.cpu_time()
+	- Visual.replace()
+	- Circle.get_polar_coordiantes(), Circle.set_polar_coordinates()
+	- FixCross.cross_size
+	- Shape.is_point_inside(), Shape.is_shape_overlapping()
+- package building with flit and pyproject.toml
+- revision number and build data (`__revision__`, `__date__`) removed from
+  source files
+- Python 2 support has been removed
+  Expyriment now only works with Python 3.10 or higher
+- Documentation not shipped with Expyriment anymore (i.e. no offline
+  documentation available, only online)
+- rewrite of permutation module
+- pause_key has been removed
+- When running in virtual environment, Expyriment settings folder will be local
+  to that environment
+- Always use maximal display resolution by default for fullscreen mode (unless
+  overwritten by control.defaults.display_resolution)
+- ``expyriment.control.defaults.openg_gl`` is now called
+  ``expyriment.control.defaults.opengl``
+- OpenGL mode "3" has been removed: OpenGL mode "2" (default) now does what
+  "3" used to do (i.e. "alternative blocking")
+- updated command line interface options:
+    - ``-0``, ``-g``, ``--no-opengl``, ``-1``, ``-2``, ``-3`` are deprecated
+    - OpenGL mode can now be set with new option ``--opengl``
+    - all arguments are now also available as alternative long names
+- io.TextMenu: `width` is now an optional parameter. If not defined, surface
+  width is based on the widest item in the menu
+- io.GamePad.wait_press: removed ``time.sleep(0.0005)``
+- Deprecated io.Screen.get_monitor_resolution and misc.get_monitor_resolution
+- misc.get_system_info:
+    - additions and improvements
+    - format changes for ``as_text`` output
+- renaming: `misc.py2py3_sort_array()` to `misc.string_sort_array()`
+- more consistent function naming in `misc`:
+
+  - `byte2unicode()` to `bytes_to_unicode()`
+
+  - `unicode2byte()` to `unicode_to_bytes()`
+
+  - `str2unicode()` to `str_to_unicode()`
+
+  - `unicode2str()` to `unicode_to_str()`
+
+  - `number2ascii()` to `numpad_digit_code_to_ascii()`
+- more consistent function naming in `misc.geometry`:
+    - `position2coordinates()` to `position_to_coordinates()`
+    - `coordinates2position`() to `coordinates_to_position()`
+    - `cartesian2polar()` to `cartesian_to_polar()`
+    - `position2visual_angle()` to `position_to_visual_angle()`
+    - `tuples2points()` to `tuples_to_points()`
+    - `polar2cartesian()` to `polar_to_cartesian()`
+
+- components with American spelling are now also available in British spelling,
+  enhancing consistency with the overall spelling in the library:
+    - method ``control.initialize`` -> ``control.initialise``
+    - module ``design.randomize`` -> ``design.randomise``
+	- property ``design.Experiment.is_initialized`` ->
+      ``design.Experiment.is_initialised``
+	- property ``design.Experiment.bws_factor_randomized`` ->
+      ``design.Experiment.bws_factor_randomised``
+	- constant ``control.defaults.initialize_delay`` ->
+      ``control.defaults.initialise_delay``
+
+
+Fixed:
+
+- bug in colour.is_hex & colour.is_colour
+- data_preprocessing: adds suffix ".csv" to filename when writing csv files
+- bug when reusing subject id within a minute
+- test suite: close serial port after test
+- io.Keyboard: 0.5 ms timing inaccuracy in wait methods
+- Visual stimuli: don't clear the original canvas when copying
+- stimuli.Ellipse: bug when using uneven `line_width` values
+- io.Screen: bug in saving screenshots with `save` when using OpenGL
+- io.Screen: bug in showing Expyriment logo in task bar
+- bug in `misc.get_display_info`
+- several bugs in misc.get_system_info
+
+
 Version 0.10.0 (30 Oct 2019)
 ----------------------------
 
@@ -15,7 +198,7 @@ New Features:
 - all visual stimuli now have ``get_surface_array`` & ``set_surface_array``
   methods for direct pixel manipulations with numpy
 - all visual stimuli have a getter and setter for the position in polar
-  coordinates: ``polar_coordiante``
+  coordinates: ``polar_coordinate``
 - ``cartesian2polar`` & ``polar2cartesian`` in ``misc.geometry``
 - ``design``: trials, blocks and experiment objects have the method
   ``has_factor`` to check if a factor is defined
@@ -29,7 +212,7 @@ New Features:
   lines
 - ``stimuli.Line`` is internally based on ``stimuli.Shape`` and has the new
   methods ``get_shape`` and ``get_connected_shape``
-- new function ``misc.round``, implementing the old Python 2 rounding behaviour
+- new function ``misc.py2_round``, implementing the old Python 2 rounding behaviour
 - ``io.keyboard.check`` now has an argument ``check_for_keyup`` which will
   check for keyup events instead of keydown events
 - new class ``misc.Colour``: create colours by names, Hex strings or RGB values;
@@ -62,7 +245,7 @@ Changed:
   ``position2coordinates``
 - ``position2coordinates`` & ``coordinates2position`` have a new optional
   argument to calculate positions relative to a surfaces
-- ``stimuli.Circle``: ``get_polar_coordiantes`` & ``set_polar_coordiantes`` are
+- ``stimuli.Circle``: ``get_polar_coordinates`` & ``set_polar_coordinates`` are
   obsolete; use ``polar_position``
 - ``design``: ``Trial().get_factor``, ``Block().get_factor`` and
   ``Experiment().get_bws_factor`` now raise an exception if the factor is not
@@ -91,7 +274,7 @@ Fixed:
 - bug in ``io.Keyboard.wait``
 - bug when drawing textures to screen (OpenGL) leading to 1-pixel inaccuracies
 - bug in ``stimuli.Ellipse`` with uneven `line_width` argument
-- ``io.TextIput``: argument ``background_stimulus`` now takes all Expyriment
+- ``io.TextInput``: argument ``background_stimulus`` now takes all Expyriment
   stimuli
 - ``misc.get_system_info()`` uses ``PIL.__version__``
 - ``io.TextMenu`` mouse wheel scrolling
@@ -151,7 +334,7 @@ Fixed:
 
 - unicode bug on Windows for font files
 - unicode bug on Windows for Audio and Picture
-- bug fix in unicode2str
+- bug fix in unicode_to_str
 - bug fix Experiment.add_experiment_info
 - bug: issue #65, tempfolder at multiuser systems
 - minor bug fixes in _secure_hash.py, _files.py
@@ -182,10 +365,10 @@ New Features:
 - new feature: Expyriment asks in interactive mode if initializing a fullscreen
 - new method: stimulus.visual.scale_to_fullscreen
 - new class: design.extras.StimulationProtocol
-- new method in data_preprocessing: save to to R data frame
+- new method in data_preprocessing: save to R data frame
 - new method in data_preprocessing: get_experiment_duration
 - new method/property: misc.get_monitor_resolution & Screen.monitor_resolution
-- new mouse function: experiments can be quited by mouse events (triple click);
+- new mouse function: experiments can be quit by mouse events (triple click);
   see documentation of property "mouse_quit_event". This function is only switched
   on per default under Android
 - new method visual stimuli.replace
@@ -248,7 +431,7 @@ Fixed:
 - stimuli with odd dimensions missed a pixel in each dimension in OpenGL mode
 - bug in stimuli.Audio.unload() and stimuli.Video.unload()
 - bug in io.ParallelPort.poll (now io.extras.SimpleParallelPort)
-- bug in Shape: shapes now comensate for the Pygame bug of extended polygons
+- bug in Shape: shapes now compensate for the Pygame bug of extended polygons
   along the horizontal axes
 - bug in stimuli.extras.DotCloud: colour of dots could not be changed
 
@@ -434,7 +617,7 @@ Changed:
 - stimuli.Dot is deprecated now, use stimuli.Circle instead
 - stimuli.Shape: is_point_inside and is_shape_overlapping are deprecated now
 - stimuli.Shape.native_scaling does now optionally scale also the line_width
-- stimuli.Frame: property line_width is now renmes to frame_line_width. Since
+- stimuli.Frame: property line_width is now renamed to frame_line_width. Since
   line_width is a property the underlying shape and always 0 (filled shapes)
 - stimuli.Frame is deprecated now, use stimuli.Rectangle with line_width > 0
 - stimuli.Rectangle was rewritten and is not inherited from Shape anymore;
@@ -447,8 +630,8 @@ Version 0.5.2 (13 Jun 2012)
 New Features:
 
 - data_preprocessing.print_n_trials(variables)
-- data_preporcessing.get_variable_data: get data as numpy arrays.
-- data_preporcessing.add_variable: add data from numpy.
+- data_preprocessing.get_variable_data: get data as numpy arrays.
+- data_preprocessing.add_variable: add data from numpy.
 - read trials from csv file into a block design.block.add_trials_from_csv_file
 - block.read_design (counterpart to save_design)
 - the main event_file logs now also the standard output and Python errors
@@ -468,7 +651,7 @@ Fixed:
 - Fixes and adjustments for default logging
 - API browser now works on OS X
 - API browser fonts on Windows
-- several bug fixes in data_preporcessing
+- several bug fixes in data_preprocessing
 
 Version 0.5.1 (07 Mar 2012)
 ---------------------------
@@ -477,7 +660,7 @@ Version 0.5.1 (07 Mar 2012)
 Fixed:
 
 - Bug in Serial Port test when no input is received
-- Bug for get_verrsion() under Python 2.6 under OS X
+- Bug for get_version() under Python 2.6 under OS X
 
 
 Changed:
