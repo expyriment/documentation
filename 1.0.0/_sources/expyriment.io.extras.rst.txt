@@ -1,6 +1,0 @@
-expyriment.io.extras
-====================
-
-.. automodule:: expyriment.io.extras
-
-
