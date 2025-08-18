@@ -1,0 +1,1041 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.misc.constants &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.misc.data_preprocessing" href="expyriment.misc.data_preprocessing.html" />
+    <link rel="prev" title="expyriment.misc" href="expyriment.misc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.design.html">expyriment.design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.io.html">expyriment.io</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.misc.constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.data_preprocessing.html">expyriment.misc.data_preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.defaults.html">expyriment.misc.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.extras.html">expyriment.misc.extras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.geometry.html">expyriment.misc.geometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.statistics.html">expyriment.misc.statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Buffer.html">expyriment.misc.Buffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.ByteBuffer.html">expyriment.misc.ByteBuffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Clock.html">expyriment.misc.Clock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.Colour.html">expyriment.misc.Colour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.misc.MediaTime.html">expyriment.misc.MediaTime</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.misc.html">expyriment.misc</a></li>
+      <li class="breadcrumb-item active">expyriment.misc.constants</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-expyriment.misc.constants">
+<span id="expyriment-misc-constants"></span><h1>expyriment.misc.constants<a class="headerlink" href="#module-expyriment.misc.constants" title="Link to this heading"></a></h1>
+<p>The constants module.</p>
+<p>This module contains expyriment constants.</p>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_BLACK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_BLACK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_BLACK" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d075032f0&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_BLUE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_BLUE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_BLUE" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d071ea870&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_DARKGREY">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_DARKGREY</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_DARKGREY" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d06dec9b0&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_EXPYRIMENT_ORANGE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_EXPYRIMENT_ORANGE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_EXPYRIMENT_ORANGE" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d06dece30&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_EXPYRIMENT_PURPLE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_EXPYRIMENT_PURPLE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_EXPYRIMENT_PURPLE" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d06decd70&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_GREEN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_GREEN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_GREEN" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d07502e70&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_GREY">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_GREY</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_GREY" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d07179eb0&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_RED">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_RED</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_RED" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d07502f30&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_WHITE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_WHITE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_WHITE" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d07503530&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.C_YELLOW">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">C_YELLOW</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.C_YELLOW" title="Link to this definition"></a></dt>
+<dd><p>default value: &lt;expyriment.misc._colour.Colour object at 0x7f5d06d424b0&gt;</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.EXPYRIMENT_LOGO_FILE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">EXPYRIMENT_LOGO_FILE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.EXPYRIMENT_LOGO_FILE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_0">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_0</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_0" title="Link to this definition"></a></dt>
+<dd><p>default value: 48</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_1">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_1</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_1" title="Link to this definition"></a></dt>
+<dd><p>default value: 49</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_2">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_2</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_2" title="Link to this definition"></a></dt>
+<dd><p>default value: 50</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_3">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_3</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_3" title="Link to this definition"></a></dt>
+<dd><p>default value: 51</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_4">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_4</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_4" title="Link to this definition"></a></dt>
+<dd><p>default value: 52</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_5">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_5</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_5" title="Link to this definition"></a></dt>
+<dd><p>default value: 53</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_6">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_6</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_6" title="Link to this definition"></a></dt>
+<dd><p>default value: 54</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_7">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_7</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_7" title="Link to this definition"></a></dt>
+<dd><p>default value: 55</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_8">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_8</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_8" title="Link to this definition"></a></dt>
+<dd><p>default value: 56</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_9">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_9</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_9" title="Link to this definition"></a></dt>
+<dd><p>default value: 57</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_ALL_DIGITS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_ALL_DIGITS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_ALL_DIGITS" title="Link to this definition"></a></dt>
+<dd><p>default value: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_ALL_KEYPAD_DIGITS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_ALL_KEYPAD_DIGITS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_ALL_KEYPAD_DIGITS" title="Link to this definition"></a></dt>
+<dd><p>default value: []</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_ALL_LETTERS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_ALL_LETTERS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_ALL_LETTERS" title="Link to this definition"></a></dt>
+<dd><p>default value: [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_AMPERSAND">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_AMPERSAND</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_AMPERSAND" title="Link to this definition"></a></dt>
+<dd><p>default value: 38</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_ASTERISK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_ASTERISK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_ASTERISK" title="Link to this definition"></a></dt>
+<dd><p>default value: 42</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_AT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_AT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_AT" title="Link to this definition"></a></dt>
+<dd><p>default value: 64</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_BACKQUOTE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_BACKQUOTE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_BACKQUOTE" title="Link to this definition"></a></dt>
+<dd><p>default value: 96</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_BACKSLASH">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_BACKSLASH</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_BACKSLASH" title="Link to this definition"></a></dt>
+<dd><p>default value: 92</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_BACKSPACE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_BACKSPACE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_BACKSPACE" title="Link to this definition"></a></dt>
+<dd><p>default value: 8</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_BREAK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_BREAK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_BREAK" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741896</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_CAPSLOCK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_CAPSLOCK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_CAPSLOCK" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741881</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_CARET">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_CARET</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_CARET" title="Link to this definition"></a></dt>
+<dd><p>default value: 94</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_CLEAR">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_CLEAR</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_CLEAR" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741980</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_COLON">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_COLON</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_COLON" title="Link to this definition"></a></dt>
+<dd><p>default value: 58</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_COMMA">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_COMMA</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_COMMA" title="Link to this definition"></a></dt>
+<dd><p>default value: 44</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_DELETE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_DELETE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_DELETE" title="Link to this definition"></a></dt>
+<dd><p>default value: 127</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_DOLLAR">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_DOLLAR</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_DOLLAR" title="Link to this definition"></a></dt>
+<dd><p>default value: 36</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_DOWN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_DOWN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_DOWN" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741905</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_END">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_END</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_END" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741901</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_EQUALS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_EQUALS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_EQUALS" title="Link to this definition"></a></dt>
+<dd><p>default value: 61</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_ESCAPE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_ESCAPE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_ESCAPE" title="Link to this definition"></a></dt>
+<dd><p>default value: 27</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_EURO">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_EURO</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_EURO" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742004</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_EXCLAIM">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_EXCLAIM</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_EXCLAIM" title="Link to this definition"></a></dt>
+<dd><p>default value: 33</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F1">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F1</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F1" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741882</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F10">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F10</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F10" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741891</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F11">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F11</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F11" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741892</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F12">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F12</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F12" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741893</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F13">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F13</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F13" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741928</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F14">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F14</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F14" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741929</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F15">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F15</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F15" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741930</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F2">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F2</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F2" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741883</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F3">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F3</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F3" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741884</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F4">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F4</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F4" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741885</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F5">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F5</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F5" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741886</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F6">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F6</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F6" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741887</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F7">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F7</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F7" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741888</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F8">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F8</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F8" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741889</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_F9">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_F9</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_F9" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741890</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_GREATER">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_GREATER</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_GREATER" title="Link to this definition"></a></dt>
+<dd><p>default value: 62</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_HASH">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_HASH</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_HASH" title="Link to this definition"></a></dt>
+<dd><p>default value: 35</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_HELP">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_HELP</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_HELP" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741941</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_HOME">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_HOME</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_HOME" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741898</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_INSERT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_INSERT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_INSERT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741897</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP0">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP0</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP0" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741922</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP1">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP1</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP1" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741913</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP2">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP2</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP2" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741914</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP3">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP3</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP3" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741915</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP4">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP4</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP4" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741916</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP5">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP5</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP5" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741917</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP6">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP6</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP6" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741918</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP7">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP7</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP7" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741919</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP8">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP8</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP8" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741920</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP9">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP9</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP9" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741921</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_DIVIDE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_DIVIDE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_DIVIDE" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741908</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_ENTER">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_ENTER</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_ENTER" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741912</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_EQUALS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_EQUALS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_EQUALS" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741927</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_MINUS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_MINUS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_MINUS" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741910</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_MULTIPLY">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_MULTIPLY</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_MULTIPLY" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741909</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_PERIOD">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_PERIOD</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_PERIOD" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741923</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_KP_PLUS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_KP_PLUS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_KP_PLUS" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741911</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LALT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LALT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LALT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742050</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LCTRL">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LCTRL</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LCTRL" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742048</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LEFT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LEFT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LEFT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741904</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LEFTBRACKET">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LEFTBRACKET</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LEFTBRACKET" title="Link to this definition"></a></dt>
+<dd><p>default value: 91</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LEFTPAREN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LEFTPAREN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LEFTPAREN" title="Link to this definition"></a></dt>
+<dd><p>default value: 40</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LESS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LESS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LESS" title="Link to this definition"></a></dt>
+<dd><p>default value: 60</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LMETA">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LMETA</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LMETA" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742051</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LSHIFT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LSHIFT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LSHIFT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742049</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_LSUPER">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_LSUPER</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_LSUPER" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742051</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_MENU">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_MENU</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_MENU" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741942</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_MINUS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_MINUS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_MINUS" title="Link to this definition"></a></dt>
+<dd><p>default value: 45</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_MODE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_MODE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_MODE" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742081</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_NUMLOCK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_NUMLOCK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_NUMLOCK" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741907</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PAGEDOWN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PAGEDOWN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PAGEDOWN" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741902</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PAGEUP">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PAGEUP</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PAGEUP" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741899</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PAUSE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PAUSE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PAUSE" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741896</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PERIOD">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PERIOD</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PERIOD" title="Link to this definition"></a></dt>
+<dd><p>default value: 46</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PLUS">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PLUS</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PLUS" title="Link to this definition"></a></dt>
+<dd><p>default value: 43</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_POWER">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_POWER</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_POWER" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741926</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_PRINT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_PRINT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_PRINT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741894</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_QUESTION">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_QUESTION</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_QUESTION" title="Link to this definition"></a></dt>
+<dd><p>default value: 63</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_QUOTE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_QUOTE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_QUOTE" title="Link to this definition"></a></dt>
+<dd><p>default value: 39</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_QUOTEDBL">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_QUOTEDBL</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_QUOTEDBL" title="Link to this definition"></a></dt>
+<dd><p>default value: 34</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RALT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RALT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RALT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742054</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RCTRL">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RCTRL</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RCTRL" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742052</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RETURN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RETURN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RETURN" title="Link to this definition"></a></dt>
+<dd><p>default value: 13</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RIGHT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RIGHT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RIGHT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741903</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RIGHTBRACKET">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RIGHTBRACKET</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RIGHTBRACKET" title="Link to this definition"></a></dt>
+<dd><p>default value: 93</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RIGHTPAREN">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RIGHTPAREN</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RIGHTPAREN" title="Link to this definition"></a></dt>
+<dd><p>default value: 41</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RMETA">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RMETA</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RMETA" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742055</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RSHIFT">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RSHIFT</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RSHIFT" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742053</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_RSUPER">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_RSUPER</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_RSUPER" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073742055</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_SCROLLOCK">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_SCROLLOCK</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_SCROLLOCK" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741895</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_SEMICOLON">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_SEMICOLON</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_SEMICOLON" title="Link to this definition"></a></dt>
+<dd><p>default value: 59</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_SLASH">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_SLASH</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_SLASH" title="Link to this definition"></a></dt>
+<dd><p>default value: 47</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_SPACE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_SPACE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_SPACE" title="Link to this definition"></a></dt>
+<dd><p>default value: 32</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_SYSREQ">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_SYSREQ</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_SYSREQ" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741978</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_TAB">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_TAB</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_TAB" title="Link to this definition"></a></dt>
+<dd><p>default value: 9</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_UNDERSCORE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_UNDERSCORE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_UNDERSCORE" title="Link to this definition"></a></dt>
+<dd><p>default value: 95</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_UP">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_UP</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_UP" title="Link to this definition"></a></dt>
+<dd><p>default value: 1073741906</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_a">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_a</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_a" title="Link to this definition"></a></dt>
+<dd><p>default value: 97</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_b">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_b</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_b" title="Link to this definition"></a></dt>
+<dd><p>default value: 98</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_c">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_c</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_c" title="Link to this definition"></a></dt>
+<dd><p>default value: 99</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_d">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_d</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_d" title="Link to this definition"></a></dt>
+<dd><p>default value: 100</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_e">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_e</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_e" title="Link to this definition"></a></dt>
+<dd><p>default value: 101</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_f">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_f</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_f" title="Link to this definition"></a></dt>
+<dd><p>default value: 102</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_g">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_g</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_g" title="Link to this definition"></a></dt>
+<dd><p>default value: 103</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_h">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_h</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_h" title="Link to this definition"></a></dt>
+<dd><p>default value: 104</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_i">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_i</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_i" title="Link to this definition"></a></dt>
+<dd><p>default value: 105</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_j">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_j</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_j" title="Link to this definition"></a></dt>
+<dd><p>default value: 106</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_k">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_k</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_k" title="Link to this definition"></a></dt>
+<dd><p>default value: 107</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_l">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_l</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_l" title="Link to this definition"></a></dt>
+<dd><p>default value: 108</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_m">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_m</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_m" title="Link to this definition"></a></dt>
+<dd><p>default value: 109</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_n">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_n</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_n" title="Link to this definition"></a></dt>
+<dd><p>default value: 110</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_o">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_o</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_o" title="Link to this definition"></a></dt>
+<dd><p>default value: 111</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_p">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_p</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_p" title="Link to this definition"></a></dt>
+<dd><p>default value: 112</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_q">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_q</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_q" title="Link to this definition"></a></dt>
+<dd><p>default value: 113</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_r">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_r</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_r" title="Link to this definition"></a></dt>
+<dd><p>default value: 114</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_s">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_s</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_s" title="Link to this definition"></a></dt>
+<dd><p>default value: 115</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_t">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_t</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_t" title="Link to this definition"></a></dt>
+<dd><p>default value: 116</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_u">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_u</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_u" title="Link to this definition"></a></dt>
+<dd><p>default value: 117</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_v">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_v</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_v" title="Link to this definition"></a></dt>
+<dd><p>default value: 118</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_w">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_w</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_w" title="Link to this definition"></a></dt>
+<dd><p>default value: 119</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_x">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_x</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_x" title="Link to this definition"></a></dt>
+<dd><p>default value: 120</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_y">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_y</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_y" title="Link to this definition"></a></dt>
+<dd><p>default value: 121</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.K_z">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">K_z</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.K_z" title="Link to this definition"></a></dt>
+<dd><p>default value: 122</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.P_BALANCED_LATIN_SQUARE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">P_BALANCED_LATIN_SQUARE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.P_BALANCED_LATIN_SQUARE" title="Link to this definition"></a></dt>
+<dd><p>default value: ‘balanced’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.P_CYCLED_LATIN_SQUARE">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">P_CYCLED_LATIN_SQUARE</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.P_CYCLED_LATIN_SQUARE" title="Link to this definition"></a></dt>
+<dd><p>default value: ‘cycled’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.misc.constants.expyriment.misc.constants.P_RANDOM">
+<span class="sig-prename descclassname"><span class="pre">expyriment.misc.constants.</span></span><span class="sig-name descname"><span class="pre">P_RANDOM</span></span><a class="headerlink" href="#expyriment.misc.constants.expyriment.misc.constants.P_RANDOM" title="Link to this definition"></a></dt>
+<dd><p>default value: ‘random’</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.misc.html" class="btn btn-neutral float-left" title="expyriment.misc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.misc.data_preprocessing.html" class="btn btn-neutral float-right" title="expyriment.misc.data_preprocessing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

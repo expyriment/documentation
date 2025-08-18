@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.design.Trial &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.io" href="expyriment.io.html" />
+    <link rel="prev" title="expyriment.design.Experiment" href="expyriment.design.Experiment.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.design.html">expyriment.design</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.defaults.html">expyriment.design.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.extras.html">expyriment.design.extras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.permute.html">expyriment.design.permute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.randomise.html">expyriment.design.randomise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.randomize.html">expyriment.design.randomize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.Block.html">expyriment.design.Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.design.Experiment.html">expyriment.design.Experiment</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.design.Trial</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.io.html">expyriment.io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.design.html">expyriment.design</a></li>
+      <li class="breadcrumb-item active">expyriment.design.Trial</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="expyriment-design-trial">
+<h1>expyriment.design.Trial<a class="headerlink" href="#expyriment-design-trial" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="expyriment.design.Trial">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.design.</span></span><span class="sig-name descname"><span class="pre">Trial</span></span><a class="headerlink" href="#expyriment.design.Trial" title="Link to this definition"></a></dt>
+<dd><p>A class implementing an experimental trial.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create a Trial.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.add_stimulus">
+<span class="sig-name descname"><span class="pre">add_stimulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulus</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.add_stimulus" title="Link to this definition"></a></dt>
+<dd><p>Add a stimulus to the trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>stimulus</strong><span class="classifier">expyriment stimulus</span></dt><dd><p>stimulus to add (expyriment.stimuli.* object)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This will add references to stimuli, not copies!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.clear_factors">
+<span class="sig-name descname"><span class="pre">clear_factors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.clear_factors" title="Link to this definition"></a></dt>
+<dd><p>Clear all factors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.clear_stimuli">
+<span class="sig-name descname"><span class="pre">clear_stimuli</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.clear_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Clear the stimuli.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.compare">
+<span class="sig-name descname"><span class="pre">compare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trial</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.compare" title="Link to this definition"></a></dt>
+<dd><p>Compares this trial with another trail and returns <cite>True</cite> if all
+factors associated with both trials are identical. Added stimuli will
+be ignored for the comparison.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>trail</strong><span class="classifier">design.Trial</span></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>identical: boolean</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.copy" title="Link to this definition"></a></dt>
+<dd><p>Return a copy of the trial.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Trial.factor_dict">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">factor_dict</span></span><a class="headerlink" href="#expyriment.design.Trial.factor_dict" title="Link to this definition"></a></dt>
+<dd><p>The dictionary with all factors of the trial.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Trial.factor_names">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">factor_names</span></span><a class="headerlink" href="#expyriment.design.Trial.factor_names" title="Link to this definition"></a></dt>
+<dd><p>Getter for factors names.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Trial.factors_as_text">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">factors_as_text</span></span><a class="headerlink" href="#expyriment.design.Trial.factors_as_text" title="Link to this definition"></a></dt>
+<dd><p>Return all factor names and values as csv string line</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.find_stimulus">
+<span class="sig-name descname"><span class="pre">find_stimulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.find_stimulus" title="Link to this definition"></a></dt>
+<dd><p>Find the positions of a stimulus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>id</strong><span class="classifier">int</span></dt><dd><p>stimulus id to look for</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>pos</strong><span class="classifier">int</span></dt><dd><p>positions as a list or None if not in stimuli list</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.get_factor">
+<span class="sig-name descname"><span class="pre">get_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_none_if_not_defined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.get_factor" title="Link to this definition"></a></dt>
+<dd><p>Get a factor of the trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>factor name</p>
+</dd>
+<dt><strong>return_none_if_not_defined</strong><span class="classifier">boolean (default: False)</span></dt><dd><p>suppresses exception and returns None if factor is not defined.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>factor_val</strong><span class="classifier">str or numeric</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.has_factor">
+<span class="sig-name descname"><span class="pre">has_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.has_factor" title="Link to this definition"></a></dt>
+<dd><p>Checks if a factor is defined.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>factor name (str)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>bool</strong><span class="classifier">boolean</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Trial.id">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.design.Trial.id" title="Link to this definition"></a></dt>
+<dd><p>Getter for id.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.order_stimuli">
+<span class="sig-name descname"><span class="pre">order_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">order</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.order_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Order the stimuli.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>order</strong><span class="classifier">list</span></dt><dd><p>list with the new order of positions</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.preload_stimuli">
+<span class="sig-name descname"><span class="pre">preload_stimuli</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.preload_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Preload all stimuli in trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>time it took to execute this method in ms</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.remove_stimulus">
+<span class="sig-name descname"><span class="pre">remove_stimulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.remove_stimulus" title="Link to this definition"></a></dt>
+<dd><p>Remove stimulus from trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>position</strong><span class="classifier">int</span></dt><dd><p>position of the stimulus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.set_factor">
+<span class="sig-name descname"><span class="pre">set_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.set_factor" title="Link to this definition"></a></dt>
+<dd><p>Set a factor for the trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>factor name</p>
+</dd>
+<dt><strong>value</strong><span class="classifier">str or numeric</span></dt><dd><p>factor value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.shuffle_stimuli">
+<span class="sig-name descname"><span class="pre">shuffle_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_repetitions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_segments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.shuffle_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Shuffle all stimuli.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>max_repetitions</strong><span class="classifier">int, optional</span></dt><dd><p>see documentation of <cite>randomise.shuffle_list</cite>, default = None</p>
+</dd>
+<dt><strong>n_segments</strong><span class="classifier">int, optional</span></dt><dd><p>see documentation of <cite>randomise.shuffle_list</cite>, default = None</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>success</strong><span class="classifier">bool</span></dt><dd><p>randomisation was successful and fulfilled the specified
+constrains (see max_repetitions)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="expyriment.design.randomise.html#expyriment.design.randomise.shuffle_list" title="expyriment.design.randomise.shuffle_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expyriment.design.randomise.shuffle_list</span></code></a></dt><dd></dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.sort_stimuli">
+<span class="sig-name descname"><span class="pre">sort_stimuli</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.sort_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Sort the stimuli according to their IDs from low to high.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="expyriment.design.Trial.stimuli">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stimuli</span></span><a class="headerlink" href="#expyriment.design.Trial.stimuli" title="Link to this definition"></a></dt>
+<dd><p>Getter for stimuli.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.swap_stimuli">
+<span class="sig-name descname"><span class="pre">swap_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.swap_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Swap two stimuli.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>position1</strong><span class="classifier">int</span></dt><dd><p>position of first stimulus</p>
+</dd>
+<dt><strong>position2</strong><span class="classifier">int</span></dt><dd><p>position of second stimulus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="expyriment.design.Trial.unload_stimuli">
+<span class="sig-name descname"><span class="pre">unload_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keep_surface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.design.Trial.unload_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Unload all stimuli in trial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>keep_surface</strong><span class="classifier">bool, optional</span></dt><dd><p>keep the surface after unloading (default = False)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>time</strong><span class="classifier">int</span></dt><dd><p>time it took to execute this method in ms</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.design.Experiment.html" class="btn btn-neutral float-left" title="expyriment.design.Experiment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.io.html" class="btn btn-neutral float-right" title="expyriment.io" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
