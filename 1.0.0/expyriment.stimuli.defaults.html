@@ -1,0 +1,563 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>expyriment.stimuli.defaults &mdash; Expyriment 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="expyriment.stimuli.extras" href="expyriment.stimuli.extras.html" />
+    <link rel="prev" title="expyriment.stimuli" href="expyriment.stimuli.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Expyriment
+              <img src="_static/xpy_button.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced.html">Advanced</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="expyriment.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="expyriment.control.html">expyriment.control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.design.html">expyriment.design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.io.html">expyriment.io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expyriment.misc.html">expyriment.misc</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="expyriment.stimuli.html">expyriment.stimuli</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">expyriment.stimuli.defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.extras.html">expyriment.stimuli.extras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Audio.html">expyriment.stimuli.Audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.BlankScreen.html">expyriment.stimuli.BlankScreen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Canvas.html">expyriment.stimuli.Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Circle.html">expyriment.stimuli.Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Ellipse.html">expyriment.stimuli.Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.FixCross.html">expyriment.stimuli.FixCross</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Line.html">expyriment.stimuli.Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Picture.html">expyriment.stimuli.Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Rectangle.html">expyriment.stimuli.Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Shape.html">expyriment.stimuli.Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextBox.html">expyriment.stimuli.TextBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextLine.html">expyriment.stimuli.TextLine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.TextScreen.html">expyriment.stimuli.TextScreen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Tone.html">expyriment.stimuli.Tone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expyriment.stimuli.Video.html">expyriment.stimuli.Video</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreviousVersions.html">Previous versions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Expyriment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="expyriment.html">expyriment</a></li>
+          <li class="breadcrumb-item"><a href="expyriment.stimuli.html">expyriment.stimuli</a></li>
+      <li class="breadcrumb-item active">expyriment.stimuli.defaults</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-expyriment.stimuli.defaults">
+<span id="expyriment-stimuli-defaults"></span><h1>expyriment.stimuli.defaults<a class="headerlink" href="#module-expyriment.stimuli.defaults" title="Link to this heading"></a></h1>
+<p>Default settings for the stimuli package.</p>
+<p>This module contains default values for all optional arguments in the init
+function of all classes in this package.</p>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.canvas_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">canvas_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.canvas_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.canvas_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">canvas_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.canvas_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">circle_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">circle_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_line_width">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">circle_line_width</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_line_width" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">circle_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.circle_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">ellipse_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">ellipse_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_line_width">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">ellipse_line_width</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_line_width" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">ellipse_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.ellipse_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">fixcross_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">fixcross_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_line_width">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">fixcross_line_width</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_line_width" title="Link to this definition"></a></dt>
+<dd><p>default value: 2</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">fixcross_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">fixcross_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.fixcross_size" title="Link to this definition"></a></dt>
+<dd><p>default value: (20, 20)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.line_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">line_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.line_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.line_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">line_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.line_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.picture_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">picture_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.picture_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">rectangle_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_corner_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">rectangle_corner_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_corner_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_corner_rounding">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">rectangle_corner_rounding</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_corner_rounding" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_line_width">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">rectangle_line_width</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_line_width" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">rectangle_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.rectangle_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_anti_aliasing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">shape_anti_aliasing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_anti_aliasing" title="Link to this definition"></a></dt>
+<dd><p>default value: 0</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">shape_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">shape_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.shape_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.tempdir">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">tempdir</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.tempdir" title="Link to this definition"></a></dt>
+<dd><p>default value: ‘/tmp/expyriment_qqwkna1z’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_background_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_background_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_background_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_do_not_trim_words">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_do_not_trim_words</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_do_not_trim_words" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_bold">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_bold</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_bold" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_font">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_font</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_font" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_italic">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_italic</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_italic" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_justification">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_justification</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_justification" title="Link to this definition"></a></dt>
+<dd><p>default value: 1</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_size" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_underline">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textbox_text_underline</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textbox_text_underline" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_background_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_background_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_background_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_bold">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_bold</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_bold" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_font">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_font</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_font" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_italic">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_italic</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_italic" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_size" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_underline">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textline_text_underline</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textline_text_underline" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_background_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_background_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_background_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_bold">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_bold</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_bold" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_font">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_font</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_font" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_italic">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_italic</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_italic" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_size" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_underline">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_heading_underline</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_heading_underline" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_size" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_bold">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_bold</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_bold" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_colour">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_colour</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_colour" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_font">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_font</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_font" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_italic">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_italic</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_italic" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_justification">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_justification</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_justification" title="Link to this definition"></a></dt>
+<dd><p>default value: 1</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_size">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_size</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_size" title="Link to this definition"></a></dt>
+<dd><p>default value: None</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_underline">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">textscreen_text_underline</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.textscreen_text_underline" title="Link to this definition"></a></dt>
+<dd><p>default value: False</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_amplitude">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">tone_amplitude</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_amplitude" title="Link to this definition"></a></dt>
+<dd><p>default value: 0.5</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_bitdepth">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">tone_bitdepth</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_bitdepth" title="Link to this definition"></a></dt>
+<dd><p>default value: 16</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_frequency">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">tone_frequency</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_frequency" title="Link to this definition"></a></dt>
+<dd><p>default value: 440</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_samplerate">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">tone_samplerate</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.tone_samplerate" title="Link to this definition"></a></dt>
+<dd><p>default value: 44100</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_audio_backend">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">video_audio_backend</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_audio_backend" title="Link to this definition"></a></dt>
+<dd><p>default value: ‘pygame’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">video_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_position" title="Link to this definition"></a></dt>
+<dd><p>default value: [0, 0]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_resizing">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">video_resizing</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.video_resizing" title="Link to this definition"></a></dt>
+<dd><p>default value: (None, None)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="expyriment.stimuli.defaults.expyriment.stimuli.defaults.visual_position">
+<span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.defaults.</span></span><span class="sig-name descname"><span class="pre">visual_position</span></span><a class="headerlink" href="#expyriment.stimuli.defaults.expyriment.stimuli.defaults.visual_position" title="Link to this definition"></a></dt>
+<dd><p>default value: (0, 0)</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="expyriment.stimuli.html" class="btn btn-neutral float-left" title="expyriment.stimuli" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="expyriment.stimuli.extras.html" class="btn btn-neutral float-right" title="expyriment.stimuli.extras" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
