@@ -23,7 +23,7 @@ Here are some configurations we observed to work as expected:
 * Nvidia Quadro NVS 290 (Windows XP SP3; NVIDIA driver)
 * Toshiba Satellite Pro Laptop (Windows 7)
 * Apple MacBook Pro 2013 (OS X 10.10; newer MacOS versions do NOT seem to work!)
-* Dell XPS 15 9560 (Windows 10 Enterprise 22H2; Intel HD Graphics 630)
+* Dell XPS 15 9560 (Windows 10 Enterprise 22H2; Intel HD Graphics 630; newer Windows versions do NOT seem to work!)
 * Raspberry Pi 4 (Raspberry Pi OS, Wayland; slight reporting inaccuracy of 1ms on average)
 
 **We recommend to always use the Expyriment test suite to check the
