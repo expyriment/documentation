@@ -26,15 +26,18 @@ Classes
    expyriment.misc.ByteBuffer
    expyriment.misc.Clock
    expyriment.misc.Colour
+   expyriment.misc.MediaTime
 
 Functions
 -----------
 .. autofunction:: expyriment.misc.add_fonts
-.. autofunction:: expyriment.misc.byte2unicode
+.. autofunction:: expyriment.misc.bytes_to_unicode
 .. autofunction:: expyriment.misc.compare_codes
 .. autofunction:: expyriment.misc.create_colours
 .. autofunction:: expyriment.misc.download_from_stash
 .. autofunction:: expyriment.misc.find_font
+.. autofunction:: expyriment.misc.get_audio_devices
+.. autofunction:: expyriment.misc.get_display_info
 .. autofunction:: expyriment.misc.get_experiment_secure_hash
 .. autofunction:: expyriment.misc.get_module_hash_dictionary
 .. autofunction:: expyriment.misc.get_monitor_resolution
@@ -46,9 +49,10 @@ Functions
 .. autofunction:: expyriment.misc.is_ipython_running
 .. autofunction:: expyriment.misc.list_fonts
 .. autofunction:: expyriment.misc.module_hashes_as_string
-.. autofunction:: expyriment.misc.numpad_digit_code2ascii
-.. autofunction:: expyriment.misc.py2py3_sort_array
-.. autofunction:: expyriment.misc.unicode2byte
+.. autofunction:: expyriment.misc.numpad_digit_code_to_ascii
+.. autofunction:: expyriment.misc.py2_round
+.. autofunction:: expyriment.misc.string_sort_array
+.. autofunction:: expyriment.misc.unicode_to_bytes
 .. autofunction:: expyriment.misc.which
 
 

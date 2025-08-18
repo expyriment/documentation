@@ -3,11 +3,25 @@ expyriment.design.permute
 
 .. automodule:: expyriment.design.permute
 
+Attributes
+-----------
+.. py:data:: expyriment.design.permute.P_BALANCED_LATIN_SQUARE
+
+   default value: 'balanced'
+
+.. py:data:: expyriment.design.permute.P_CYCLED_LATIN_SQUARE
+
+   default value: 'cycled'
+
+.. py:data:: expyriment.design.permute.P_RANDOM
+
+   default value: 'random'
+
+
 
 Functions
 -----------
-.. autofunction:: expyriment.design.permute.balanced_latin_square
-.. autofunction:: expyriment.design.permute.cycled_latin_square
 .. autofunction:: expyriment.design.permute.is_permutation_type
+.. autofunction:: expyriment.design.permute.latin_square
 
 

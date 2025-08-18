@@ -1,6 +1,6 @@
 Using non-English characters
 ============================
-Expyriment has full `unicode support <http://docs.python.org/2/howto/unicode.html>`_.
+Expyriment has full `unicode support <http://docs.python.org/3/howto/unicode.html>`_.
 This means that, in principle, non-English characters (such as umlaut, accent,
 special character) can be used in strings throughout the library. Two
 different forms of using non-English characters have to be dissociated.
@@ -10,9 +10,8 @@ Non-English characters in strings in the Expyriment script file
 When attempting to use non-English characters in strings in your Expyriment
 script file, the following three conditions have to be met:
 
-1. **Only use non-English charactes in unicode strings (Python 2 only)!**
-   For example: Use ``u"Überexperiment"`` instead of ``"Überexperiment"``.
-   (In Python 3 you can use normal strings, as they are already unicode compatible.)
+1. **Only use non-English characters in normal strings (and not byte string)!**
+   For example: Use ``"Überexperiment"`` instead of ``b"Überexperiment"``.
 
 2. **Know the encoding used by your editor!**
    For example: IDLE will automatically suggest to save in utf-8 encoding when
@@ -24,7 +23,7 @@ script file, the following three conditions have to be met:
 
      # -*- coding: utf-8 -*-
      
-  (In Python 3, you can skip this, if and only if you use utf-8 encoding.)
+  (You can skip this, if and only if you use utf-8 encoding.)
 
 Non-English characters in other text files (e.g. stimuli lists)
 ---------------------------------------------------------------

@@ -13,17 +13,15 @@ Classes
 
 Functions
 -----------
-.. autofunction:: expyriment.misc.geometry.cartesian2polar
-.. autofunction:: expyriment.misc.geometry.coordinates2position
+.. autofunction:: expyriment.misc.geometry.cartesian_to_polar
+.. autofunction:: expyriment.misc.geometry.coordinates_to_position
 .. autofunction:: expyriment.misc.geometry.lines_intersect
 .. autofunction:: expyriment.misc.geometry.lines_intersection_point
-.. autofunction:: expyriment.misc.geometry.points2vertices
 .. autofunction:: expyriment.misc.geometry.points_to_vertices
-.. autofunction:: expyriment.misc.geometry.polar2cartesian
-.. autofunction:: expyriment.misc.geometry.position2coordinate
-.. autofunction:: expyriment.misc.geometry.position2coordinates
-.. autofunction:: expyriment.misc.geometry.position2visual_angle
-.. autofunction:: expyriment.misc.geometry.tuples2points
+.. autofunction:: expyriment.misc.geometry.polar_to_cartesian
+.. autofunction:: expyriment.misc.geometry.position_to_coordinates
+.. autofunction:: expyriment.misc.geometry.position_to_visual_angle
+.. autofunction:: expyriment.misc.geometry.tuples_to_points
 .. autofunction:: expyriment.misc.geometry.vertices_cross
 .. autofunction:: expyriment.misc.geometry.vertices_frame
 .. autofunction:: expyriment.misc.geometry.vertices_parallelogram
@@ -31,6 +29,6 @@ Functions
 .. autofunction:: expyriment.misc.geometry.vertices_regular_polygon
 .. autofunction:: expyriment.misc.geometry.vertices_trapezoid
 .. autofunction:: expyriment.misc.geometry.vertices_triangle
-.. autofunction:: expyriment.misc.geometry.visual_angle2position
+.. autofunction:: expyriment.misc.geometry.visual_angle_to_position
 
 

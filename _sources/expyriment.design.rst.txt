@@ -13,6 +13,7 @@ Modules
    expyriment.design.defaults
    expyriment.design.extras
    expyriment.design.permute
+   expyriment.design.randomise
    expyriment.design.randomize
 
 Classes
