@@ -33,7 +33,7 @@ publication:
 
     Krause, F., & Lindemann, O. (2014). Expyriment: A Python library for
     cognitive and neuroscientific experiments. *Behavior Research Methods*, 46(2),
-    416-428. `doi:10.3758/s13428-013-0390-6 <http://dx.doi.org/10.3758/s13428-013-0390-6>`_
+    416-428. `doi:10.3758/s13428-013-0390-6 <https://doi.org/10.3758/s13428-013-0390-6>`_
 
 
 Main features
