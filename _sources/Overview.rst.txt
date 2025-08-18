@@ -16,11 +16,11 @@ design to a running programme. It is therefore also suited for students as well
 as experimental psychologists and neuroscientists with little programming 
 experience.
 
-*Website*: http://www.expyriment.org
+*Website*: https://www.expyriment.org
 
 *Authors:*
 
-* `Florian Krause <http://www.floriankrause.org>`_, Donders Institute, RadboudUMC Nijmegen, The Netherlands
+* `Florian Krause <https://www.floriankrause.org>`_, Donders Institute, RadboudUMC Nijmegen, The Netherlands
     
 * `Oliver Lindemann 
   <http://www.cognitive-psychology.eu/lindemann/>`_, Erasmus University Rotterdam, The Netherlands
@@ -33,7 +33,7 @@ publication:
 
     Krause, F., & Lindemann, O. (2014). Expyriment: A Python library for
     cognitive and neuroscientific experiments. *Behavior Research Methods*, 46(2),
-    416-428. `doi:10.3758/s13428-013-0390-6 <http://dx.doi.org/10.3758/s13428-013-0390-6>`_
+    416-428. `doi:10.3758/s13428-013-0390-6 <https://doi.org/10.3758/s13428-013-0390-6>`_
 
 
 Main features
@@ -136,19 +136,19 @@ an email to info@expyriment.org.
 
 Forum
 -----
-The new official Expyriment support forum can be found at http://forum.expyriment.org.
+The new official Expyriment support forum can be found at https://github.com/orgs/expyriment/discussions.
 
 
 Matrix chat
 -----------
-To ask questions or to have real-time discussions with other users and the developers you can also use our `Matrix chat <https://matrix.to/#/#expyriment:matrix.org>`_.
+To ask questions or to have real-time discussions with other users and the developers you can also use our `Matrix space <https://matrix.to/#/#expyriment-space:matrix.org>`_.
 
 
 Social networks
 ---------------
-* Subscribe to `/r/expyriment <http://www.reddit.com/r/expyriment>`_ on Reddit
-* Follow `@expyriment <http://www.twitter.com/expyriment>`_ on Twitter
-* Like `Expyriment <http://www.facebook.com/expyriment>`_ on Facebook
+* Follow `@expyriment <https://www.twitter.com/expyriment>`_ on Twitter
+* Follow `Expyriment <https://www.facebook.com/expyriment>`_ on Facebook
+* Follow `Expyriment <https://www.linkedin.com/company/expyriment>`_ on LinkedIn
 
 
 Related projects

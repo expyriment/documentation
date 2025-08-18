@@ -1,8 +1,0 @@
-expyriment.misc.MediaTime
-=========================
-
-.. autoclass:: expyriment.misc.MediaTime
-   :members:
-   :inherited-members:
-
-   .. automethod:: expyriment.misc.MediaTime.__init__
