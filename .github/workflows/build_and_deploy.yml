@@ -31,7 +31,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages-test  # change back to gh-pages after testing
+          branch: gh-pages
           folder: _build/html/
           target-folder: ./
           clean: true
@@ -45,7 +45,7 @@ jobs:
       - name: Deploy (version subdirectory)
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages-test  # change back to gh-pages after testing
+          branch: gh-pages
           folder: _build/html/
           target-folder: ${{ env.VERSION_NR }}
           clean: true
