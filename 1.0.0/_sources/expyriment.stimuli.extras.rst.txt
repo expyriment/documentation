@@ -1,6 +1,0 @@
-expyriment.stimuli.extras
-=========================
-
-.. automodule:: expyriment.stimuli.extras
-
-

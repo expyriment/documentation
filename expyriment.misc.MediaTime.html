@@ -6,18 +6,18 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.misc.MediaTime &mdash; Expyriment 1.0.0 documentation</title>
+  <title>expyriment.misc.MediaTime &mdash; Expyriment 1.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=292eb321"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -103,7 +103,7 @@
 <h1>expyriment.misc.MediaTime<a class="headerlink" href="#expyriment-misc-mediatime" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.misc.MediaTime">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">MediaTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">expyriment.misc.</span></span><span class="sig-name descname"><span class="pre">MediaTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime" title="Link to this definition"></a></dt>
 <dd><p>A class representing time as used in the context of media playback.</p>
 <p>Internally represents time in seconds as a float value (inherits from
 built-in float type), but can deal with multiple formats when creating and
@@ -163,7 +163,7 @@ OverflowError on infinities and a ValueError on NaNs.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.misc.MediaTime.convert_to_seconds">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_to_seconds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime.convert_to_seconds" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">convert_to_seconds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime.convert_to_seconds" title="Link to this definition"></a></dt>
 <dd><p>Try to convert time specified in common media formats into seconds.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -173,7 +173,7 @@ OverflowError on infinities and a ValueError on NaNs.</p>
 <li><p>float: seconds</p></li>
 <li><p>tuple: (minutes, seconds) or (hours, minutes, seconds)</p></li>
 <li><p>list: [minutes, seconds] or [hours, minutes, seconds]</p></li>
-<li><p>str: ‘hhrmm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
+<li><p>str: ‘hh:mm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
 </ul>
 </dd>
 </dl>
@@ -206,7 +206,7 @@ OverflowError on infinities and a ValueError on NaNs.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="expyriment.misc.MediaTime.fromhex">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromhex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime.fromhex" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromhex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.misc.MediaTime.fromhex" title="Link to this definition"></a></dt>
 <dd><p>Create a floating-point number from a hexadecimal string.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s1">&#39;0x1.ffffp10&#39;</span><span class="p">)</span>
 <span class="go">2047.984375</span>
@@ -261,7 +261,7 @@ OverflowError on infinities and a ValueError on NaNs.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2026, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

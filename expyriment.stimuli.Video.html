@@ -6,18 +6,18 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>expyriment.stimuli.Video &mdash; Expyriment 1.0.0 documentation</title>
+  <title>expyriment.stimuli.Video &mdash; Expyriment 1.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=292eb321"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -109,7 +109,7 @@
 <h1>expyriment.stimuli.Video<a class="headerlink" href="#expyriment-stimuli-video" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">Video</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resizing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">audio_backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Video" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">expyriment.stimuli.</span></span><span class="sig-name descname"><span class="pre">Video</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resizing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">audio_backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#expyriment.stimuli.Video" title="Link to this definition"></a></dt>
 <dd><p>A class implementing a general video stimulus.</p>
 <p>This class uses a background thread for playing the video!</p>
 <p class="rubric">Notes</p>
@@ -175,7 +175,7 @@ screen dimension)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.audio_backend">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">audio_backend</span></span><a class="headerlink" href="#expyriment.stimuli.Video.audio_backend" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">audio_backend</span></span><a class="headerlink" href="#expyriment.stimuli.Video.audio_backend" title="Link to this definition"></a></dt>
 <dd><p>Getter for audio_backend.</p>
 </dd></dl>
 
@@ -194,7 +194,7 @@ screen dimension)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.filename">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#expyriment.stimuli.Video.filename" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#expyriment.stimuli.Video.filename" title="Link to this definition"></a></dt>
 <dd><p>Getter for filename.</p>
 </dd></dl>
 
@@ -210,7 +210,7 @@ screen dimension)</p>
 <li><p>float: seconds</p></li>
 <li><p>tuple: (minutes, seconds) or (hours, minutes, seconds)</p></li>
 <li><p>list: [minutes, seconds] or [hours, minutes, seconds]</p></li>
-<li><p>str: ‘hhrmm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
+<li><p>str: ‘hh:mm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
 </ul>
 </dd>
 </dl>
@@ -231,73 +231,73 @@ screen dimension)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.fps">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fps</span></span><a class="headerlink" href="#expyriment.stimuli.Video.fps" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fps</span></span><a class="headerlink" href="#expyriment.stimuli.Video.fps" title="Link to this definition"></a></dt>
 <dd><p>Property to get the FSP (frames per second) of the video.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.frame">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><a class="headerlink" href="#expyriment.stimuli.Video.frame" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">frame</span></span><a class="headerlink" href="#expyriment.stimuli.Video.frame" title="Link to this definition"></a></dt>
 <dd><p>Property to get the current available video frame (0-based!).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.has_audio">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_audio</span></span><a class="headerlink" href="#expyriment.stimuli.Video.has_audio" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">has_audio</span></span><a class="headerlink" href="#expyriment.stimuli.Video.has_audio" title="Link to this definition"></a></dt>
 <dd><p>Property to check if video file has audio information.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.has_video">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_video</span></span><a class="headerlink" href="#expyriment.stimuli.Video.has_video" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">has_video</span></span><a class="headerlink" href="#expyriment.stimuli.Video.has_video" title="Link to this definition"></a></dt>
 <dd><p>Property to check if video fifle has video information.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.id">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.Video.id" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#expyriment.stimuli.Video.id" title="Link to this definition"></a></dt>
 <dd><p>Getter for id.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.is_paused">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_paused</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_paused" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_paused</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_paused" title="Link to this definition"></a></dt>
 <dd><p>Property to check if video is paused.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.is_playing">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_playing</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_playing" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_playing</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_playing" title="Link to this definition"></a></dt>
 <dd><p>Property to check if video is playing.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.is_preloaded">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_preloaded" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_preloaded</span></span><a class="headerlink" href="#expyriment.stimuli.Video.is_preloaded" title="Link to this definition"></a></dt>
 <dd><p>Getter for is_preloaded.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.length">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#expyriment.stimuli.Video.length" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#expyriment.stimuli.Video.length" title="Link to this definition"></a></dt>
 <dd><p>Property to get the length of the video.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.logging">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.Video.logging" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">logging</span></span><a class="headerlink" href="#expyriment.stimuli.Video.logging" title="Link to this definition"></a></dt>
 <dd><p>Getter for logging.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.n_frames">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_frames</span></span><a class="headerlink" href="#expyriment.stimuli.Video.n_frames" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_frames</span></span><a class="headerlink" href="#expyriment.stimuli.Video.n_frames" title="Link to this definition"></a></dt>
 <dd><p>Property to get the number of frames of the video.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.new_frame_available">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">new_frame_available</span></span><a class="headerlink" href="#expyriment.stimuli.Video.new_frame_available" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">new_frame_available</span></span><a class="headerlink" href="#expyriment.stimuli.Video.new_frame_available" title="Link to this definition"></a></dt>
 <dd><p>Property to check if new video frame is available to render.</p>
 </dd></dl>
 
@@ -341,7 +341,7 @@ Video.wait_end(), dropped video frames will be reported and logged.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.position">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.Video.position" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#expyriment.stimuli.Video.position" title="Link to this definition"></a></dt>
 <dd><p>Getter for position.</p>
 </dd></dl>
 
@@ -392,7 +392,7 @@ frames will be reported and logged.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.resizing">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">resizing</span></span><a class="headerlink" href="#expyriment.stimuli.Video.resizing" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resizing</span></span><a class="headerlink" href="#expyriment.stimuli.Video.resizing" title="Link to this definition"></a></dt>
 <dd><p>Getter for resizing.</p>
 </dd></dl>
 
@@ -408,7 +408,7 @@ frames will be reported and logged.</p>
 <li><p>float: seconds</p></li>
 <li><p>tuple: (minutes, seconds) or (hours, minutes, seconds)</p></li>
 <li><p>list: [minutes, seconds] or [hours, minutes, seconds]</p></li>
-<li><p>str: ‘hhrmm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
+<li><p>str: ‘hh:mm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
 </ul>
 </dd>
 </dl>
@@ -439,7 +439,7 @@ frames will be reported and logged.</p>
 <li><p>float: seconds</p></li>
 <li><p>tuple: (minutes, seconds) or (hours, minutes, seconds)</p></li>
 <li><p>list: [minutes, seconds] or [hours, minutes, seconds]</p></li>
-<li><p>str: ‘hhrmm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
+<li><p>str: ‘hh:mm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
 </ul>
 </dd>
 </dl>
@@ -480,7 +480,7 @@ frames will be reported and logged.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.size">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.stimuli.Video.size" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#expyriment.stimuli.Video.size" title="Link to this definition"></a></dt>
 <dd><p>Getter for size.</p>
 </dd></dl>
 
@@ -492,7 +492,7 @@ frames will be reported and logged.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="expyriment.stimuli.Video.time">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time</span></span><a class="headerlink" href="#expyriment.stimuli.Video.time" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">time</span></span><a class="headerlink" href="#expyriment.stimuli.Video.time" title="Link to this definition"></a></dt>
 <dd><p>Property to get the current playback time (in seconds).</p>
 </dd></dl>
 
@@ -616,7 +616,7 @@ frames will be reported and logged.</p>
 <ul class="simple">
 <li><p>tuple: (minutes, seconds) or (hours, minutes, seconds)</p></li>
 <li><p>list: [minutes, seconds] or [hours, minutes, seconds]</p></li>
-<li><p>str: ‘hhrmm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
+<li><p>str: ‘hh:mm:ss’, ‘hh:mm:ss.sss’, or ‘mm:ss.sss’</p></li>
 </ul>
 </dd>
 </dl>
@@ -672,7 +672,7 @@ frames will be reported and logged.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2026, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

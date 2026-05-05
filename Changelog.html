@@ -6,18 +6,18 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Changelog &mdash; Expyriment 1.0.0 documentation</title>
+  <title>Changelog &mdash; Expyriment 1.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=065f7c17" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=292eb321"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -79,6 +79,32 @@
              
   <section id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading"></a></h1>
+<section id="version-1-0-1-5-may-2026">
+<h2>Version 1.0.1 (5 May 2026)<a class="headerlink" href="#version-1-0-1-5-may-2026" title="Link to this heading"></a></h2>
+<p>Changed:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>command line interface:</dt><dd><ul>
+<li><p>unknown arguments are now passed through to the script</p></li>
+<li><p>check SSL errors when downloading from stash</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>io.GamePad:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">pygame.joystick.init</span></code> not called on import, but later in class init</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Fixed:</p>
+<ul class="simple">
+<li><p>command line interface <code class="docutils literal notranslate"><span class="pre">SCRIPT</span></code> argument resulted in crash
+(<a class="reference external" href="https://github.com/expyriment/expyriment/issues/278">https://github.com/expyriment/expyriment/issues/278</a>)</p></li>
+</ul>
+</section>
 <section id="version-1-0-0-18-aug-2025">
 <h2>Version 1.0.0 (18 Aug 2025)<a class="headerlink" href="#version-1-0-0-18-aug-2025" title="Link to this heading"></a></h2>
 <p>New Features:</p>
@@ -1086,7 +1112,7 @@ stimuli anymore</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Florian Krause &amp; Oliver Lindemann.</p>
+    <p>&#169; Copyright 2026, Florian Krause &amp; Oliver Lindemann.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
