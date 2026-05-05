@@ -8,7 +8,7 @@ of other common functionality through the ``expyriment`` command.
 Note
 ----
 | Non-capitalized letter arguments are (chainable) options, capitalized letter arguments run single commands.
-| Unknown arguments are passed through to script.
+| Unknown arguments are passed through to the script.
 
 Usage
 -----
