@@ -175,7 +175,7 @@ Attributes
 
 .. py:data:: expyriment.io.defaults.textmenu_background_colour
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f4f31f87e60>
+   default value: <expyriment.misc._colour.Colour object at 0x7fa056b88560>
 
 .. py:data:: expyriment.io.defaults.textmenu_gap
 
@@ -187,7 +187,7 @@ Attributes
 
 .. py:data:: expyriment.io.defaults.textmenu_heading_text_colour
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f4f317e9730>
+   default value: <expyriment.misc._colour.Colour object at 0x7fa058a82ba0>
 
 .. py:data:: expyriment.io.defaults.textmenu_justification
 
@@ -203,11 +203,11 @@ Attributes
 
 .. py:data:: expyriment.io.defaults.textmenu_select_background_colour
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f4f317e8110>
+   default value: <expyriment.misc._colour.Colour object at 0x7fa056ffaea0>
 
 .. py:data:: expyriment.io.defaults.textmenu_select_frame_colour
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f4f317e9730>
+   default value: <expyriment.misc._colour.Colour object at 0x7fa058a82ba0>
 
 .. py:data:: expyriment.io.defaults.textmenu_select_frame_line_width
 
@@ -219,7 +219,7 @@ Attributes
 
 .. py:data:: expyriment.io.defaults.textmenu_text_colour
 
-   default value: <expyriment.misc._colour.Colour object at 0x7f4f3171ee10>
+   default value: <expyriment.misc._colour.Colour object at 0x7fa056ffb1a0>
 
 .. py:data:: expyriment.io.defaults.textmenu_text_font
 
